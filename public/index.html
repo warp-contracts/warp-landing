@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- ===============================================-->
+<!--    Document Title-->
+<!-- ===============================================-->
+<title>RedStone</title>
+
+
+<!-- ===============================================-->
+<!--    Favicons-->
+<!-- ===============================================-->
+<!--link(rel="apple-touch-icon" sizes="180x180", href=`${CWD}assets/img/favicons/apple-touch-icon.png`)-->
+<!--link(rel="icon" type="image/png" sizes="32x32", href=`${CWD}assets/img/favicons/favicon-32x32.png`)-->
+<!--link(rel="icon" type="image/png" sizes="16x16", href=`${CWD}assets/img/favicons/favicon-16x16.png`)-->
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/redstone-favicon.png">
+<link rel="manifest" href="assets/img/favicons/manifest.json">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Highly customizable DeFi data streams delivered quickly, reliably and cost-efficiently.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FT767HW5C2"></script>
+<script async>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-FT767HW5C2');
+</script>
+<script async src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
+
+
+<!-- ===============================================-->
+<!--    Stylesheets-->
+<!-- ===============================================-->
+<link href="/assets/css/theme.css" rel="stylesheet" lazyload />
+
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css"></noscript>
+
+</head>
+
+
+<body>
+
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+  <main class="main" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
+    <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html"><img src="assets/img/smartweave-logo.png" width="175" height="75" alt="Redstone logo" /></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+            <!--li.nav-item(data-anchor)-->
+            <!--  a.nav-link.fw-medium(aria-current='page', href='#home' class= currentPage === 'index' ? 'active' : false ) Home-->
+            
+                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#home">Home</a></li>
+                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#project">Project</a></li>
+                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#developers">For developers</a></li>
+                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#goals">Goals</a></li>
+                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#community">Community</a></li>
+                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#contact">Contact</a></li>
+            
+        </ul>
+        <form class="ps-lg-5 text-end text-lg-center mt-3 mt-lg-0"><a class="button btn btn-lg btn-danger rounded-pill order-0" href="https://app.redstone.finance" target="_blank">Try it out</a></form>
+        </div>
+    </div>
+</nav>
+
+
+    <section class="" id="home">
+      <div class="container position-relative">
+        <div class="row" style="height: 40vh">
+          <div id="redstone-video"></div>
+        </div>
+        <div class="row align-items-center mt-6">
+          <div class="col-12 text-center text-md-start mt-8">
+            <div class="h1 mb-2 display-3 fw-bold lh-sm mt-lg-0">The next generation of smart contracts</div>
+            <p class="my-3 my-md-4 fs-1">Smart contracts designed to efficiently handle large data sets</p><a class="btn btn-lg btn-danger rounded-pill"
+              href="https://app.redstone.finance" target="_blank" role="button">Try it out</a>
+        </div>
+      </div>
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+        <!-- ============================================-->
+    <!-- <section> begin ============================-->
+      <section class="py-4 py-lg-6" id="project">
+
+        <div class="container">
+          <div class="row justify-content-center mb-6">
+            <div class="col-sm-10 col-lg-6">
+              <img src="assets/animations/blockchain.gif" width="500" />
+            </div>
+            <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-5 mt-4">
+              <div class="h6 fw-bold fs-4 display-3 lh-sm">Blockchain data problem</div>
+              <p class="mb-0">Most modern smart contracts treat data as a side-product that slows down processing. 
+                Data is digested, pruned and pushed out to side chains. Nonetheless the bloated global state is still 
+                the biggest challenge of modern blockchains. 
+                </p>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-6">
+            <div class="col-sm-10 col-lg-6 text-end mx-auto mb-3 mb-md-5 mt-4">
+              <div class="h6 fw-bold fs-4 display-3 lh-sm">How SmartWeave solves that</div>
+              <p class="mb-0">We use a radically different design treating data as the most 
+                valuable asset. We get rid of a global state thanks to decoupling the storage 
+                from the computation. The contracts can be evaluated on-demand, lazily, creating 
+                the potential for unparalleled scalability.
+                </p>
+            </div>           
+            <div class="col-sm-10 col-lg-6">
+              <img src="assets/animations/smartweave.gif" width="400" />
+            </div>
+          </div>
+        </div><!-- end of .container-->
+  
+      </section>
+
+
+    <section class="" id="developers">
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
+            <div class="h6 fw-bold fs-4 display-3 lh-sm">Smartweave SDK</div>
+            <p class="mb-0">Javascript toolbox for interacting with smart contracts. Check it out on 
+              <a href="https://www.npmjs.com/package/redstone-smartweave" target="_blank" rel="noreferrer noopener">
+                <img width="50" src="assets/img/icons/npm.png" />
+              </a>
+              and
+              <a href="https://github.com/redstone-finance/redstone-smartweave" target="_blank" rel="noreferrer noopener">
+                <img width="25" src="/assets/img/icons/github-black.svg" alt="Github icon"/>
+              </a>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-2">
+          <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-5 mt-2 text-end">
+            <div class="h6 fw-bold fs-4 display-3 lh-sm">Architecture</div>
+            <p class="mb-0">To improve blockchain performance, smart contracts evaluation is taken out from the blockchain and 
+              handed over to client-side. That's where this SDK comes into play- wrapping up complicated contract interaction issues into 
+              few easy to use library methods. All written in modular fashion, allowing you to write and integrate your own modules, and
+              ready to use with any cache mechanism.
+              </p>
+          </div>
+          <div class="col-sm-10 col-lg-6">
+            <img src="assets/img/illustrations/diagram.png" width="500" />
+          </div>
+        </div>
+        <div class="row justify-content-center mb-6">
+          <div class="col-sm-10 col-lg-6">
+            <img src="assets/img/illustrations/benchmark.png" width="400" />
+          </div>
+          <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-5 mt-8">
+            <div class="h6 fw-bold fs-4 display-3 lh-sm">Outstanding performance</div>
+            <p class="mb-0">Optimization of contract evaluation and caching mechanisms allowed us to reach speed of contract evaluation not yet seen on
+              Arweave blockchain. 
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-4" id="goals">
+      <div class="container">
+        <div class="row justify-content-center mb-3 mt-4">
+          <div class="col-sm-10 col-lg-12 text-center mx-auto">
+            <div class="h6 fw-bold fs-4 display-3 lh-sm">What's there</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <div class="text-center px-lg-3"><img loading="lazy" class="lazy img-fluid img-features mb-3"
+                src="assets/img/icons/fast.svg" alt="Speed-o-meter" height="80" width="80" />
+              <div class="h5 fw-bold">Performance</div>
+              <p class="mb-md-0">Caching data inputs</p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="text-center px-lg-3"><img loading="lazy" class="lazy img-fluid img-features mb-3"
+                src="assets/img/icons/cost-efficient.svg" alt="Cost efficient" height="80" width="80" />
+              <div class="h5 fw-bold">Efficiency</div>
+              <p class="mb-md-0">Memoizing computations.</p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="text-center px-lg-3"><img loading="lazy" class="lazy img-fluid img-features mb-3"
+                src="assets/img/icons/accountable.svg" alt="Contract" height="60" width="60"  />
+              <div class="h5 fw-bold">Safety</div>
+              <p class="mb-md-0">Handling execution errors.</p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="text-center px-lg-3"><img loading="lazy" class="lazy img-fluid img-features mb-3"
+                src="assets/img/icons/decentralized.svg" alt="Decentralized structure" height="70" width="70"  />
+              <div class="h5 fw-bold">Interoperability</div>
+              <p class="mb-md-0">Interactive reads from external contracts.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-6">
+          <div class="col-sm-10 col-lg-12 text-center mx-auto">
+            <div class="h6 fw-bold fs-4 display-3 lh-sm">What's coming</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="text-center px-lg-3"><img loading="lazy" class="lazy img-fluid img-features mb-3"
+                src="assets/img/icons/decentralized.svg" alt="Decentralized structure" height="80" width="80"  />
+              <div class="h5 fw-bold">Expressiveness</div>
+              <p class="mb-md-0">Allowing atomic writes, upgradable contract.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="text-center px-lg-3"><img loading="lazy" class="lazy img-fluid img-features mb-3"
+                src="assets/img/icons/versatile.svg" alt="Multitool" height="80" width="80"  />
+              <div class="h5 fw-bold">Devex</div>
+              <p class="mb-md-0">Testing, logging and debugging tools.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="text-center px-lg-3"><img loading="lazy" class="lazy img-fluid img-features mb-3"
+                src="assets/img/icons/accountable.svg" alt="Contract" height="80" width="80"  />
+              <div class="h5 fw-bold">Security</div>
+              <p class="mb-md-0">Sandboxing execution environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-lg-3 pt-5" id="community">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mx-auto align-items-center text-center">
+            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-5">SmartWeave community</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-12 mx-auto align-items-center text-center">
+            <div class="mt-3">
+              We believe that the community is the most important building block of future of blockchain technology. For that reason we 
+              cooperate with many projects on various fields, battle-testing our product in different use-cases and environments, to create 
+              the best possible user and developer experience. 
+              <br /><br />
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center justify-content-lg-around">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-5 mb-lg-0 text-center"><a
+                href="https://www.arweave.org/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
+                class="lazy" src="assets/img/backers/arweave.jpeg" width="70px" alt="Arweave logo" /></a></div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-5 mb-lg-0 text-center"><a
+                href="https://community.xyz/home/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
+                class="lazy" src="assets/img/backers/communityxyz.jpeg" width="120px" height="120px" alt="CommunityXYZ logo" /></a></div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-5 mb-lg-0 text-center"><a
+                href="https://koii.network/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
+                class="lazy" src="assets/img/backers/koii.jpeg" width="60px" height="60px" alt="Koii logo" /></a></div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-5 mb-lg-0 text-center"><a
+                href="https://https://www.kyve.network/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
+                class="lazy" src="assets/img/backers/kyve.png" width="70px" height="70px" alt="Kyve logo" /></a></div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-5 mb-lg-0 text-center"><a href="https://openbits.world/"
+                role="button" target="_blank"><img loading="lazy" class="lazy" src="assets/img/backers/openbits.jpeg" width="70px" height="70px" alt="Openbits logo" /></a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-5 mb-lg-0 text-center"><a
+                href="https://https://verto.exchange/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
+                class="lazy" src="assets/img/backers/verto.svg" width="80px" height="80px" alt="Verto logo" /></a></div>
+          </div>
+      </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+  </main>
+  <!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-12 mx-auto align-items-center text-center">
+          <div class="h6 fw-bold fs-4 display-3 lh-sm mb-5">Want to know more?</div>
+          <div class="mt-3">
+            You can about <a href="about.html">our team</a> or reach us
+            directly using contact form below.
+            Don't forget about our social channels!
+            Feel free to contact us if you have any questions or would like to contribute in our project.
+            We'll be happy to answer!
+            <br /><br />
+          </div>
+          <div class="justify-content-center">
+    <form action="https://formsubmit.co/e9be7fef243c839a1a501b9a7fab4668" method="POST">
+        <div class="row">
+            <div class="form-group col-lg-6">
+                <label class="control-label" for="name-input">Name</label>
+                <input id="name-input" name="name" class="form-control" required>
+            </div>
+            <div class="form-group col-lg-6">
+                <label class="control-label" for="email-input">Email address</label>
+                <input id="email-input" type="email" name="email" class="form-control" required>
+            </div>
+        </div>
+        <div class="form-group mt-3">
+            <label class="control-label" for="textarea-input">Message</label>
+            <textarea class="form-control" id="textarea-input" name="text" rows="3"></textarea>
+        </div>
+        <button class="button btn btn-lg btn-danger rounded-pill mt-3" type="submit">Send</button>
+    </form>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================-->
+<!-- <section> begin ============================-->
+<section class="py-3 bg-1000" id="footer">
+
+    <div class="container">
+        <!--.row.flex-center-->
+        <!--  .col-auto.mb-5-->
+        <!--    a.pe-2.d-flex.align-items-center.text-decoration-none.fw-bold.fs-3(href='#')-->
+        <!--      .text-danger Red-->
+        <!--      .text-white Stone-->
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="footer-links d-flex flex-wrap justify-content-center mb-3 mb-md-0">
+                <div class="text-white" style="margin-right: 0.5rem">&copy; RedStone 2021</div>
+                <div class="text-white">·</div>
+                <div class="mx-2">
+                    <a class="text-white" href="./contact.html">Contact </a>
+                </div>
+                <div class="text-white">·</div>
+                <div class="mx-2">
+                    <a class="text-white" href="./about.html">About us</a>
+                </div>
+                <div class="text-white">·</div>
+                <div class="mx-2">
+                    <a class="text-white" href="./privacy.html">Privacy policy</a>
+                </div>
+                <div class="text-white">·</div>
+                <div class="mx-2">
+                    <a class="text-white" href="./terms.html">Terms of Use</a>
+                </div>
+            </div>
+            <div class="footer-social">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item me-3">
+                        <a href="mailto:hello@redstone.finance" target="_blank">
+                            <img src="/assets/img/icons/mail.svg" alt="Mail icon"/>
+                        </a>
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <a href="https://twitter.com/redstone_defi" target="_blank" rel="noreferrer noopener">
+                            <img src="/assets/img/icons/twitter.svg" alt="Twitter icon"/>
+                        </a>
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <a href="https://discord.com/invite/PVxBZKFr46" target="_blank" rel="noreferrer noopener">
+                            <img src="/assets/img/icons/discord.svg" alt="Discord icon"/>
+                        </a>
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <a href="https://github.com/redstone-finance" target="_blank" rel="noreferrer noopener">
+                            <img src="/assets/img/icons/github.svg" alt="Github icon"/>
+                        </a>
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <a href="https://www.linkedin.com/company/75012238/admin/" target="_blank" rel="noreferrer noopener">
+                            <img src="/assets/img/icons/linkedin.svg" alt="Github icon"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- end of .container-->
+
+</section>
+<!-- <section> close ============================-->
+<!-- ============================================-->
+
+  <!-- ===============================================-->
+<!--    JavaScripts-->
+<!-- ===============================================-->
+<script async src="vendors/@popperjs/popper.min.js"></script>
+<script async src="vendors/bootstrap/bootstrap.min.js"></script>
+<script src="vendors/is/is.min.js"></script> 
+<script async id="cookie-script" src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js"></script>
+<script async src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+<script async src="assets/js/theme.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+  <script src="assets/js/theme.js" type="text/javascript"></script>
+
+</body>
+
+</html>

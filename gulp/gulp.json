@@ -1,0 +1,30 @@
+{
+  "rtl": true,
+  "dir": {
+    "dev": "public",
+    "prod": "build"
+  },
+  "style": {
+    "src": "src/scss/**/*.scss",
+    "dest": "assets/css"
+  },
+  "script": {
+    "src": [
+      "src/js/utils.js",
+      "src/js/detector.js",
+      "src/js/**/!(utils | detector  )*.js",
+      "!src/js/theme.js",
+      "src/js/theme.js"
+    ],
+
+    "dest": "assets/js"
+  },
+  "html": {
+    "src": [
+        "src/html/*.html",
+        "src/html/**/*.html"
+    ],
+    "dest": "./"
+  },
+  "watch": ["assets/img", "assets/video", "assets/fonts", "vendors"]
+}
