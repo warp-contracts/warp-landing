@@ -18237,6 +18237,20 @@ label {
 |   User Styles
 -----------------------------------------------*/
 /* prettier-ignore */
+p {
+  text-align: justify;
+}
+
+#footer {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.quote {
+  font-style: italic;
+}
+
 .btn-danger:hover {
   background-color: #FF788A;
   border-color: #FF788A;

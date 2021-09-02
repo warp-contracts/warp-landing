@@ -6,6 +6,18 @@
 @import "user-variables";
 @import "theme/variables";
 
+p {
+    text-align: justify;
+}
+
+#footer {
+    height: min-content;
+}
+
+.quote {
+    font-style: italic;
+}
+
 .btn-danger {
     &:hover {
         background-color: $red-100;
