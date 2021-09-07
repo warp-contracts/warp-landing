@@ -2,7 +2,7 @@ import { docReady } from './utils';
 import navbarInit from './bootstrap-navbar';
 import detectorInit from './detector';
 import scrollToTop from './scroll-to-top';
-import isDeviceMobile from './ismobile';
+// import isDeviceMobile from './ismobile';
 
 
 // /* -------------------------------------------------------------------------- */
@@ -13,23 +13,32 @@ docReady(navbarInit);
 docReady(detectorInit);
 docReady(scrollToTop);
   
-  var videoElem = document.getElementById("redstone-video");
 
-  if (videoElem) {
-    if (!isDeviceMobile()) {
+  // if (videoElem) {
+    // if (!isDeviceMobile()) {
       var scriptEle = document.createElement("script");
       scriptEle.setAttribute("src", "vendors/@lottiefiles/lottie-player.js");
     
       document.getElementsByTagName("body")[0].appendChild(scriptEle);
   
-      videoElem.innerHTML = `            
-        <lottie-player autoplay="true" loop="true" speed="1" src="assets/animations/ethereum.json"
-                       style="height: 70%; background: transparent" background="transparent"></lottie-player>`;
+      document.getElementById("weave-animation").innerHTML = `            
+        <lottie-player autoplay="true" loop="true" speed="1" src="assets/animations/weave.json"
+                       style="height: 65%; background: transparent" background="transparent"></lottie-player>`;
+
+      document.getElementById("baloon-animation").innerHTML = `            
+      <lottie-player autoplay="true" loop="true" speed="1" src="assets/animations/baloon.json"
+                    style="background: transparent" background="transparent"></lottie-player>`;
+
+      document.getElementById("gears-animation").innerHTML = `            
+      <lottie-player autoplay="true" loop="true" speed="1" src="assets/animations/gears.json"
+                    style="background: transparent" background="transparent"></lottie-player>`;
+
   
-    } else {
-      videoElem.innerHTML = `<video width="100%" src="assets/animations/redstone.mov" autoplay loop muted playsinline></video>`;
-    }
-  }
+    // } else {
+    //   videoElem.innerHTML = `<video width="100%" 
+    // src="assets/animations/redstone.mov" autoplay loop muted playsinline></video>`;
+    // }
+  // }
 
 var cookieScript = document.getElementById("cookie-script");
 

@@ -484,26 +484,27 @@ if (document.getElementById('members')) {
       element.appendChild(memberBio);
     }
   });
-} // /* -------------------------------------------------------------------------- */
+} // import isDeviceMobile from './ismobile';
+// /* -------------------------------------------------------------------------- */
 // /*                            Theme Initialization                            */
 // /* -------------------------------------------------------------------------- */
 
 
 docReady(navbarInit);
 docReady(detectorInit);
-docReady(scrollToTop);
-var videoElem = document.getElementById('redstone-video');
+docReady(scrollToTop); // if (videoElem) {
+// if (!isDeviceMobile()) {
 
-if (videoElem) {
-  if (!isDeviceMobile()) {
-    var scriptEle = document.createElement('script');
-    scriptEle.setAttribute('src', 'vendors/@lottiefiles/lottie-player.js');
-    document.getElementsByTagName('body')[0].appendChild(scriptEle);
-    videoElem.innerHTML = "            \n        <lottie-player autoplay=\"true\" loop=\"true\" speed=\"1\" src=\"assets/animations/ethereum.json\"\n                       style=\"height: 70%; background: transparent\" background=\"transparent\"></lottie-player>";
-  } else {
-    videoElem.innerHTML = '<video width="100%" src="assets/animations/redstone.mov" autoplay loop muted playsinline></video>';
-  }
-}
+var scriptEle = document.createElement('script');
+scriptEle.setAttribute('src', 'vendors/@lottiefiles/lottie-player.js');
+document.getElementsByTagName('body')[0].appendChild(scriptEle);
+document.getElementById('weave-animation').innerHTML = "            \n        <lottie-player autoplay=\"true\" loop=\"true\" speed=\"1\" src=\"assets/animations/weave.json\"\n                       style=\"height: 65%; background: transparent\" background=\"transparent\"></lottie-player>";
+document.getElementById('baloon-animation').innerHTML = "            \n      <lottie-player autoplay=\"true\" loop=\"true\" speed=\"1\" src=\"assets/animations/baloon.json\"\n                    style=\"background: transparent\" background=\"transparent\"></lottie-player>";
+document.getElementById('gears-animation').innerHTML = "            \n      <lottie-player autoplay=\"true\" loop=\"true\" speed=\"1\" src=\"assets/animations/gears.json\"\n                    style=\"background: transparent\" background=\"transparent\"></lottie-player>"; // } else {
+//   videoElem.innerHTML = `<video width="100%"
+// src="assets/animations/redstone.mov" autoplay loop muted playsinline></video>`;
+// }
+// }
 
 var cookieScript = document.getElementById('cookie-script');
 cookieScript.addEventListener('load', function () {
