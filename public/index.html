@@ -19,7 +19,7 @@
 <!--link(rel="apple-touch-icon" sizes="180x180", href=`${CWD}assets/img/favicons/apple-touch-icon.png`)-->
 <!--link(rel="icon" type="image/png" sizes="32x32", href=`${CWD}assets/img/favicons/favicon-32x32.png`)-->
 <!--link(rel="icon" type="image/png" sizes="16x16", href=`${CWD}assets/img/favicons/favicon-16x16.png`)-->
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/redstone-favicon.png">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/smartweave-favicon.png">
 <link rel="manifest" href="assets/img/favicons/manifest.json">
 <meta name="theme-color" content="#ffffff">
 <meta name="description" content="Highly customizable DeFi data streams delivered quickly, reliably and cost-efficiently.">
@@ -54,20 +54,19 @@
   <!-- ===============================================-->
   <main class="main" id="top">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
-    <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html"><img src="assets/img/smartweave-logo.png" width="175" height="75" alt="Redstone logo" /></a>
+    <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#intro"><img src="assets/img/smartweave-logo.svg" width="189" height="58" alt="Redstone logo" /></a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
             <!--li.nav-item(data-anchor)-->
             <!--  a.nav-link.fw-medium(aria-current='page', href='#home' class= currentPage === 'index' ? 'active' : false ) Home-->
             
-                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#intro">Intro</a></li>
                 <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#motivation">Motivation</a></li>
                 <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#sdk">SDK</a></li>
                 <!-- <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#network">Network</a></li> -->
                 <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#features">Features</a></li>
                 <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#vision">Vision</a></li>
-                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#docs">Docs</a></li>
+                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#resources">Resources</a></li>
                 <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#community">Community</a></li>
                 <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#contact">Contact</a></li>
             
@@ -78,16 +77,22 @@
 </nav>
 
 
+    <div class="oval top"></div>
+    <div class="oval right"></div>
+    <div class="oval bottom"></div>
+    <div class="oval left"></div>
+
+    
     <section class="" id="intro">
       <div class="container position-relative h-100">
         <div class="row mt-6 mb-8 align-items-center">
           <div class="col-12 col-md-6 text-center text-md-start">
-            <div class="h1 mb-2 display-3 fw-bold lh-sm mt-lg-0">Data-centred smart contracts protocol</div>
+            <div class="h1 mb-2 display-3 fw-bold lh-sm mt-lg-0">Data-centered smart contracts protocol</div>
             <p class="my-3 my-md-4 fs-1 text-center text-md-start">A new generation of smart contracts designed to efficiently handle large data sets powered by 
               <a href="https://www.arweave.org/">Arweave</a></p>
             <a class="btn btn-lg btn-danger rounded-pill"
               href="https://www.npmjs.com/package/redstone-smartweave" target="_blank" role="button">Try it out</a>
-              <a class="btn btn-link ps-md-4" href="#motivation" role="button"> Learn more </a>
+              <a class="btn btn-link ps-md-4 fw-medium" href="#motivation" role="button"> Learn more </a>
         </div>
         <div  class="col-12 col-md-6 px-6" id="weave-animation"></div>
       </div>
@@ -102,8 +107,9 @@
 
       <div class="container">
         <div class="row justify-content-center mb-3 flex-column-reverse flex-md-row">
-          <div class="col-sm-10 col-lg-6 text-center baloon-container monospace">
+          <div class="col-sm-10 col-lg-6 text-center baloon-container">
             <div id="baloon-animation"></div>
+            <div class="italic f-sm">Ethereum <a target="_blank" href="https://etherscan.io/chartsync/chainarchive">full-archive state</a> by Etherscan</a></div>
           </div>
           <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-2">
             <div class="h6 fw-bold fs-4 display-3 lh-sm">Blockchain data problem</div>
@@ -155,7 +161,7 @@
               </a>
           </div>
         </div>
-        <div class="row justify-content-center mb-2">
+        <div class="row justify-content-center mt-4 mb-2">
           <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-5 mt-4 text-center text-md-start align-self-center">
             <div class="h6 fw-bold fs-4 display-3 lh-sm">Architecture</div>
             <p class="mb-0">We’ve based our solution on the original Arweave implementation and rewritten the code in 
@@ -166,8 +172,9 @@
             <img src="assets/img/illustrations/architecture.svg" height="420px" />
           </div>
         </div>
-        <div class="row justify-content-center mb-6 flex-column-reverse flex-md-row">
+        <div class="row justify-content-center mb-6 mt-6 flex-column-reverse flex-md-row">
           <div class="col-sm-10 col-lg-6 d-flex flex-column align-items-center">
+            <div class="fw-bold mb-3 align-self-start performance-gain">Performance improvement</div>
             <div class="d-flex">
               <div class="d-flex flex-column justify-content-around pt-4 pb-3 pe-2">
                 <a target="_blank" class="chart-link first" href="https://viewblock.io/arweave/tx/usjm4PCxUd5mtaon7zc97-dt-3qf67yPyqgzLnLqk5A">usjm4P...qk5A</a>
@@ -175,7 +182,7 @@
                 <a target="_blank" class="chart-link first" href="https://viewblock.io/arweave/tx/LkfzZvdl_vfjRXZOPjnov18cGnnK3aDKj0qSQCgkCX8">LkfzZv...kCX8</a>
               </div>
               <div>
-                <div class="fw-medium mb-2">First contract read performance gain</div>
+                <div class="fw-medium mb-2">First read</div>
                 <img src="assets/img/illustrations/chart_first_read.png" class="benchmark-chart" />
                 <div class="d-flex justify-content-between chart-scale">
                   <div>0</div>
@@ -193,7 +200,7 @@
                 <a target="_blank" class="chart-link consecutive" href="https://viewblock.io/arweave/tx/LkfzZvdl_vfjRXZOPjnov18cGnnK3aDKj0qSQCgkCX8">LkfzZv...kCX8</a>
               </div>
               <div>
-                <div class="fw-medium mb-2">Consecutive contract read performance gain</div>
+                <div class="fw-medium mb-2">Consecutive read</div>
                 <img src="assets/img/illustrations/chart_consecutive_read.png" class="benchmark-chart" />
                 <div class="d-flex justify-content-between chart-scale">
                   <div>0</div>
@@ -205,6 +212,7 @@
                 </div>
               </div>
             </div>
+            <div class="mt-4 italic f-sm">Benchmarks created with scripts available in <a target="_blank" href="https://github.com/redstone-finance/redstone-smartweave-examples/tree/main/src">our repository</a></div>
           </div>
           <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-0 text-center text-md-start align-self-center">
             <div class="h6 fw-bold fs-4 display-3 lh-sm">Improved performance</div>
@@ -262,7 +270,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-5">
             <div class="text-center px-lg-3">
               <div class="features-image-wrapper">
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
@@ -272,7 +280,7 @@
               <p class="mb-md-0  text-center">Trustless delegated computation</p>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-5">
             <div class="text-center px-lg-3">
               <div class="features-image-wrapper">
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
@@ -282,7 +290,7 @@
               <p class="mb-md-0  text-center">Allowing atomic writes & upgradable contract</p>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-5">
             <div class="text-center px-lg-3">
               <div class="features-image-wrapper">
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
@@ -292,27 +300,27 @@
               <p class="mb-md-0  text-center">Sandboxing execution environment</p>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-5">
             <div class="text-center px-lg-3">
               <div class="features-image-wrapper">
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
                 src="assets/img/icons/replay.svg" alt="Contract" height="60" width="60"  />
               </div>  
-              <div class="h5 fw-bold">External calls</div>
+              <div class="h5 fw-bold">External calls proxy</div>
               <p class="mb-md-0  text-center">Proxying API to allow deterministic replay</p>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-5">
             <div class="text-center px-lg-3">
               <div class="features-image-wrapper">
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
                 src="assets/img/icons/incognito.svg" alt="Contract" height="60" width="60"  />
               </div>  
               <div class="h5 fw-bold">Privacy</div>
-              <p class="mb-md-0  text-center">Virtual subnets operating on encrypted dat.</p>
+              <p class="mb-md-0  text-center">Virtual subnets operating on encrypted data</p>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-5">
             <div class="text-center px-lg-3">
               <div class="features-image-wrapper">
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
@@ -331,16 +339,17 @@
         <div class="row justify-content-center">
           <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
             <div class="h6 fw-bold fs-4 display-3 lh-sm">Vision</div>
+            <div id="vision-animation" class="mx-auto mt-4"></div>
             <div class="d-flex justify-content-around align-items-center mt-6 mx-auto vision-icons">
               <img  src="assets/img/icons/bitcoin.svg" />
-              <img class="chevron" src="assets/img/icons/chevron.svg" />
+              <img class="chevron" src="assets/img/icons/right-chevron.svg" />
               <img  src="assets/img/icons/ethereum.svg" />
-              <img class="chevron" src="assets/img/icons/chevron.svg" />
+              <img class="chevron" src="assets/img/icons/right-chevron.svg" />
               <img  src="assets/img/icons/nft.svg" />
-              <img class="chevron" src="assets/img/icons/chevron.svg" />
-              <img  src="assets/img/icons/folder.svg" />
+              <img class="chevron" src="assets/img/icons/right-chevron.svg" />
+              <img  src="assets/img/icons/data.svg" />
             </div>
-            <p class="mb-0 mt-6">Blockchains have gone a long way from a medium of a single coin, 
+            <p class="mb-0 mt-6 mx-md-6 px-md-6">Blockchains have gone a long way from a medium of a single coin, 
               through embracing more sophisticated tokens towards managing media-rich NFTs. Every iteration 
               introduced more content-rich assets. We believe that in the future blockchains will be able to handle 
               large streams of data powering machine learning and data mining solutions. When that moment comes we’ll 
@@ -351,11 +360,11 @@
 
     </section>
 
-    <section id="docs">
+    <section id="resources">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm">Docs</div>
+            <div class="h6 fw-bold fs-4 display-3 lh-sm">Resources</div>
             <div class="row justify-content-center mb-2">
               <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-5 mt-4">
                 <div class="d-flex flex-column align-items-center doc-links">
@@ -394,7 +403,7 @@
         <div class="row">
           <div class="col-12 col-lg-12 mx-auto align-items-center text-center">
             <div class="mt-3">
-              <p>
+              <p class="px-6 mx-6">
                 We believe that the community is the most important building block of future of blockchain technology. For that reason we 
                 cooperate with many projects on various fields, battle-testing our product in different use-cases and environments, to create 
                 the best possible user and developer experience. We’re extremely grateful to the amazing Arweave projects for initial feedback 
@@ -480,7 +489,7 @@
 
   <!-- ============================================-->
 <!-- <section> begin ============================-->
-<section class="py-3 bg-1000" id="footer">
+<section class="py-3" id="footer">
 
     <div class="container">
         <!--.row.flex-center-->
@@ -554,6 +563,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <script src="assets/js/theme.js" type="text/javascript"></script>
 

@@ -50,7 +50,7 @@ cookieScript.addEventListener('load', function () {
         "text": "#FFFFFF"
       },
       "button": {
-        "background": "#FD627A",
+        "background": "#5982F1",
         "text": "#FFFFFF"
       }
     },

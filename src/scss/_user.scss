@@ -7,14 +7,11 @@
 @import "theme/variables";
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    // background: -webkit-linear-gradient(45deg, #35D6E9, #564DDC, #ca63fa);
-    background: -webkit-linear-gradient(45deg, #020202, #564DDC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: $redstone-blue;
 }
 
 .nav-link {
-    color: #020202;
+    color: $redstone-blue;
 }
 
 p {
@@ -23,6 +20,85 @@ p {
 
     @include media-breakpoint-up(md) {
         text-align: justify;
+    }
+}
+
+.oval {
+    position: fixed;
+    opacity: 0.2;
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    z-index: -1;
+
+    &.top {
+        top: 0;
+        background-color: #fdd762;
+        width: 10%;
+        height: 12%;
+        right: 15%;
+    }
+
+    &.right {
+        right: 0;
+        background-color: #5982f1;
+        width: 7%;
+        height: 25%;
+        top: 16%;
+    }
+
+    &.bottom {
+        bottom: 0;
+        background-color: #fdd762;
+        width: 30%;
+        height: 16%;
+        left: 25%;
+    }
+
+    &.left {
+        left: 0;
+        background-color: #5982f1;
+        width: 9%;
+        height: 35%;
+        top: 24%;
+    }
+}
+
+#footer {
+    background-color: $redstone-light-blue;
+}
+
+#vision-animation{ 
+    // animation: changeBg 6s infinite; 
+    animation: changeBg 20s infinite, blur 5s ease 4s infinite; 
+    // animation: blur 4s ease 0s infinite; 
+    // -webkit-animation: blur 4s ease 0s infinite;
+    // -moz-animation: blur 4s ease 0s infinite;
+    width:  150px; 
+    height: 150px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes changeBg{
+   0%,24%,100%  {background-image: url("/assets/img/icons/bitcoin.svg");}
+   25%, 49% {background-image: url("/assets/img/icons/ethereum.svg");}
+   50%, 74% {background-image: url("/assets/img/icons/nft.svg");}
+   75%, 99% {background-image: url("/assets/img/icons/data.svg");}
+}
+
+@keyframes blur{
+    0%,
+    40% {
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -o-filter: blur(0px);
+      -ms-filter: blur(0px);
+    }
+    20% {
+      -webkit-filter: blur(50px);
+      -moz-filter: blur(50px);
+      -o-filter: blur(50px);
+      -ms-filter: blur(50px);
     }
 }
 
@@ -56,6 +132,14 @@ p {
         font-style: italic;
         width: 400px;
     }
+}
+
+.italic {
+    font-style: italic;
+}
+
+.f-sm {
+    font-size: 14px;
 }
 
 .benchmark-chart {
@@ -107,18 +191,15 @@ p {
     border: none;
     // background: -webkit-linear-gradient(45deg, #35D6E9, #564DDC, #ca63fa);
     // background: -webkit-linear-gradient(45deg, #35D6E9, #564DDC);
-    background: -webkit-linear-gradient(#8248e5);
+    background: rgb(89, 130, 241);
     color: white;
 
     &:hover {
-        background-color: $red-100;
-        border-color: $red-100;
+        background: rgba(89, 130, 241, 0.7);
     }
 
     &:active {
-        background-color: $red-200;
-        border-color: $red-200;
-        color:rgba($white, 0.7)
+        background: rgba(89, 130, 241, 0.5);
     }
 }
 
@@ -180,6 +261,10 @@ ul.no-list li {
     }
 }
 
+.performance-gain {
+    margin-left: 106px;
+}
+
 .chart-scale {
     font-size: 14px;
 }
@@ -237,6 +322,10 @@ ul.no-list li {
     border-radius: 20px;
     font-weight: 500;
     text-decoration: none;
+}
+
+.cc-banner {
+    font-family: $font-family-base !important; 
 }
 
 .form-group {
