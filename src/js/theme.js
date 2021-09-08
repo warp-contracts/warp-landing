@@ -22,8 +22,9 @@ docReady(scrollToTop);
       document.getElementsByTagName("body")[0].appendChild(scriptEle);
   
       document.getElementById("weave-animation").innerHTML = `            
-        <lottie-player autoplay="true" loop="true" speed="1" src="assets/animations/weave.json"
-                       style="height: 65%; background: transparent" background="transparent"></lottie-player>`;
+        <lottie-player id="weave-lottie" autoplay="true" loop="true" speed="1" src="assets/animations/weave.json"
+                       style="height: 65%" background="url(/assets/img/illustrations/weave.svg) no-repeat center center / 100% 100%"></lottie-player>`;
+
 
       document.getElementById("baloon-animation").innerHTML = `            
       <lottie-player autoplay="true" loop="true" speed="1" src="assets/animations/baloon.json"
@@ -62,3 +63,14 @@ cookieScript.addEventListener('load', function () {
     }
   });
 });
+
+const resizeObserver = new ResizeObserver(entries => {
+  entries.forEach(
+    entry => {
+      console.log('elo')
+      console.log(entry)
+      entry.target.style.height = (entry.target.offsetWidth * 0.56) + "px";
+    });
+});
+
+resizeObserver.observe(document.querySelector('#migration-video'));

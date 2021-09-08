@@ -10,7 +10,7 @@
 <!-- ===============================================-->
 <!--    Document Title-->
 <!-- ===============================================-->
-<title>RedStone</title>
+<title>SmartWeave</title>
 
 
 <!-- ===============================================-->
@@ -85,16 +85,16 @@
     
     <section class="" id="intro">
       <div class="container position-relative h-100">
-        <div class="row mt-6 mb-8 align-items-center">
+        <div class="row mt-5 mt-md-6 mb-8 align-items-center">
           <div class="col-12 col-md-6 text-center text-md-start">
-            <div class="h1 mb-2 display-3 fw-bold lh-sm mt-lg-0">Data-centered smart contracts protocol</div>
+            <div class="h1 mb-4 mb-md-2 display-3 fw-bold lh-sm mt-lg-0">Data-centered smart contracts protocol</div>
             <p class="my-3 my-md-4 fs-1 text-center text-md-start">A new generation of smart contracts designed to efficiently handle large data sets powered by 
-              <a href="https://www.arweave.org/">Arweave</a></p>
+              <a target="_blank" href="https://www.arweave.org/">Arweave</a>.</p>
             <a class="btn btn-lg btn-danger rounded-pill"
               href="https://www.npmjs.com/package/redstone-smartweave" target="_blank" role="button">Try it out</a>
               <a class="btn btn-link ps-md-4 fw-medium" href="#motivation" role="button"> Learn more </a>
         </div>
-        <div  class="col-12 col-md-6 px-6" id="weave-animation"></div>
+        <div  class="col-12 col-md-6 px-2 px-md-6" id="weave-animation"></div>
       </div>
     </section>
     <!-- <section> close ============================-->
@@ -112,30 +112,36 @@
             <div class="italic f-sm">Ethereum <a target="_blank" href="https://etherscan.io/chartsync/chainarchive">full-archive state</a> by Etherscan</a></div>
           </div>
           <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-2">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm">Blockchain data problem</div>
+            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-mb-3">Blockchain data problem</div>
             <p class="mb-0">
               Most smart contracts treat data as a side-product that slows down processing. 
               Data is digested, pruned and pushed out to side chains. Nonetheless, the bloated global state is still the biggest challenge of modern blockchains.                           
             </p>
-            <ul class="no-list">
-              <li>Enormous sizes of EVMs’ global states</li>
-              <li>Extreme costs of data storage</li>
-              <li>Weak connection between tokens and content</li>
+            <ul class="no-list mt-3 mt-md-2">
+              <li><span>Enormous sizes of EVMs’ global states</span></li>
+              <li><span>Extreme costs of data storage</span></li>
+              <li><span>Weak connection between tokens and content</span></li>
             </ul>
           </div>
         </div>
         <div class="row justify-content-center mb-3">
           <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm">How SmartWeave solves that</div>
+            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">How SmartWeave solves that</div>
             <p class="mb-0">We use a radically different design treating data as the most valuable asset. 
               We get rid of a global state thanks to separating the storage from the computation. 
               The contracts can be evaluated on-demand, lazily, creating the potential for unparalleled scalability.
               </p>
-              <ul class="yes-list">
-                <li>Decoupling storage from computation</li>
-                <li>Flexible lazy-evaluation pattern</li>
-                <li>The ability to directly process rich content</li>
+              <ul class="yes-list mt-3 mt-md-2">
+                <li><span>Decoupling storage from computation</span></li>
+                <li><span>Flexible lazy-evaluation pattern</span></li>
+                <li><span>The ability to directly process rich content</span></li>
               </ul>
+              <p>
+                Building our solution on the <a href="https://smartweave.redstone.finance">Arweave</a> chain, the most innovative 
+                and scalable storage solution, allows us to save time on the development 
+                of the basic infrastructure. Arweave has a thriving community of users and developers 
+                with a growing need for an efficient smart contracts protocol.  
+              </p>
           </div>           
           <div class="col-sm-10 col-lg-6">
             <div id="gears-animation" height="80%"></div>
@@ -148,60 +154,63 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm">SmartWeave SDK</div>
+            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">SmartWeave SDK</div>
             <p class="mb-0 text-center">This is a core module responsible for the evaluation of smart contracts.
               <br class="d-md-none" />
               Check it out on 
               <a href="https://www.npmjs.com/package/redstone-smartweave" target="_blank" rel="noreferrer noopener">
-                <img width="50" src="assets/img/icons/npm.png" />
+                <img width="50" src="/assets/img/icons/npm.png" />
               </a>
               and
               <a href="https://github.com/redstone-finance/redstone-smartweave" target="_blank" rel="noreferrer noopener">
-                <img width="25" src="/assets/img/icons/github-black.svg" alt="Github icon"/>
+                <img width="25" src="/assets/img/icons/github-black.svg" alt="Github icon" style="transform: translateY(-3px)"/>
               </a>
           </div>
         </div>
+        
         <div class="row justify-content-center mt-4 mb-2">
           <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-5 mt-4 text-center text-md-start align-self-center">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm">Architecture</div>
+            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">Architecture</div>
             <p class="mb-0">We’ve based our solution on the original Arweave implementation and rewritten the code in 
               a modular way adding plenty of improvements and performance tweaks. 
               </p>
           </div>
           <div class="col-sm-10 col-lg-6 px-0">
-            <img src="assets/img/illustrations/architecture.svg" height="420px" />
+            <img class="d-md-none" src="assets/img/illustrations/architecture_mobile.svg" width="100%" />
+            <img class="d-none d-md-block" src="assets/img/illustrations/architecture.svg" width="100%" />
           </div>
         </div>
         <div class="row justify-content-center mb-6 mt-6 flex-column-reverse flex-md-row">
           <div class="col-sm-10 col-lg-6 d-flex flex-column align-items-center">
-            <div class="fw-bold mb-3 align-self-start performance-gain">Performance improvement</div>
+            <div class="fw-bold mb-3 align-self-center align-self-md-start performance-gain blue">Performance improvement</div>
             <div class="d-flex">
               <div class="d-flex flex-column justify-content-around pt-4 pb-3 pe-2">
-                <a target="_blank" class="chart-link first" href="https://viewblock.io/arweave/tx/usjm4PCxUd5mtaon7zc97-dt-3qf67yPyqgzLnLqk5A">usjm4P...qk5A</a>
-                <a target="_blank" class="chart-link first" href="https://viewblock.io/arweave/tx/mzvUgNc8YFk0w5K5H7c8pyT-FC5Y_ba0r7_8766Kx74">mzvUgN...Kx74</a>
-                <a target="_blank" class="chart-link first" href="https://viewblock.io/arweave/tx/LkfzZvdl_vfjRXZOPjnov18cGnnK3aDKj0qSQCgkCX8">LkfzZv...kCX8</a>
+                <a target="_blank" class="chart-link first" href="https://viewblock.io/arweave/tx/usjm4PCxUd5mtaon7zc97-dt-3qf67yPyqgzLnLqk5A">usjm4P...<span class="d-none d-md-inline">qk5A</span></a>
+                <a target="_blank" class="chart-link first" href="https://viewblock.io/arweave/tx/mzvUgNc8YFk0w5K5H7c8pyT-FC5Y_ba0r7_8766Kx74">mzvUgN...<span class="d-none d-md-inline">Kx74</span></a>
+                <a target="_blank" class="chart-link first" href="https://viewblock.io/arweave/tx/LkfzZvdl_vfjRXZOPjnov18cGnnK3aDKj0qSQCgkCX8">LkfzZv...<span class="d-none d-md-inline">kCX8</span></a>
               </div>
               <div>
                 <div class="fw-medium mb-2">First read</div>
-                <img src="assets/img/illustrations/chart_first_read.png" class="benchmark-chart" />
+                <img class="benchmark-chart d-md-none" src="assets/img/illustrations/chart_first_read_mobile.png" />
+                <img class="benchmark-chart d-none d-md-block"src="assets/img/illustrations/chart_first_read.png" />
                 <div class="d-flex justify-content-between chart-scale">
                   <div>0</div>
                   <div>5x</div>
                   <div>10x</div>
                   <div>15x</div>
-                  <div>20x</div>
                 </div>
               </div>
             </div>
             <div class="d-flex mt-3">
               <div class="d-flex flex-column justify-content-around pt-4 pb-3 pe-2">
-                <a target="_blank" class="chart-link consecutive" href="https://viewblock.io/arweave/tx/usjm4PCxUd5mtaon7zc97-dt-3qf67yPyqgzLnLqk5A">usjm4P...qk5A</a>
-                <a target="_blank" class="chart-link consecutive" href="https://viewblock.io/arweave/tx/mzvUgNc8YFk0w5K5H7c8pyT-FC5Y_ba0r7_8766Kx74">mzvUgN...Kx74</a>
-                <a target="_blank" class="chart-link consecutive" href="https://viewblock.io/arweave/tx/LkfzZvdl_vfjRXZOPjnov18cGnnK3aDKj0qSQCgkCX8">LkfzZv...kCX8</a>
+                <a target="_blank" class="chart-link consecutive" href="https://viewblock.io/arweave/tx/usjm4PCxUd5mtaon7zc97-dt-3qf67yPyqgzLnLqk5A">usjm4P...<span class="d-none d-md-inline">qk5A</span></a>
+                <a target="_blank" class="chart-link consecutive" href="https://viewblock.io/arweave/tx/mzvUgNc8YFk0w5K5H7c8pyT-FC5Y_ba0r7_8766Kx74">mzvUgN...<span class="d-none d-md-inline">Kx74</span</a>
+                <a target="_blank" class="chart-link consecutive" href="https://viewblock.io/arweave/tx/LkfzZvdl_vfjRXZOPjnov18cGnnK3aDKj0qSQCgkCX8">LkfzZv...<span class="d-none d-md-inline">kCX8</span></a>
               </div>
               <div>
                 <div class="fw-medium mb-2">Consecutive read</div>
-                <img src="assets/img/illustrations/chart_consecutive_read.png" class="benchmark-chart" />
+                <img class="benchmark-chart d-md-none" src="assets/img/illustrations/chart_consecutive_read_mobile.png" />
+                <img class="benchmark-chart d-none d-md-block"src="assets/img/illustrations/chart_consecutive_read.png" />
                 <div class="d-flex justify-content-between chart-scale">
                   <div>0</div>
                   <div>50x</div>
@@ -215,7 +224,7 @@
             <div class="mt-4 italic f-sm">Benchmarks created with scripts available in <a target="_blank" href="https://github.com/redstone-finance/redstone-smartweave-examples/tree/main/src">our repository</a></div>
           </div>
           <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-0 text-center text-md-start align-self-center">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm">Improved performance</div>
+            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">Improved performance</div>
             <p class="mb-0">Optimization of contract evaluation and caching mechanisms allowed us to reach speed of contract evaluation not yet seen on
               Arweave blockchain. 
               </p>
@@ -277,7 +286,8 @@
                 src="assets/img/icons/decentralized.svg" alt="Decentralized structure" height="55" width="55"  />
               </div>    
               <div class="h5 fw-bold">Distributed Execution Network</div>
-              <p class="mb-md-0  text-center">Trustless delegated computation</p>
+              <p class="mb-md-0  text-center">A trustless set of nodes responsible for delegated computation and speeding-up data access
+              </p>
             </div>
           </div>
           <div class="col-md-4 mb-5">
@@ -286,8 +296,8 @@
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
                 src="assets/img/icons/writing.svg" alt="Decentralized structure" height="60" width="60"  />
               </div>  
-              <div class="h5 fw-bold">Expressiveness</div>
-              <p class="mb-md-0  text-center">Allowing atomic writes & upgradable contract</p>
+              <div class="h5 fw-bold">Extended Functionality</div>
+              <p class="mb-md-0  text-center">Allowing contracts to modify the state of other contracts in an atomic transaction and implementing a native code upgrade mechanism</p>
             </div>
           </div>
           <div class="col-md-4 mb-5">
@@ -297,7 +307,7 @@
                   src="assets/img/icons/shield.svg" alt="Contract" height="60" width="60"  />
                 </div>
               <div class="h5 fw-bold">Security</div>
-              <p class="mb-md-0  text-center">Sandboxing execution environment</p>
+              <p class="mb-md-0  text-center">Sandboxing the execution environment preventing malicious code from harming	users’ environment</p>
             </div>
           </div>
           <div class="col-md-4 mb-5">
@@ -306,8 +316,8 @@
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
                 src="assets/img/icons/replay.svg" alt="Contract" height="60" width="60"  />
               </div>  
-              <div class="h5 fw-bold">External calls proxy</div>
-              <p class="mb-md-0  text-center">Proxying API to allow deterministic replay</p>
+              <div class="h5 fw-bold">Deterministic external calls</div>
+              <p class="mb-md-0  text-center">Intercepting and persisting answers from external API’s allowing to rebuilt contract state deterministically</p>
             </div>
           </div>
           <div class="col-md-4 mb-5">
@@ -317,7 +327,8 @@
                 src="assets/img/icons/incognito.svg" alt="Contract" height="60" width="60"  />
               </div>  
               <div class="h5 fw-bold">Privacy</div>
-              <p class="mb-md-0  text-center">Virtual subnets operating on encrypted data</p>
+              <p class="mb-md-0  text-center">Ability to create a virtual network that will use encrypted data available to trusted parties
+              </p>
             </div>
           </div>
           <div class="col-md-4 mb-5">
@@ -327,7 +338,7 @@
                 src="assets/img/icons/tools.svg" alt="Multitool" height="60" width="60"  />
               </div>  
               <div class="h5 fw-bold">Devex</div>
-              <p class="mb-md-0  text-center">Testing, logging and debugging tools</p>
+              <p class="mb-md-0  text-center">Developing tools for code testing, automatic deployment, real-time monitoring and debugging of live contracts</p>
             </div>
           </div>
         </div>
@@ -339,7 +350,6 @@
         <div class="row justify-content-center">
           <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
             <div class="h6 fw-bold fs-4 display-3 lh-sm">Vision</div>
-            <div id="vision-animation" class="mx-auto mt-4"></div>
             <div class="d-flex justify-content-around align-items-center mt-6 mx-auto vision-icons">
               <img  src="assets/img/icons/bitcoin.svg" />
               <img class="chevron" src="assets/img/icons/right-chevron.svg" />
@@ -363,29 +373,34 @@
     <section id="resources">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm">Resources</div>
-            <div class="row justify-content-center mb-2">
-              <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-5 mt-4">
+          <div class="col-sm-10 col-lg-12 text-center mx-auto">
+            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-6">Resources</div>
+            <div class="row justify-content-center mb-2 mt-4 align-items-center">
+              <div class="col-sm-10 col-lg-6 mb-5 mb-md-0">
                 <div class="d-flex flex-column align-items-center doc-links">
-                  <a class="mb-3 d-flex justify-content-between align-items-center" target="_blank" href="https://github.com/redstone-finance/redstone-smartweave/blob/main/README.md">
+                  <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank" href="https://github.com/redstone-finance/redstone-smartweave/blob/main/README.md">
                     <p>Readme</p>
                     <img src="/assets/img/icons/arrow-right.svg">
                   </a>
-                  <a class="mb-3 d-flex justify-content-between align-items-center" target="_blank" href="https://smartweave.docs.redstone.finance">
+                  <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank" href="https://smartweave.docs.redstone.finance">
                     <p>Documentation</p>
                     <img src="/assets/img/icons/arrow-right.svg">
                   </a>
-                  <a class="mb-3 d-flex justify-content-between align-items-center" target="_blank" href="https://github.com/redstone-finance/redstone-smartweave/blob/hatskier/migration-guide/docs/MIGRATION_GUIDE.md">
+                  <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank" href="https://github.com/redstone-finance/redstone-smartweave/blob/hatskier/migration-guide/docs/MIGRATION_GUIDE.md">
                     <p>Migration guide</p>
                     <img src="/assets/img/icons/arrow-right.svg">
                   </a>
                   <!-- <a class="mb-3" target="_blank" >Migration guide</a> -->
-                  <a class="mb-3 d-flex justify-content-between align-items-center" target="_blank" href="https://github.com/redstone-finance/redstone-smartweave-examples">
+                  <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank" href="https://github.com/redstone-finance/redstone-smartweave-examples">
                     <p>Examples</p>
                     <img src="/assets/img/icons/arrow-right.svg">
                   </a>
                 </div>
+              </div>
+              <div class="col-sm-10 col-lg-6">
+                <iframe width="100%" id="migration-video"
+                  src="https://www.youtube.com/embed/dLsYwgrrrIE">
+                </iframe>
               </div>
             </div>
           </div>
@@ -397,13 +412,13 @@
       <div class="container">
         <div class="row">
           <div class="col-12 mx-auto align-items-center text-center">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-3">SmartWeave community</div>
+            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">SmartWeave community</div>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-lg-12 mx-auto align-items-center text-center">
             <div class="mt-3">
-              <p class="px-6 mx-6">
+              <p class="px-2 px-md-6 mx-md-6">
                 We believe that the community is the most important building block of future of blockchain technology. For that reason we 
                 cooperate with many projects on various fields, battle-testing our product in different use-cases and environments, to create 
                 the best possible user and developer experience. We’re extremely grateful to the amazing Arweave projects for initial feedback 
@@ -412,7 +427,7 @@
               </p>
             </div>
           </div>
-          <div class="row align-items-center justify-content-center justify-content-lg-around mx-0">
+          <div class="row align-items-center justify-content-center justify-content-lg-around mx-0 px-md-7">
             <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-3 mb-lg-0 text-center"><a
                 href="https://www.arweave.org/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
                 class="lazy" src="assets/img/backers/arweave.jpeg" width="50px" alt="Arweave logo" /></a></div>
@@ -426,11 +441,11 @@
                 href="https://https://www.kyve.network/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
                 class="lazy" src="assets/img/backers/kyve.png" height="55px" alt="Kyve logo" /></a></div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-3 mb-lg-0 text-center"><a href="https://openbits.world/"
-                role="button" target="_blank"><img loading="lazy" class="lazy" src="assets/img/backers/openbits.jpeg" width="70px" height="70px" alt="Openbits logo" /></a>
+                role="button" target="_blank"><img loading="lazy" class="lazy" src="assets/img/backers/openbits.jpeg" width="50px" height="50px" alt="Openbits logo" /></a>
             </div>
         </div>
-        <div class="row mt-6 mx-0">
-          <div class="col-12 col-md-6 text-center quoted-person d-flex flex-column align-items-center">
+        <div class="row mt-8 mx-0">
+          <div class="col-12 col-md-6 text-center quoted-person d-flex flex-column align-items-center mb-5 mb-md-0">
             <img src="assets/img/gallery/cedrik.jpeg">
             <div class="mt-3 fw-bold">Cedrik Boudreau</div>
             <div class="mt-1">Arweave Team, CommunityXYZ</div>

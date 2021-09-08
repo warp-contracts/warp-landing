@@ -498,7 +498,7 @@ docReady(scrollToTop); // if (videoElem) {
 var scriptEle = document.createElement('script');
 scriptEle.setAttribute('src', 'vendors/@lottiefiles/lottie-player.js');
 document.getElementsByTagName('body')[0].appendChild(scriptEle);
-document.getElementById('weave-animation').innerHTML = "            \n        <lottie-player autoplay=\"true\" loop=\"true\" speed=\"1\" src=\"assets/animations/weave.json\"\n                       style=\"height: 65%; background: transparent\" background=\"transparent\"></lottie-player>";
+document.getElementById('weave-animation').innerHTML = "            \n        <lottie-player id=\"weave-lottie\" autoplay=\"true\" loop=\"true\" speed=\"1\" src=\"assets/animations/weave.json\"\n                       style=\"height: 65%\" background=\"url(/assets/img/illustrations/weave.svg) no-repeat center center / 100% 100%\"></lottie-player>";
 document.getElementById('baloon-animation').innerHTML = "            \n      <lottie-player autoplay=\"true\" loop=\"true\" speed=\"1\" src=\"assets/animations/baloon.json\"\n                    style=\"background: transparent\" background=\"transparent\"></lottie-player>";
 document.getElementById('gears-animation').innerHTML = "            \n      <lottie-player autoplay=\"true\" loop=\"true\" speed=\"1\" src=\"assets/animations/gears.json\"\n                    style=\"background: transparent\" background=\"transparent\"></lottie-player>"; // } else {
 //   videoElem.innerHTML = `<video width="100%"
@@ -527,4 +527,12 @@ cookieScript.addEventListener('load', function () {
     }
   });
 });
+var resizeObserver = new ResizeObserver(function (entries) {
+  entries.forEach(function (entry) {
+    console.log('elo');
+    console.log(entry);
+    entry.target.style.height = "".concat(entry.target.offsetWidth * 0.56, "px");
+  });
+});
+resizeObserver.observe(document.querySelector('#migration-video'));
 //# sourceMappingURL=theme.js.map

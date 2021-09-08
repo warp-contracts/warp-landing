@@ -25,6 +25,8 @@ $grid-breakpoints: map-merge(
     lg: 992px,
     xl: 1200px,
     xxl: 1540px,
+    2K: 2048px,
+    4K: 3840px
   ),
   $grid-breakpoints
 );
