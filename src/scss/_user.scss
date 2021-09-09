@@ -253,8 +253,12 @@ ul.yes-list, ul.no-list {
 
         span {
             display: block;
-            transform: translateY(-2px);
             padding-left: 0.25rem;
+            transform: translateY(-3px);
+
+            @include media-breakpoint-up(md) {
+                transform: translateY(-2px);
+            }
         }
 
         &::marker {
@@ -262,6 +266,18 @@ ul.yes-list, ul.no-list {
             line-height: 24px;
         }
     }
+}
+
+.community-logo {
+    filter: grayscale(100%) invert(0.56);
+
+    &:hover {
+        filter: none;
+    }
+}
+
+#weave-animation {
+    height: 65%;
 }
 
 .navbar {
@@ -380,10 +396,6 @@ ul.no-list li {
         background-color: $gray-200;
     }
 } 
-
-.cc-revoke, .cc-window {
-    font-family: "Poppins";
-}
 
 .cc-theme-classic .cc-btn {
     border-radius: 20px;

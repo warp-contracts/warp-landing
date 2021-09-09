@@ -22120,15 +22120,37 @@ ul.yes-list li, ul.no-list li {
 
 ul.yes-list li span, ul.no-list li span {
   display: block;
-  -webkit-transform: translateY(-2px);
-  -ms-transform: translateY(-2px);
-  transform: translateY(-2px);
   padding-left: 0.25rem;
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+@media (min-width: 768px) {
+  ul.yes-list li span, ul.no-list li span {
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
 }
 
 ul.yes-list li::marker, ul.no-list li::marker {
   font-size: 24px;
   line-height: 24px;
+}
+
+.community-logo {
+  -webkit-filter: grayscale(100%) invert(0.56);
+  filter: grayscale(100%) invert(0.56);
+}
+
+.community-logo:hover {
+  -webkit-filter: none;
+  filter: none;
+}
+
+#weave-animation {
+  height: 65%;
 }
 
 .navbar {
@@ -22258,10 +22280,6 @@ ul.no-list li {
 
 .accordion-button:hover {
   background-color: #f7f7f7;
-}
-
-.cc-revoke, .cc-window {
-  font-family: "Poppins";
 }
 
 .cc-theme-classic .cc-btn {
