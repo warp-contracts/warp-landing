@@ -30,50 +30,71 @@ section {
 
 .oval {
     position: fixed;
-    opacity: 0.2;
-    z-index: -1;
+    // opacity: 0.2;
+    // z-index: -1;
 
-    filter: blur(50px);
+    // filter: blur(50px);
 
-    @include media-breakpoint-up(2K) {
-        filter: blur(75px);
-    }
+    // @include media-breakpoint-up(2K) {
+    //     filter: blur(75px);
+    // }
 
-    @include media-breakpoint-up(4K) {
-        filter: blur(100px);
-    }
-
-
-    &.top {
-        top: 0;
-        background-color: #fdd762;
-        width: 10%;
-        height: 12%;
-        right: 15%;
-    }
+    // @include media-breakpoint-up(4K) {
+    //     filter: blur(100px);
+    // }
 
     &.right {
-        right: 0;
-        background-color: #5982f1;
-        width: 7%;
-        height: 25%;
-        top: 16%;
+        background: url('/assets/img/illustrations/dot-blue-right.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        right: -8vw;
+        width: 80vw;
+        height: 80vh;
+        top: 2vh;
+
+        @include media-breakpoint-up(md) {
+            right: -25vw;
+            width: 50vw;
+            height: 50vw;
+            top: 5vh;
+        }
     }
 
     &.bottom {
-        bottom: 0;
-        background-color: #fdd762;
-        width: 30%;
-        height: 16%;
-        left: 25%;
+        background: url('/assets/img/illustrations/dot-yellow-big.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        bottom: -15vw;
+        width: 100vw;
+        height: 30vh;
+        left: 10vw;
+
+        @include media-breakpoint-up(md) {
+            bottom: -22vw;
+            width: 40vw;
+            height: 40vw;
+            left: 20vw;
+        }
     }
 
     &.left {
-        left: 0;
-        background-color: #5982f1;
-        width: 9%;
-        height: 35%;
-        top: 24%;
+        background: url('/assets/img/illustrations/dot-blue-left.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        left: -36vw;
+        width: 74vw;
+        height: 75vh;
+        top: 16vh;
+
+        @include media-breakpoint-up(md) {
+            left: -15vw;
+            width: 30vw;
+            height: 30vw;
+            top: 6vh;
+        }
     }
 }
 
@@ -231,7 +252,7 @@ ul.yes-list, ul.no-list {
         }
 
         span {
-            display: inline-block;
+            display: block;
             transform: translateY(-2px);
             padding-left: 0.25rem;
         }
@@ -241,6 +262,10 @@ ul.yes-list, ul.no-list {
             line-height: 24px;
         }
     }
+}
+
+.navbar {
+    background-color: white !important;
 }
 
 ul.yes-list li {

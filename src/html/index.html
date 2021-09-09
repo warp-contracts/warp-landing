@@ -14,7 +14,6 @@
   <main class="main" id="top">
     @@include('./common/navbar.html', { "isHome": true })
 
-    <div class="oval top"></div>
     <div class="oval right"></div>
     <div class="oval bottom"></div>
     <div class="oval left"></div>
@@ -40,7 +39,7 @@
 
         <!-- ============================================-->
     <!-- <section> begin ============================-->
-    <section class="py-4 py-lg-6" id="motivation">
+    <section class="py-4 py-lg-0" id="motivation">
 
       <div class="container">
         <div class="row justify-content-center mb-3 flex-column-reverse flex-md-row">
@@ -87,7 +86,7 @@
       </div><!-- end of .container-->
     </section>
 
-    <section class="pt-4" id="sdk">
+    <section class="pt-6 pb-3" id="sdk">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
@@ -96,20 +95,20 @@
               <br class="d-md-none" />
               Check it out on 
               <a href="https://www.npmjs.com/package/redstone-smartweave" target="_blank" rel="noreferrer noopener">
-                <img width="50" src="/assets/img/icons/npm.png" />
+                <img width="40" src="/assets/img/icons/npm.png" />
               </a>
               and
               <a href="https://github.com/redstone-finance/redstone-smartweave" target="_blank" rel="noreferrer noopener">
-                <img width="25" src="/assets/img/icons/github-black.svg" alt="Github icon" style="transform: translateY(-3px)"/>
-              </a>
+                <img width="22" src="/assets/img/icons/github-black.svg" alt="Github icon" style="transform: translateY(-2px)"/>
+              </a>.
           </div>
         </div>
         
         <div class="row justify-content-center mt-4 mb-2">
           <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-5 mt-4 text-center text-md-start align-self-center">
             <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">Architecture</div>
-            <p class="mb-0">We’ve based our solution on the original Arweave implementation and rewritten the code in 
-              a modular way adding plenty of improvements and performance tweaks. 
+            <p class="mb-0">We based our solution on the Arweave's innovative approach to smart contracts and their initial 
+              version of the SmartWeave SDK. We've designed and built our implementation, focusing on performance, modularity adding multiple enhancements and optimizations.
               </p>
           </div>
           <div class="col-sm-10 col-lg-6 px-0">
@@ -170,9 +169,9 @@
       </div>
     </section>
     
-    <section id="features">
+    <section class="pb-3" id="features">
       <div class="container">
-        <div class="row justify-content-center mb-4">
+        <div class="row justify-content-center mb-6">
           <div class="col-sm-10 col-lg-12 text-center mx-auto">
             <div class="h6 fw-bold fs-4 display-3 lh-sm">What's there already</div>
           </div>
@@ -192,7 +191,7 @@
             <div class="text-center px-lg-3">
               <div class="features-image-wrapper">
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
-                src="assets/img/icons/cost-efficient.svg" alt="Cost efficient" height="60" width="60" />
+                src="assets/img/icons/cost-efficient.svg" alt="Efficiency" height="60" width="60" />
               </div>
               <div class="h5 fw-bold">Efficiency</div>
               <p class="mb-md-0  text-center">Memoizing computations</p>
@@ -210,7 +209,7 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-center mt-8 mb-4">
+        <div class="row justify-content-center mt-8 mb-6">
           <div class="col-sm-10 col-lg-12 text-center mx-auto">
             <div class="h6 fw-bold fs-4 display-3 lh-sm">What's coming</div>
           </div>
@@ -227,17 +226,17 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 mb-5">
+          <div class="col-md-4 mb-7">
             <div class="text-center px-lg-3">
               <div class="features-image-wrapper">
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
                 src="assets/img/icons/writing.svg" alt="Decentralized structure" height="60" width="60"  />
               </div>  
               <div class="h5 fw-bold">Extended Functionality</div>
-              <p class="mb-md-0  text-center">Allowing contracts to modify the state of other contracts in an atomic transaction and implementing a native code upgrade mechanism</p>
+              <p class="mb-md-0  text-center">Allowing contracts to modify the state of other contracts and implementing an upgrade mechanism for contracts</p>
             </div>
           </div>
-          <div class="col-md-4 mb-5">
+          <div class="col-md-4 mb-7">
             <div class="text-center px-lg-3">
               <div class="features-image-wrapper">
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
@@ -247,7 +246,7 @@
               <p class="mb-md-0  text-center">Sandboxing the execution environment preventing malicious code from harming	users’ environment</p>
             </div>
           </div>
-          <div class="col-md-4 mb-5">
+          <div class="col-md-4 mb-7">
             <div class="text-center px-lg-3">
               <div class="features-image-wrapper">
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
@@ -257,7 +256,7 @@
               <p class="mb-md-0  text-center">Intercepting and persisting answers from external API’s allowing to rebuilt contract state deterministically</p>
             </div>
           </div>
-          <div class="col-md-4 mb-5">
+          <div class="col-md-4 mb-7">
             <div class="text-center px-lg-3">
               <div class="features-image-wrapper">
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
@@ -268,21 +267,21 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 mb-5">
+          <div class="col-md-4 mb-7">
             <div class="text-center px-lg-3">
               <div class="features-image-wrapper">
                 <img loading="lazy" class="lazy img-fluid img-features mb-2"
                 src="assets/img/icons/tools.svg" alt="Multitool" height="60" width="60"  />
               </div>  
               <div class="h5 fw-bold">Devex</div>
-              <p class="mb-md-0  text-center">Developing tools for code testing, automatic deployment, real-time monitoring and debugging of live contracts</p>
+              <p class="mb-md-0  text-center">Developing tools for code testing, automatic deployment, real-time monitoring and debugging</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="vision">
+    <section class="pb-3" id="vision">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
@@ -311,7 +310,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-lg-12 text-center mx-auto">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-6">Resources</div>
+            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-7">Resources</div>
             <div class="row justify-content-center mb-2 mt-4 align-items-center">
               <div class="col-sm-10 col-lg-6 mb-5 mb-md-0">
                 <div class="d-flex flex-column align-items-center doc-links">
@@ -367,18 +366,15 @@
           <div class="row align-items-center justify-content-center justify-content-lg-around mx-0 px-md-7">
             <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-3 mb-lg-0 text-center"><a
                 href="https://www.arweave.org/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
-                class="lazy" src="assets/img/backers/arweave.jpeg" width="50px" alt="Arweave logo" /></a></div>
+                class="lazy" src="assets/img/backers/arweave.svg" width="50px" alt="Arweave logo" /></a></div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-3 mb-lg-0 text-center"><a
                 href="https://community.xyz/home/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
-                class="lazy" src="assets/img/backers/communityxyz.svg" height="60px" alt="CommunityXYZ logo" /></a></div>
+                class="lazy" src="assets/img/backers/communityxyz.svg" height="45px" alt="CommunityXYZ logo" /></a></div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-3 mb-lg-0 text-center"><a
-                href="https://koii.network/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
-                class="lazy" src="assets/img/backers/koii.jpeg" height="50px" alt="Koii logo" /></a></div>
-            <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-3 mb-lg-0 text-center"><a
-                href="https://https://www.kyve.network/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
-                class="lazy" src="assets/img/backers/kyve.png" height="55px" alt="Kyve logo" /></a></div>
+                href="https://www.kyve.network/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
+                class="lazy" src="assets/img/backers/kyve.svg" height="55px" alt="Kyve logo" /></a></div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-3 mb-lg-0 text-center"><a href="https://openbits.world/"
-                role="button" target="_blank"><img loading="lazy" class="lazy" src="assets/img/backers/openbits.jpeg" width="50px" height="50px" alt="Openbits logo" /></a>
+                role="button" target="_blank"><img loading="lazy" class="lazy" src="assets/img/backers/openbits.svg" width="50px" height="50px" alt="Openbits logo" /></a>
             </div>
         </div>
         <div class="row mt-8 mx-0">
@@ -413,7 +409,9 @@
               We'll be happy to answer!
               <br /><br />
             </div>
-            @@include('./common/form.html')
+            <div class="px-7">
+              @@include('./common/form.html')
+            </div>
           </div>
         </div>
       </div>
