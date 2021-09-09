@@ -23,7 +23,7 @@ docReady(scrollToTop);
   
       document.getElementById("weave-animation").innerHTML = `            
         <lottie-player id="weave-lottie" autoplay="true" loop="true" speed="1" src="assets/animations/weave.json"
-                       background="url(/assets/img/illustrations/weave.svg) no-repeat center center / 100% 100%"></lottie-player>`;
+        style="background: transparent" background="transparent"></lottie-player>`;
 
 
       document.getElementById("baloon-animation").innerHTML = `            
