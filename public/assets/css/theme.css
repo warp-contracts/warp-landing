@@ -21938,6 +21938,11 @@ section {
   padding-right: 1.5rem;
 }
 
+.p-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
 .oval {
   position: fixed;
 }

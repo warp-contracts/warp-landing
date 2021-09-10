@@ -28,20 +28,13 @@ section {
     padding-right: 1.5rem
 }
 
+.p-title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
 .oval {
     position: fixed;
-    // opacity: 0.2;
-    // z-index: -1;
-
-    // filter: blur(50px);
-
-    // @include media-breakpoint-up(2K) {
-    //     filter: blur(75px);
-    // }
-
-    // @include media-breakpoint-up(4K) {
-    //     filter: blur(100px);
-    // }
 
     &.right {
         background: url('/assets/img/illustrations/dot-blue-right.svg');
@@ -101,41 +94,6 @@ section {
 #footer {
     background-color: $redstone-light-blue;
 }
-
-// #vision-animation{ 
-//     // animation: changeBg 6s infinite; 
-//     animation: changeBg 20s infinite, blur 5s ease 4s infinite; 
-//     // animation: blur 4s ease 0s infinite; 
-//     // -webkit-animation: blur 4s ease 0s infinite;
-//     // -moz-animation: blur 4s ease 0s infinite;
-//     width:  150px; 
-//     height: 150px; 
-//     background-size: contain;
-//     background-repeat: no-repeat;
-// }
-
-// @keyframes changeBg{
-//    0%,24%,100%  {background-image: url("/assets/img/icons/bitcoin.svg");}
-//    25%, 49% {background-image: url("/assets/img/icons/ethereum.svg");}
-//    50%, 74% {background-image: url("/assets/img/icons/nft.svg");}
-//    75%, 99% {background-image: url("/assets/img/icons/data.svg");}
-// }
-
-// @keyframes blur{
-//     0%,
-//     40% {
-//       -webkit-filter: blur(0px);
-//       -moz-filter: blur(0px);
-//       -o-filter: blur(0px);
-//       -ms-filter: blur(0px);
-//     }
-//     20% {
-//       -webkit-filter: blur(50px);
-//       -moz-filter: blur(50px);
-//       -o-filter: blur(50px);
-//       -ms-filter: blur(50px);
-//     }
-// }
 
 .doc-links {
     a {
