@@ -22023,6 +22023,14 @@ section {
   -ms-flex-align: start;
   align-items: flex-start;
   border-radius: 5px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.doc-links a:hover {
+  border-color: #5982F1;
+  text-decoration: none;
 }
 
 .doc-links a p {

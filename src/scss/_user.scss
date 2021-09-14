@@ -109,6 +109,12 @@ section {
         border-style: solid;
         align-items: flex-start;
         border-radius: 5px;
+        transition: all 0.2s ease;
+
+        &:hover {
+            border-color: $redstone-light-blue;
+            text-decoration: none;
+        }
 
         p {
             margin-bottom: 0;
