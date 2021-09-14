@@ -22180,6 +22180,10 @@ ul.no-list li {
   color: #24355B;
 }
 
+.light-blue {
+  color: #5982F1;
+}
+
 @media (min-width: 992px) {
   .first-page {
     height: 100vh;

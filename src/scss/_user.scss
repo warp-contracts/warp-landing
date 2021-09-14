@@ -281,6 +281,10 @@ ul.no-list li {
     color: $redstone-blue;
 }
 
+.light-blue {
+    color: $redstone-light-blue;
+}
+
 .first-page {
     @include media-breakpoint-up(lg) {
         height: 100vh;
