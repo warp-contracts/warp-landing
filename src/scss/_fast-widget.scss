@@ -1,0 +1,23 @@
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.vertical-container {
+    position: relative;
+}
+
+.blue-text {
+    color: #5273fb;
+}
+
+.carousel-control-prev { 
+    left: -65px !important;
+}
+
+.carousel-control-next { 
+    right: -65px !important;
+}
