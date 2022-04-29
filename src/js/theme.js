@@ -2,9 +2,7 @@ import { docReady } from './utils';
 import navbarInit from './bootstrap-navbar';
 import detectorInit from './detector';
 import scrollToTop from './scroll-to-top';
-// import * as buffer from 'buffer';
 
-// window.Buffer = buffer.Buffer;
 // /* -------------------------------------------------------------------------- */
 // /*                            Theme Initialization                            */
 // /* -------------------------------------------------------------------------- */
@@ -16,20 +14,14 @@ docReady(scrollToTop);
 // if (videoElem) {
 // if (!isDeviceMobile()) {
 var scriptEle = document.createElement('script');
-// var scriptEleBuf = document.createElement('script');
 
 scriptEle.setAttribute('src', 'vendors/@lottiefiles/lottie-player.js');
-// scriptEleBuf.setAttribute('src', 'vendors/buffer/index.js');
 
 document.getElementsByTagName('body')[0].appendChild(scriptEle);
 
 document.getElementById('weave-animation').innerHTML = `            
         <lottie-player id="weave-lottie" autoplay="true" loop="true" speed="1" src="assets/animations/weave.json"
         style="background: transparent" background="transparent"></lottie-player>`;
-
-document.getElementById('baloon-animation').innerHTML = `            
-      <lottie-player autoplay="true" loop="true" speed="1" src="assets/animations/baloon.json"
-                    style="background: transparent" background="transparent"></lottie-player>`;
 
 document.getElementById('gears-animation').innerHTML = `            
       <lottie-player autoplay="true" loop="true" speed="1" src="assets/animations/gears.json"

@@ -22,10 +22,5 @@
   "@lottiefiles/lottie-player": {
     "src": "dist/lottie-player.js",
     "dest": "@lottiefiles"
-  },
-
-  "buffer": {
-    "src": "index.js",
-    "dest": "buffer"
   }
 }

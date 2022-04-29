@@ -1023,9 +1023,7 @@ if (document.getElementById('members')) {
       element.appendChild(memberBio);
     }
   });
-} // import * as buffer from 'buffer';
-// window.Buffer = buffer.Buffer;
-// /* -------------------------------------------------------------------------- */
+} // /* -------------------------------------------------------------------------- */
 // /*                            Theme Initialization                            */
 // /* -------------------------------------------------------------------------- */
 
@@ -1035,13 +1033,10 @@ docReady(detectorInit);
 docReady(scrollToTop); // if (videoElem) {
 // if (!isDeviceMobile()) {
 
-var scriptEle = document.createElement('script'); // var scriptEleBuf = document.createElement('script');
-
-scriptEle.setAttribute('src', 'vendors/@lottiefiles/lottie-player.js'); // scriptEleBuf.setAttribute('src', 'vendors/buffer/index.js');
-
+var scriptEle = document.createElement('script');
+scriptEle.setAttribute('src', 'vendors/@lottiefiles/lottie-player.js');
 document.getElementsByTagName('body')[0].appendChild(scriptEle);
 document.getElementById('weave-animation').innerHTML = "            \n        <lottie-player id=\"weave-lottie\" autoplay=\"true\" loop=\"true\" speed=\"1\" src=\"assets/animations/weave.json\"\n        style=\"background: transparent\" background=\"transparent\"></lottie-player>";
-document.getElementById('baloon-animation').innerHTML = "            \n      <lottie-player autoplay=\"true\" loop=\"true\" speed=\"1\" src=\"assets/animations/baloon.json\"\n                    style=\"background: transparent\" background=\"transparent\"></lottie-player>";
 document.getElementById('gears-animation').innerHTML = "            \n      <lottie-player autoplay=\"true\" loop=\"true\" speed=\"1\" src=\"assets/animations/gears.json\"\n                    style=\"background: transparent\" background=\"transparent\"></lottie-player>"; // } else {
 //   videoElem.innerHTML = `<video width="100%"
 // src="assets/animations/redstone.mov" autoplay loop muted playsinline></video>`;

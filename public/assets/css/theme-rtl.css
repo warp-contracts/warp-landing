@@ -24975,6 +24975,22 @@ ul.no-list li {
   height: 70px;
 }
 
+.text-fade-in {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+}
+
+.text-fade-out {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s 0.5s, opacity 0.5s linear;
+  -o-transition: visibility 0s 0.5s, opacity 0.5s linear;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
 .monospace {
   font-family: "DM Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
@@ -24985,6 +25001,10 @@ ul.no-list li {
 
 .light-blue {
   color: #5273fb;
+}
+
+.bolded {
+  font-weight: 500;
 }
 
 @media (min-width: 992px) {

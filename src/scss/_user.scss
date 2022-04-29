@@ -283,6 +283,18 @@ ul.no-list li {
     height: 70px;
 }
 
+.text-fade-in {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+  
+.text-fade-out {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
 .monospace {
     font-family: $font-family-monospace !important;
 }
@@ -295,6 +307,9 @@ ul.no-list li {
     color: $redstone-light-blue;
 }
 
+.bolded {
+    font-weight: $font-weight-bolded;
+}
 .first-page {
     @include media-breakpoint-up(lg) {
         height: 100vh;
