@@ -198,9 +198,44 @@ var setItemToStore = function setItemToStore(key, payload) {
 var getStoreSpace = function getStoreSpace() {
   var store = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : localStorage;
   return parseFloat((escape(encodeURIComponent(JSON.stringify(store))).length / (1024 * 1024)).toFixed(2));
-};
+}; // function setCookie(cname, cvalue) {
+//   document.cookie = cname + '=' + cvalue + ';';
+// }
+// function getCookie(cname) {
+//   var name = cname + '=';
+//   var ca = document.cookie.split(';');
+//   for (var i = 0; i < ca.length; i++) {
+//     var c = ca[i].trim();
+//     if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+//   }
+//   return '';
+// }
+
+
+function waitForElm(selector) {
+  /* eslint-disable */
+  return new Promise(function (resolve) {
+    if (document.querySelector(selector)) {
+      return resolve(document.querySelector(selector));
+    }
+
+    var observer = new MutationObserver(function () {
+      if (document.querySelector(selector)) {
+        resolve(document.querySelector(selector));
+        observer.disconnect();
+      }
+    });
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  });
+}
 
 var utils = {
+  waitForElm: waitForElm,
+  getCookie: getCookie,
+  setCookie: setCookie,
   docReady: docReady,
   resize: resize,
   isIterableArray: isIterableArray,
@@ -215,8 +250,6 @@ var utils = {
   getOffset: getOffset,
   isScrolledIntoView: isScrolledIntoView,
   getBreakpoint: getBreakpoint,
-  setCookie: setCookie,
-  getCookie: getCookie,
   newChart: newChart,
   settings: settings,
   getItemFromStore: getItemFromStore,
@@ -939,26 +972,7 @@ var scrollToTop = function scrollToTop() {
       window.location.hash = id;
     });
   });
-}; // import { waitForElm } from './utils';
-// import Arweave from 'arweave';
-// import { SmartWeaveWebFactory } from 'redstone-smartweave';
-// const arweave = Arweave.init({
-//   host: 'arweave.net',
-//   port: 443,
-//   protocol: 'https',
-// });
-// const smartweave = SmartWeaveWebFactory.memCachedBased(arweave).useRedStoneGateway().build();
-// arweave.wallets.generate().then((key) => {
-//   arweave.wallets.jwkToAddress(key).then(async (address) => {
-//     const addressElement = await waitForElm('.address-el');
-//     console.log(addressElement);
-//     console.log(address);
-//     addressElement.innerHTML += address;
-//   });
-//   const contract = smartweave.pst('-EffmpHE3FM-8OsoX6AkKgKGQICQ6uI04r9R5fpe9Ao').connect(key);
-//   console.log(contract);
-// });
-
+};
 
 if (document.getElementById('members')) {
   var isMobile = isDeviceMobile();

@@ -6,7 +6,6 @@
 <head>
   @@include('./common/head.html')
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  // Add the new slick-theme.css if you want the default styling
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
@@ -51,8 +50,8 @@
       <section class="py-5 mb-5">
         <div class="container">
           <div class="row justify-content-center mb-3 flex-column-reverse flex-md-row align-items-center mb-5">
-            <div class="col-sm-10 col-lg-5 text-center text-md-start mx-auto mb-2">
-              <div class="p-title lh-sm mb-2 fs-6 light-blue">Fast</div>
+            <div class="col-sm-10 col-lg-5 text-center text-md-start mx-auto mb-2 order-1 order-sm-0">
+              <div class="p-title lh-sm mb-2 fs-6 light-blue text-left">Fast</div>
               <p class="font-weight-bold blue lh-sm fs-2 text-left">Transactions processed in seconds not minutes
               </p>
 
@@ -82,8 +81,8 @@
       <section class="py-5">
         <div class="container">
           <div class="row justify-content-center mb-3 align-items-center mb-5">
-            <div class="col-sm-10 col-lg-5 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
-              <div class="p-title lh-sm mb-2 fs-6 light-blue">Secure</div>
+            <div class="col-sm-10 col-lg-5 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4 order-1 order-sm-0">
+              <div class="p-title lh-sm mb-2 fs-6 light-blue text-left">Secure</div>
               <p class="font-weight-bold blue lh-sm fs-2 text-left">WASM sandboxed execution environment</p>
 
               <p>
@@ -103,7 +102,7 @@
                   target="_blank">corrupted interactions.</a>
               </p>
             </div>
-            <div class="col-sm-10 col-lg-6 offset-lg-1">
+            <div class="col-sm-10 col-lg-6 offset-lg-1 order-1 order-sm-0">
               <div class="your-class">
                 <div class="">
                   <img src="assets/img/code/rust.png" style="width: 100%;" />
@@ -126,13 +125,9 @@
       <section class="py-5">
         <div class="container">
           <div class="row justify-content-center mb-3 flex-column-reverse flex-md-row align-items-center mb-5">
-            <div class="col-sm-10 col-lg-5 text-center text-md-start mx-auto mb-2">
-              <div class="p-title lh-sm mb-2 fs-6 light-blue">Convenient</div>
+            <div class="col-sm-10 col-lg-5 text-center text-md-start mx-auto mb-2 order-1 order-sm-0">
+              <div class="p-title lh-sm mb-2 fs-6 light-blue text-left">Convenient</div>
               <p class="font-weight-bold blue lh-sm fs-2 text-left">Set of tools for developers</p>
-
-              <!-- <p>Building secure and performant smart contracts is not an easy task and you should be equipped with
-                proper
-                tools. We implemented a few services to make your journey easier.</p> -->
 
               <p><a href="https://sonar.redstone.tools">SonAR</a> allows you to monitor your contracts displaying the
                 status of every transaction, notifying about errors and allowing you to check the current state of a
@@ -152,12 +147,9 @@
                 that will guide you through the process of creating, deploying and testing your smart contracts.</p>
 
             </div>
-            <div class="col-sm-10 col-lg-6 offset-lg-1 baloon-container">
+            <div class="col-sm-10 col-lg-6 offset-lg-1 baloon-container mt-5 mt-sm-0">
               <img src="assets/img/academy.png" width="85%" class="float-left mt-n5" />
               <img src="assets/img/sonar-main.png" width="85%" class="float-right" style="margin-top: -5rem;" />
-
-              <!-- <div id="baloon-animation"></div>
-            <div class="italic f-sm">Ethereum <a target="_blank" href="https://etherscan.io/chartsync/chainarchive">full-archive state</a> by Etherscan</a></div> -->
             </div>
           </div>
         </div><!-- end of .container-->
@@ -168,30 +160,30 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">Smart contracts on steroids</div>
+            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">SmartWeave contracts on steroids</div>
 
           </div>
         </div>
         <div class="row justify-content-center align-items-center mb-3">
-          <div class="col-sm-10 col-lg-6">
+          <div class="col-sm-10 col-lg-6 order-1 order-sm-0">
             <img src="assets/img/code/cross-contract.png" style="width: 100%;" />
           </div>
-          <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
+          <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4 order-0 order-sm-1">
             <div class="p-title lh-sm mb-4 mb-md-3">Cross contract calls</div>
             <div class="fs-1">an easy way to access and modify external contract state.</div>
           </div>
         </div>
         <div class="row justify-content-center align-items-center mb-3">
           <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
-            <div class="p-title lh-sm mb-4 mb-md-3 text-right">Verifiable randomness</div>
-            <div class="fs-1 text-right">some text</div>
+            <div class="p-title lh-sm mb-4 mb-md-3 text-sm-right">Verifiable randomness</div>
+            <div class="fs-1 text-sm-right">some text</div>
           </div>
           <div class="col-sm-10 col-lg-6">
             Coming soon.
           </div>
         </div>
         <div class="row justify-content-center align-items-center mb-3">
-          <div class="col-sm-10 col-lg-6">
+          <div class="col-sm-10 col-lg-6 order-1 order-sm-0">
             <img src="assets/img/code/bundled.png" style="width: 100%;" />
           </div>
           <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
@@ -224,13 +216,6 @@
               <li><span>Flexible lazy-evaluation pattern</span></li>
               <li><span>The ability to directly process rich content</span></li>
             </ul>
-            <!-- <p>
-              Building our solution on the <a href="https://smartweave.redstone.finance">Arweave</a> chain (which is the
-              most innovative
-              and scalable storage solution out there), allows us to save time on the development
-              of the basic infrastructure. Arweave has a thriving community of users and developers
-              with a growing need for an efficient smart contracts protocol.
-            </p> -->
           </div>
           <div class="col-sm-10 col-lg-6">
             <div id="gears-animation" height="80%"></div>
@@ -291,11 +276,6 @@
                     <p>Readme</p>
                     <img src="/assets/img/icons/arrow-right.svg">
                   </a>
-                  <!-- <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank"
-                    href="https://smartweave.docs.redstone.finance">
-                    <p>Documentation</p>
-                    <img src="/assets/img/icons/arrow-right.svg">
-                  </a> -->
                 </div>
               </div>
               <div class="col-sm-10 col-lg-6">
@@ -424,27 +404,8 @@
 
   @@include('./common/footer.html')
   @@include('./common/scripts.html')
-  <script src="assets/js/theme.js" type="text/javascript"></script>
-  <script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <!-- <script src="https://unpkg.com/redstone-smartweave/bundles/web.bundle.min.js"></script> -->
-  <script src="web.bundle.js"></script>
-  <script src="vendors/buffer/index.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
 
   <script>
-
     $(document).ready(function () {
       $('.your-class').slick({
         dots: true,
@@ -456,6 +417,25 @@
         autoplaySpeed: 5000,
       })
     });
+
+    const arweave = Arweave.init({
+      host: 'arweave.net',
+      port: 443,
+      protocol: 'https',
+    });
+
+    const smartweave = rsdk.SmartWeaveWebFactory.memCachedBased(arweave).useRedStoneGateway().build();
+
+    if (!getCookie('arweave_key')) {
+      arweave.wallets.generate().then((key) => {
+        const keyCookie = JSON.stringify(key);
+        setCookie('arweave_key', keyCookie);
+        handleArweaveKey(key, smartweave, arweave)
+      });
+    } else {
+      const key = JSON.parse(getCookie('arweave_key'));
+      handleArweaveKey(key, smartweave, arweave)
+    }
 
     function waitForElm(selector) {
       /* eslint-disable */
@@ -501,6 +481,27 @@
 
       const contract = smartweave.pst('-EffmpHE3FM-8OsoX6AkKgKGQICQ6uI04r9R5fpe9Ao').connect(key);
 
+      arweave.wallets.jwkToAddress(key).then(async (address) => {
+        walletAddress = address;
+        mintTokens(contract, walletAddress, balanceElement)
+        const addressElement = await waitForElm('.address-el');
+        addressElement.innerHTML += subtractWalletString(walletAddress);
+        const { state } = await contract.readState();
+        const currentBalance = state.balances[address]
+        balanceElement.innerHTML = "";
+        if (currentBalance) {
+          balanceElement.innerHTML += currentBalance;
+        } else {
+          balanceElement.innerHTML += "0"
+        }
+      });
+    }
+
+    function subtractWalletString(address) {
+      return address.substr(0, 6) + '...' + address.substr(address.length - 6);
+    }
+
+    function mintTokens(contract, walletAddress, balanceElement) {
       const mintBtn = document.querySelector('.mint');
       mintBtn.addEventListener('click', async (e) => {
         e.preventDefault();
@@ -508,8 +509,9 @@
         mintBtn.innerHTML += `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>`;
 
         let tokensAmount = document.getElementById('tokens');
+
         const txId = await contract.bundleInteraction({ function: 'mint', qty: parseInt(tokensAmount.value) })
-        console.log(txId)
+
         mintBtn.innerHTML = "";
         mintBtn.innerHTML += "Mint";
         balanceElement.innerHTML = "";
@@ -522,6 +524,7 @@
         interactionInfo.innerHTML = `<a href="https://sonar.redstone.tools/#/app/interaction/${txId.originalTxId}" target="_blank">SonAR.</a>`
         interactionInfo.parentNode.classList.remove('text-fade-out');
         interactionInfo.parentNode.classList.add('text-fade-in');
+
         const { state } = await contract.readState();
         const currentBalance = state.balances[walletAddress]
         balanceElement.innerHTML = "";
@@ -532,41 +535,7 @@
         }
         tokensAmount.value = "";
       })
-
-      arweave.wallets.jwkToAddress(key).then(async (address) => {
-        walletAddress = address;
-        const addressElement = await waitForElm('.address-el');
-        addressElement.innerHTML += address.substr(0, 6) + '...' + address.substr(address.length - 6);;
-
-        const { state } = await contract.readState();
-        console.log(state)
-        const currentBalance = state.balances[address]
-        balanceElement.innerHTML = "";
-        if (currentBalance) {
-          balanceElement.innerHTML += currentBalance;
-        } else {
-          balanceElement.innerHTML += "0"
-        }
-      });
     }
-
-    const arweave = Arweave.init({
-      host: 'arweave.net',
-      port: 443,
-      protocol: 'https',
-    });
-    const smartweave = rsdk.SmartWeaveWebFactory.memCachedBased(arweave).useRedStoneGateway().build();
-    if (!getCookie('arweave_key')) {
-      arweave.wallets.generate().then((key) => {
-        const keyCookie = JSON.stringify(key);
-        setCookie('arweave_key', keyCookie);
-        handleArweaveKey(key, smartweave, arweave)
-      });
-    } else {
-      const key = JSON.parse(getCookie('arweave_key'));
-      handleArweaveKey(key, smartweave, arweave)
-    }
-
   </script>
 </body>
 

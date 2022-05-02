@@ -189,7 +189,45 @@ const setItemToStore = (key, payload, store = localStorage) => store.setItem(key
 const getStoreSpace = (store = localStorage) =>
   parseFloat((escape(encodeURIComponent(JSON.stringify(store))).length / (1024 * 1024)).toFixed(2));
 
+// function setCookie(cname, cvalue) {
+//   document.cookie = cname + '=' + cvalue + ';';
+// }
+
+// function getCookie(cname) {
+//   var name = cname + '=';
+//   var ca = document.cookie.split(';');
+//   for (var i = 0; i < ca.length; i++) {
+//     var c = ca[i].trim();
+//     if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+//   }
+//   return '';
+// }
+
+function waitForElm(selector) {
+  /* eslint-disable */
+  return new Promise((resolve) => {
+    if (document.querySelector(selector)) {
+      return resolve(document.querySelector(selector));
+    }
+
+    const observer = new MutationObserver(() => {
+      if (document.querySelector(selector)) {
+        resolve(document.querySelector(selector));
+        observer.disconnect();
+      }
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  });
+}
+
 const utils = {
+  waitForElm,
+  getCookie,
+  setCookie,
   docReady,
   resize,
   isIterableArray,
@@ -204,8 +242,6 @@ const utils = {
   getOffset,
   isScrolledIntoView,
   getBreakpoint,
-  setCookie,
-  getCookie,
   newChart,
   settings,
   getItemFromStore,
