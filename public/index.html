@@ -156,7 +156,7 @@
           <div class="row justify-content-center mb-3 flex-column-reverse flex-md-row align-items-center mb-5">
             <div class="col-sm-10 col-lg-5 text-center text-md-start mx-auto mb-2 order-1 order-sm-0">
               <div class="p-title lh-sm mb-2 fs-6 light-blue text-left">Fast</div>
-              <p class="font-weight-bold blue lh-sm fs-2 text-left">Transactions processed in seconds not minutes
+              <p class="font-weight-bold blue lh-sm fs-2 text-left">Transactions processed in seconds, not minutes.
               </p>
 
               <p>We optimized data input by building a <span class="font-weight-bold">sequencer</span> which orders
@@ -179,7 +179,7 @@
             <div class="col-sm-10 offset-lg-1 col-lg-6 text-center baloon-container">
               <div class="col-12 col-md-10 offset-md-1 mt-5 mt-sm-5">
     <div class="mb-3" style="font-weight: 500;">Try for yourself how fast you can mint PST tokens with<a target="_blank"
-            href="https://sonar.redstone.tools/#/app/contract/-EffmpHE3FM-8OsoX6AkKgKGQICQ6uI04r9R5fpe9Ao"> this
+            href="https://sonar.redstone.tools/#/app/contract/5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI"> this
             contract.</a>
     </div>
     <div class="d-flex justify-content-between pb-3">Balance: <span class="balance-el font-weight-bold"></span></div>
@@ -192,7 +192,9 @@
         </div>
         <button class="button btn btn-lg btn-danger rounded-pill order-0 mint btn-block mt-0">Mint</button>
     </form>
-    <div class="text-fade-out mt-2">Verify interaction in <span class="interaction"></span></div>
+    <div class="d-flex justify-content-center pt-2" style="height: 40px">
+        <div class="mt-2 interaction"></div>
+    </div>
 </div>
 <script src="assets/js/theme.js" type="text/javascript"></script>
             </div>
@@ -296,20 +298,20 @@
         </div>
         <div class="row justify-content-center align-items-center mb-3">
           <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
-            <div class="p-title lh-sm mb-4 mb-md-3 text-sm-right">Verifiable randomness</div>
-            <div class="fs-1 text-sm-right">some text</div>
+            <div class="p-title lh-sm mb-4 mb-md-3 text-sm-right">Bundled interactions and deployment</div>
+            <div class="fs-1 text-sm-right">instant transactions availability and finality</div>
           </div>
           <div class="col-sm-10 col-lg-6">
-            Coming soon.
+            <img src="assets/img/code/bundled.png" style="width: 100%;" />
           </div>
         </div>
         <div class="row justify-content-center align-items-center mb-3">
-          <div class="col-sm-10 col-lg-6 order-1 order-sm-0">
-            <img src="assets/img/code/bundled.png" style="width: 100%;" />
+          <div class="col-sm-10 col-lg-6 order-1 order-sm-0 text-right">
+            <img src="assets/img/code/vrf.png" style="width: 100%;" />
           </div>
           <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
-            <div class="p-title lh-sm mb-4 mb-md-3">Bundled interactions and deployment</div>
-            <div class="fs-1">some text</div>
+            <div class="p-title lh-sm mb-4 mb-md-3">Verifiable randomness</div>
+            <div class="fs-1">generate randomness that is verifiable on-chain</div>
           </div>
         </div>
       </div>
@@ -323,8 +325,42 @@
 
           </div>
         </div>
+        <div class="row mt-4 mb-2 justify-content-center">
+          <div class="col-sm-10 px-0 mb-md-5 mt-md-5">
+            <img class="d-block" src="assets/img/warp_transaction_lifecycle.svg" width="100%" />
+          </div>
+          <div
+            class="col-sm-10 col-lg-10 offset-lg-1 mx-auto mb-3 mb-md-5 mt-4 text-center text-center align-self-center">
+            <p class="mb-0">We enhance our smart contracts platform by making transactions processing and evaluation
+              easy and effective.
+            <ol class="mt-3 mt-md-2 text-left list">
+              <li><span class="aligned">Our <span class="font-weight-bold">Sequencer</span> assigns order to SmartWeave
+                  interactions, taking into account sequencer’s timestamp, current Arweave network block height and is
+                  salted
+                  with sequencer’s key.</span></li>
+              <li><span class="aligned">Interactions are then packed by <span class="font-weight-bold">Bundlr</span>
+                  which guarantees transactions finality and data upload reliability.</span></li>
+              <li><span class="aligned">The ability to directly process rich content</span></li>
+              <li><span class="aligned">Transactions are stored on <span class="font-weight-bold">Arweave</span>
+                  where they are available for querying.</span></li>
+              <li><span class="aligned">The key component for the lazy-evaluation nature of SmartWeave
+                  protocol is fast and reliable interaction loading. Thanks to our <span
+                    class="font-weight-bold">gateway</span> we guarantee loading
+                  transactions
+                  in seconds in a reliable way - it has built-in protection against forks and corrupted
+                  transactions.</span></li>
+              <li><span class="aligned">Lastly, transactions can be evaluated either by our <span
+                    class="font-weight-bold">SDK</span> or
+                  the
+                  evaluation can be delegated to a distribution execution network - a dedicated
+                  network of nodes (<span class="font-weight-bold">DEN</span>).</span></li>
+              </ul>
+
+              </p>
+          </div>
+        </div>
         <div class="row justify-content-center mb-3">
-          <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
+          <div class="col-sm-10 col-lg-5 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
             <div class="p-title lh-sm mb-4 mb-md-3">State separated from execution</div>
             <p class="mb-0">
               We have a radically different design where data is treated as the most valuable asset.
@@ -338,30 +374,21 @@
               <li><span>The ability to directly process rich content</span></li>
             </ul>
           </div>
-          <div class="col-sm-10 col-lg-6">
+          <div class="col-sm-10 col-lg-6 offset-lg-1">
             <div id="gears-animation" height="80%"></div>
           </div>
         </div>
-
         <div class="row justify-content-center mt-4 mb-2">
-          <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-5 mt-4 text-center text-md-start align-self-center">
-            <div class="p-title lh-sm mb-4 mb-md-3">Modular architecture</div>
-            <p class="mb-0">...</p>
-          </div>
-          <div class="col-sm-10 col-lg-6 px-0">
-
-          </div>
-        </div>
-        <div class="row justify-content-center mt-4 mb-2">
-          <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-5 mt-4 text-center text-md-start align-self-center">
+          <div class="col-sm-10 col-lg-5 mx-auto mb-3 mb-md-5 mt-4 text-center text-md-start align-self-center">
             <div class="p-title lh-sm mb-4 mb-md-3">Flexible execution environment</div>
             <p class="mb-0">We based our solution on the Arweave's innovative approach to smart contracts and their
               initial
-              version of the SmartWeave SDK. We've designed and built our implementation, focusing on performance,
+              version of the <a href="https://github.com/ArweaveTeam/SmartWeave" target="_blank">SmartWeaveJS</a>.
+              We've designed and built our implementation, focusing on performance,
               modularity adding multiple enhancements and optimizations.
             </p>
           </div>
-          <div class="col-sm-10 col-lg-6 px-0">
+          <div class="col-sm-10 col-lg-6 offset-lg-1 px-0">
             <img class="d-md-none" src="assets/img/illustrations/architecture_mobile.svg" width="100%" />
             <img class="d-none d-md-block" src="assets/img/illustrations/architecture.svg" width="100%" />
           </div>
@@ -375,7 +402,7 @@
           <div class="col-sm-10 col-lg-12 text-center mx-auto">
             <div class="h6 fw-bold fs-4 display-3 lh-sm mb-7">Resources</div>
             <div class="row justify-content-center mb-2 mt-4 align-items-center">
-              <div class="col-sm-10 col-lg-6 mb-5 mb-md-0">
+              <div class="col-sm-10 mb-5 mb-md-0">
                 <div class="d-flex flex-column align-items-center doc-links">
                   <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank"
                     href="https://github.com/redstone-finance/redstone-smartweave/blob/hatskier/migration-guide/docs/MIGRATION_GUIDE.md">
@@ -399,11 +426,11 @@
                   </a>
                 </div>
               </div>
-              <div class="col-sm-10 col-lg-6">
+              <!-- <div class="col-sm-10 col-lg-6">
                 <iframe width="100%" id="migration-video" allow="fullscreen"
                   src="https://www.youtube.com/embed/fNjUV7mHFqw">
                 </iframe>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -455,23 +482,39 @@
           </div>
         </div>
         <div class="row mt-8 mx-0">
-          <div class="col-12 col-md-6 text-center quoted-person d-flex flex-column align-items-center mb-5 mb-md-0">
-            <img src="assets/img/gallery/cedrik.jpeg">
-            <div class="mt-3 fw-bold">Cedrik Boudreau</div>
-            <div class="mt-1">Arweave Team, CommunityXYZ</div>
-            <div class="quote mt-2">
-              The Redstone team did an amazing work improving the SmartContracts Javascript library.
-              "redstone-smartweave" is the way to go
+          <div class="col-12 col-md-5 text-center quoted-person d-flex flex-column align-items-center mb-5 mb-md-0">
+            <img width="200" src="assets/img/gallery/pianity.svg">
+            <div class="quote mt-2 quotes-height">
+              Warp took smart contracts on Arweave to the next level and has become a fundamental piece of our tech
+              stack here at Pianity. Its Sequencer allows us to scale our contract interactions, whereas WASM support
+              ensures security and stability.<br />
+              Warp has consistently been making our use of smart contracts a lot more stable, faster and safer.
             </div>
+            <div class="mt-3 fw-bold">Eyal Chojnowski</div>
+            <div class="mt-1">Web3 lead at Pianity</div>
           </div>
-          <div class="col-12 col-md-6 text-center quoted-person d-flex flex-column align-items-center">
-            <img src="assets/img/gallery/john.jpeg">
-            <div class="mt-3 fw-bold">John Letey</div>
-            <div class="mt-1">Founder of Kyve</div>
-            <div class="quote mt-2">
-              The easy-to-use predefined caching mechanisms improved our contract execution time drastically! The
-              plugin-like approach is genius - we've even made a plugin to use KYVE data when executing contracts.
+          <div class="col-12 col-md-5 offset-md-2 text-center quoted-person d-flex flex-column align-items-center">
+            <img src="assets/img/gallery/Dark.svg" width="300">
+            <div class="quote mt-2 quotes-height">
+              Warp enables us to build scaling solutions for Arweave. Bundlr does not need to worry about transaction
+              costs getting out of hand while Warp's "lazy" approach guarantees that the contracts can execute more
+              complex code without blocking the whole blockchain network.
             </div>
+            <div class="mt-3 fw-bold">Josh Benaron</div>
+            <div class="mt-1">Founder of Bundlr Network</div>
+          </div>
+        </div>
+        <div class="row mt-8 mx-0">
+          <div
+            class="col-12 col-md-5 col-centered text-center quoted-person d-flex flex-column align-items-center mb-5 mb-md-0">
+            <img width="200" src="assets/img/gallery/akord.svg">
+            <div class="quote mt-2 quotes-height">
+              Implementation of Warp was pivotal for us at Akord. All their tools and enhancements to the Arweave smart
+              contract system allowed us to increase efficiency and quickly get to market. Warp Contracts is now the
+              cornerstone technology in the Akord Vault Protocol stack.
+            </div>
+            <div class="mt-3 fw-bold">Richard Caetano</div>
+            <div class="mt-1">Co-Founder of Akord</div>
           </div>
         </div>
       </div>
@@ -626,7 +669,7 @@
 <script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="https://unpkg.com/redstone-smartweave/bundles/web.bundle.min.js"></script>
+<script src="https://unpkg.com/redstone-smartweave@0.4.80/bundles/web.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -709,21 +752,30 @@
   <span class="sr-only">Loading...</span>
 </div>`;
 
-      const contract = smartweave.pst('-EffmpHE3FM-8OsoX6AkKgKGQICQ6uI04r9R5fpe9Ao').connect(key);
+      const contract = smartweave.pst('5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI').connect(key);
 
       arweave.wallets.jwkToAddress(key).then(async (address) => {
         walletAddress = address;
         mintTokens(contract, walletAddress, balanceElement)
         const addressElement = await waitForElm('.address-el');
         addressElement.innerHTML += subtractWalletString(walletAddress);
-        const { state } = await contract.readState();
-        const currentBalance = state.balances[address]
-        balanceElement.innerHTML = "";
-        if (currentBalance) {
-          balanceElement.innerHTML += currentBalance;
-        } else {
-          balanceElement.innerHTML += "0"
-        }
+        // const result = await contract.readState()
+        // console.log('res', result.state)
+        const state = await fetch(`https://d2rkt3biev1br2.cloudfront.net/state?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
+          .then((res) => {
+            console.log(res)
+            return res.json();
+          })
+          .then((data) => {
+            const currentBalance = data.state.balances[address]
+            balanceElement.innerHTML = "";
+            if (currentBalance) {
+              balanceElement.innerHTML += currentBalance;
+            } else {
+              balanceElement.innerHTML += "0"
+            }
+            return data.state
+          });
       });
     }
 
@@ -732,39 +784,57 @@
     }
 
     function mintTokens(contract, walletAddress, balanceElement) {
+
       const mintBtn = document.querySelector('.mint');
       mintBtn.addEventListener('click', async (e) => {
         e.preventDefault();
-        mintBtn.innerHTML = "";
-        mintBtn.innerHTML += `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>`;
+        //         mintBtn.innerHTML = "";
+        //         mintBtn.innerHTML += `<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        //         <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        //         <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        // `;
+        const interactionInfo = document.querySelector('.interaction');
+        interactionInfo.innerHTML = "";
 
+        interactionInfo.classList.add('dot-flashing')
         let tokensAmount = document.getElementById('tokens');
 
         const txId = await contract.bundleInteraction({ function: 'mint', qty: parseInt(tokensAmount.value) })
 
-        mintBtn.innerHTML = "";
-        mintBtn.innerHTML += "Mint";
         balanceElement.innerHTML = "";
         balanceElement.innerHTML += `<div class="spinner-border spinner-border-sm text-primary" role="status">
   <span class="sr-only">Loading...</span>
 </div>`;
 
-        const interactionInfo = document.querySelector('.interaction');
-        interactionInfo.innerHTML = "";
-        interactionInfo.innerHTML = `<a href="https://sonar.redstone.tools/#/app/interaction/${txId.originalTxId}" target="_blank">SonAR.</a>`
-        interactionInfo.parentNode.classList.remove('text-fade-out');
-        interactionInfo.parentNode.classList.add('text-fade-in');
+        interactionInfo.classList.remove('dot-flashing')
+        interactionInfo.innerHTML = `Transaction processed: <span><a href="https://sonar.redstone.tools/#/app/interaction/${txId.originalTxId}" target="_blank">${subtractWalletString(txId.originalTxId)}</a></span>.`
 
-        const { state } = await contract.readState();
-        const currentBalance = state.balances[walletAddress]
-        balanceElement.innerHTML = "";
-        if (currentBalance) {
-          balanceElement.innerHTML += currentBalance;
-        } else {
-          balanceElement.innerHTML += "0"
-        }
-        tokensAmount.value = "";
+        const state = await fetch(`https://d2rkt3biev1br2.cloudfront.net/state?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            const currentBalance = data.state.balances[walletAddress]
+            balanceElement.innerHTML = "";
+            if (currentBalance) {
+              balanceElement.innerHTML += currentBalance;
+            } else {
+              balanceElement.innerHTML += "0"
+            }
+            tokensAmount.value = "";
+            return data.state
+          });
       })
+    }
+    async function getContractState() {
+      const state = fetch(`https://d2rkt3biev1br2.cloudfront.net/state?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          return data.state
+        });
+      return state
     }
   </script>
 </body>

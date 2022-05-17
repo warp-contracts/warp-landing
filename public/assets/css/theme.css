@@ -27,6 +27,69 @@
   right: -65px !important;
 }
 
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #5273fb;
+  color: #5273fb;
+  -webkit-animation: dotFlashing 1s infinite linear alternate;
+  animation: dotFlashing 1s infinite linear alternate;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.dot-flashing::before, .dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #5273fb;
+  color: #5273fb;
+  -webkit-animation: dotFlashing 1s infinite alternate;
+  animation: dotFlashing 1s infinite alternate;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #5273fb;
+  color: #5273fb;
+  -webkit-animation: dotFlashing 1s infinite alternate;
+  animation: dotFlashing 1s infinite alternate;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes dotFlashing {
+  0% {
+    background-color: #9880ff;
+  }
+  50%, 100% {
+    background-color: #ebe6ff;
+  }
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #9880ff;
+  }
+  50%, 100% {
+    background-color: #ebe6ff;
+  }
+}
 /* prettier-ignore */
 /* -------------------------------------------------------------------------- */
 /*                                  Utilities                                 */
@@ -24845,7 +24908,6 @@ section {
 }
 
 .quoted-person img {
-  border-radius: 9999px;
   height: 200px;
 }
 .quoted-person .quote {
@@ -24929,7 +24991,7 @@ ul.yes-list li, ul.no-list li {
     margin-bottom: 0.25rem;
   }
 }
-ul.yes-list li span, ul.no-list li span {
+ul.yes-list li .text, ul.no-list li .text {
   display: block;
   padding-left: 0.25rem;
   -webkit-transform: translateY(-3px);
@@ -24937,7 +24999,7 @@ ul.yes-list li span, ul.no-list li span {
   transform: translateY(-3px);
 }
 @media (min-width: 768px) {
-  ul.yes-list li span, ul.no-list li span {
+  ul.yes-list li .text, ul.no-list li .text {
     -webkit-transform: translateY(-2px);
     -ms-transform: translateY(-2px);
     transform: translateY(-2px);
@@ -24946,6 +25008,73 @@ ul.yes-list li span, ul.no-list li span {
 ul.yes-list li::marker, ul.no-list li::marker {
   font-size: 24px;
   line-height: 24px;
+}
+
+.quotes-height {
+  height: 320px;
+}
+@media (min-width: 576px) {
+  .quotes-height {
+    height: 180px;
+  }
+}
+
+ol li {
+  list-style-type: none;
+  counter-increment: item;
+  padding-top: 20px;
+}
+
+ol li:before {
+  content: counter(item);
+  margin-right: 5px;
+  font-size: 70%;
+  background-color: #5273fb;
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 50%;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+ol li:first-of-type:before {
+  padding: 3px 9px;
+}
+
+.aligned {
+  vertical-align: text-top;
+  display: inline-block;
+  width: 80%;
+  margin-left: 0.5rem;
+}
+
+div.list {
+  counter-reset: list-number;
+}
+
+div.list div:before {
+  counter-increment: list-number;
+  content: counter(list-number);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 25px;
+  height: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #5273fb;
+  border-radius: 50%;
+  color: #fff;
 }
 
 .community-logo {
