@@ -505,8 +505,7 @@
           </div>
         </div>
         <div class="row mt-8 mx-0">
-          <div
-            class="col-12 col-md-5 col-centered text-center quoted-person d-flex flex-column align-items-center mb-5 mb-md-0">
+          <div class="col-12 col-md-5 text-center quoted-person d-flex flex-column align-items-center mb-5 mb-md-0">
             <img width="200" src="assets/img/gallery/akord.svg">
             <div class="quote mt-2 quotes-height">
               Implementation of Warp was pivotal for us at Akord. All their tools and enhancements to the Arweave smart
@@ -515,6 +514,16 @@
             </div>
             <div class="mt-3 fw-bold">Richard Caetano</div>
             <div class="mt-1">Co-Founder of Akord</div>
+          </div>
+          <div class="col-12 col-md-5 offset-md-2 text-center quoted-person d-flex flex-column align-items-center">
+            <img width="500" src="assets/img/gallery/ever-logo.svg">
+            <div class="quote mt-2 quotes-height">
+              Warp is the true rocket system for SmartWeave. The Sequencer solves problems that SWC can produce with
+              many invalid trades and Front-Running issues. Our core product, a cross-chain PST called everPay, uses the
+              scalable Warp infrastructure, which provides the core foundation for PST liquidity.
+            </div>
+            <div class="mt-3 fw-bold">Outprog</div>
+            <div class="mt-1">Founder & CEO of everFinance</div>
           </div>
         </div>
       </div>
@@ -669,7 +678,7 @@
 <script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="https://unpkg.com/redstone-smartweave@0.4.80/bundles/web.bundle.min.js"></script>
+<script src="https://unpkg.com/redstone-smartweave@0.5.6/bundles/web.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -697,7 +706,7 @@
       protocol: 'https',
     });
 
-    const smartweave = rsdk.SmartWeaveWebFactory.memCachedBased(arweave).useRedStoneGateway().build();
+    const smartweave = rsdk.SmartWeaveWebFactory.memCachedBased(arweave).build();
 
     if (!getCookie('arweave_key')) {
       arweave.wallets.generate().then((key) => {
@@ -756,11 +765,9 @@
 
       arweave.wallets.jwkToAddress(key).then(async (address) => {
         walletAddress = address;
-        mintTokens(contract, walletAddress, balanceElement)
+        await mintTokens(contract, walletAddress, balanceElement)
         const addressElement = await waitForElm('.address-el');
         addressElement.innerHTML += subtractWalletString(walletAddress);
-        // const result = await contract.readState()
-        // console.log('res', result.state)
         const state = await fetch(`https://d2rkt3biev1br2.cloudfront.net/state?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
           .then((res) => {
             console.log(res)
@@ -783,16 +790,12 @@
       return address.substr(0, 6) + '...' + address.substr(address.length - 6);
     }
 
-    function mintTokens(contract, walletAddress, balanceElement) {
+    async function mintTokens(contract, walletAddress, balanceElement) {
 
       const mintBtn = document.querySelector('.mint');
       mintBtn.addEventListener('click', async (e) => {
         e.preventDefault();
-        //         mintBtn.innerHTML = "";
-        //         mintBtn.innerHTML += `<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-        //         <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-        //         <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-        // `;
+        mintBtn.setAttribute('disabled', '');
         const interactionInfo = document.querySelector('.interaction');
         interactionInfo.innerHTML = "";
 
@@ -822,6 +825,9 @@
               balanceElement.innerHTML += "0"
             }
             tokensAmount.value = "";
+            const mintBtn = document.querySelector('.mint');
+            console.log(mintBtn)
+            mintBtn.removeAttribute('disabled');
             return data.state
           });
       })
