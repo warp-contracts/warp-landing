@@ -44,7 +44,7 @@
     <path
        id="rect5"
        d="M 0,0 H 380 V 280 H 0 Z"
-       style="fill:url(#bg_color_gradient);fill-opacity:1" />
+       style="fill:url(#bg_color_gradient);fill-opacity:0" />
   </svg>
   <svg
      id="svg13"
