@@ -181,8 +181,8 @@
               <div class="col-sm-10 offset-lg-1 col-lg-6 text-center baloon-container">
                 <div class="col-12 col-md-10 offset-md-1 mt-5 mt-sm-5">
     <div class="mb-3" style="font-weight: 500;">Try minting some PST tokens with <a target="_blank"
-        href="https://sonar.redstone.tools/#/app/contract/5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI"> this
-        contract</a>, to test the execution speed yourself.
+            href="https://sonar.redstone.tools/#/app/contract/5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI"> this
+            contract</a>, to test the execution speed yourself.
 
     </div>
     <div class="d-flex justify-content-between pb-3">Balance: <span class="balance-el font-weight-bold"></span></div>
@@ -191,7 +191,7 @@
     </div>
     <form>
         <div class="form-group">
-            <input type="number" min="0" inputmode="numeric" pattern="[0-9]*" id="tokens" name="tokens" class="form-control"
+            <input type="number" inputmode="numeric" pattern="[1-9]*" id="tokens" name="tokens" class="form-control"
                 placeholder="Tokens">
         </div>
         <button class="button btn btn-lg btn-danger rounded-pill order-0 mint btn-block mt-0">Mint</button>
@@ -227,8 +227,8 @@
                   performance of Rust.
                 </p>
                 <p>
-                  Warp’s <span class="font-weight-bold">gateway</span> also provides a added protection against forks and <a
-                    href="https://github.com/redstone-finance/redstone-sw-gateway#corrupted-transactions"
+                  Warp’s <span class="font-weight-bold">gateway</span> also provides a added protection against forks
+                  and <a href="https://github.com/redstone-finance/redstone-sw-gateway#corrupted-transactions"
                     target="_blank">corrupted interactions.</a>
                 </p>
               </div>
@@ -594,7 +594,7 @@
                 through embracing more sophisticated tokens, towards managing media-rich NFTs. Every iteration has
                 introduced more content-rich assets and new possibilities. In the future, blockchains will be able to
                 handle large streams of data that can power data-heavy interactions from machine learning to data mining
-                solutions and much much more. Once that moment arrives, Redstone will be ready with a smart contracts
+                solutions and much much more. Once that moment arrives, Warp will be ready with a smart contracts
                 protocol to facilitate that change.</p>
             </div>
           </div>
@@ -852,6 +852,11 @@
         });
       return state
     }
+    $("#tokens").on("input", function () {
+      if (/^0/.test(this.value)) {
+        this.value = this.value.replace(/^0/, "")
+      }
+    })
   </script>
 </body>
 
