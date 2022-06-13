@@ -1,0 +1,108 @@
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg24"
+   version="1.1"
+   viewBox="0 0 380 280">
+  <metadata
+     id="metadata30">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs28" />
+  <svg
+     height="100%"
+     width="100%"
+     id="svg7"
+     version="1.1"
+     viewBox="0 0 380 280">
+    <linearGradient
+       y2="0"
+       x2="1"
+       y1="0"
+       x1="0"
+       id="bg_color_gradient">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         id="stop4"
+         offset="0%" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         id="stop6"
+         offset="100%" />
+    </linearGradient>
+    <path
+       id="rect5"
+       d="M 0,0 H 380 V 280 H 0 Z"
+       style="fill:url(#bg_color_gradient);fill-opacity:0" />
+  </svg>
+  <svg
+     id="svg13"
+     version="1.1"
+     height="64"
+     width="64"
+     y="88.5625"
+     x="158">
+    <svg
+       height="100%"
+       width="100%"
+       id="svg11"
+       version="1.1"
+       viewBox="0 0 100 100">
+      <path
+         style="fill:#6fa2f2;fill-rule:evenodd;stroke:none"
+         id="path9"
+         d="m 47.4,0.616 c -0.676,0.307 -3.128,2.632 -9.851,9.346 l -8.95,8.938 0.01,4.3 0.01,4.3 8.967,-9.05 c 4.932,-4.977 9.022,-9.05 9.09,-9.05 0.067,0 0.145,8.071 0.173,17.935 l 0.051,17.936 0.511,-0.786 c 1.83,-2.812 1.828,-2.78 1.667,-25.235 C 48.924,-2.114 49.101,-0.154 47.4,0.616 M 50.844,20.423 50.9,40.7 51.35,42 c 0.247,0.715 0.742,1.75 1.1,2.3 l 0.65,1 0.1,-17.961 0.1,-17.961 8.978,9.011 c 4.938,4.956 9.01,9.011 9.05,9.011 0.04,0 0.072,-1.91 0.072,-4.245 V 18.911 L 62.85,10.348 C 54.151,1.637 52.854,0.481 51.534,0.267 L 50.789,0.146 50.844,20.423 M 9.961,37.55 C 0.945,46.575 0.217,47.411 0.204,48.75 L 0.2,49.2 h 5.2 c 5.648,0 5.696,-0.006 4.15,-0.511 -0.577,-0.188 -1.128,-0.387 -1.223,-0.442 -0.095,-0.054 3.461,-3.755 7.902,-8.223 4.441,-4.468 8.792,-8.867 9.668,-9.774 l 1.594,-1.65 h -4.295 -4.295 l -8.94,8.95 M 72.6,28.749 c 0,0.082 4.338,4.488 9.64,9.791 6.438,6.439 9.544,9.677 9.35,9.749 -0.159,0.058 -0.65,0.236 -1.09,0.395 -0.736,0.265 -0.394,0.289 4.25,0.302 5.708,0.016 5.406,0.119 4.634,-1.586 -0.307,-0.676 -2.632,-3.128 -9.346,-9.851 L 81.1,28.599 h -4.25 c -2.337,0.001 -4.25,0.068 -4.25,0.15 m -3.385,27.66 c -8.407,3.073 -15.447,5.638 -15.646,5.701 -0.337,0.107 -0.364,-0.127 -0.415,-3.634 L 53.1,54.728 52.589,55.514 c -1.83,2.814 -1.828,2.781 -1.667,25.236 0.154,21.364 -0.023,19.403 1.678,18.635 0.678,-0.306 3.108,-2.612 9.85,-9.346 L 71.4,81.099 71.398,76.7 71.397,72.3 62.309,81.5 53.222,90.7 53.216,80.2 53.21,69.7 70.037,63.049 c 9.255,-3.658 16.85,-6.628 16.878,-6.6 0.027,0.028 -3.237,3.403 -7.253,7.501 l -7.303,7.45 4.37,10e-4 H 81.1 l 8.938,-8.95 C 99.046,53.43 99.783,52.584 99.796,51.25 L 99.8,50.8 92.15,50.811 84.5,50.823 69.215,56.409 M 0.204,51.35 C 0.22,52.575 1.1,53.576 9.962,62.451 l 8.938,8.95 h 4.374 L 27.647,71.4 20.299,63.9 c -4.042,-4.125 -7.27,-7.495 -7.174,-7.49 0.096,0.006 7.69,2.999 16.875,6.652 l 16.7,6.642 0.052,10.448 C 46.78,85.898 46.777,90.6 46.745,90.6 46.68,90.6 35.152,78.998 31.146,74.9 l -2.542,-2.6 -0.002,4.4 -0.002,4.399 8.95,8.94 c 9.034,9.024 9.86,9.744 11.206,9.757 L 49.213,99.8 49.156,79.55 49.099,59.3 48.65,58 c -0.247,-0.715 -0.742,-1.75 -1.1,-2.3 l -0.65,-1 -0.054,3.75 c -0.03,2.063 -0.08,3.75 -0.11,3.75 -0.031,0 -6.978,-2.52 -15.44,-5.6 L 15.912,51 H 8.056 C 0.706,51 0.2,51.023 0.204,51.35" />
+    </svg>
+  </svg>
+  <g
+     transform="translate(190,172)"
+     id="container">
+    <g
+       id="text15"
+       style="font-size:40px;font-family:'REEJI-Bright-ExtraBoldGB1.0';fill:#81b0fc;fill-opacity:1"
+       aria-label="e">
+      <path
+         id="path33"
+         style="font-size:40px;font-family:'REEJI-Bright-ExtraBoldGB1.0';fill:#81b0fc;fill-opacity:1"
+         d="m -39.755,0.8275 h 4.04 q 0.84,0 0.84,-0.84 v -9.08 h -4.88 z m -9.28,12.44 v -25.36 h 23.44 v 13.4 q 0,1.04 -0.72,1.76 -0.72,0.72 -1.76,0.72 h -11.68 v 6.52 h 14.24 l -1.6,2.96 z" />
+    </g>
+    <g
+       id="text17"
+       style="font-size:40px;font-family:'REEJI-Bright-ExtraBoldGB1.0';fill:#81b0fc;fill-opacity:1"
+       aria-label="v">
+      <path
+         id="path36"
+         style="font-size:40px;font-family:'REEJI-Bright-ExtraBoldGB1.0';fill:#81b0fc;fill-opacity:1"
+         d="m -23.66,-12.1725 h 9.28 l 3.92,16.28 3.92,-16.28 h 9.28 l -6.56,25.44 H -17.1 Z" />
+    </g>
+    <g
+       id="text19"
+       style="font-size:40px;font-family:'REEJI-Bright-ExtraBoldGB1.0';fill:#81b0fc;fill-opacity:1"
+       aria-label="e">
+      <path
+         id="path39"
+         style="font-size:40px;font-family:'REEJI-Bright-ExtraBoldGB1.0';fill:#81b0fc;fill-opacity:1"
+         d="m 14.12,0.8275 h 4.04 q 0.84,0 0.84,-0.84 v -9.08 h -4.88 z m -9.28,12.44 v -25.36 h 23.44 v 13.4 q 0,1.04 -0.72,1.76 -0.72,0.72 -1.76,0.72 H 14.12 v 6.52 h 14.24 l -1.6,2.96 z" />
+    </g>
+    <g
+       id="text21"
+       style="font-size:40px;font-family:'REEJI-Bright-ExtraBoldGB1.0';fill:#81b0fc;fill-opacity:1"
+       aria-label="r">
+      <path
+         id="path42"
+         style="font-size:40px;font-family:'REEJI-Bright-ExtraBoldGB1.0';fill:#81b0fc;fill-opacity:1"
+         d="m 39.495,13.2675 h -9.28 v -26.68 h 9.28 v 4 l 4.72,-2.4 h 4.96 v 6.52 h -6.72 l -2.96,1.64 z" />
+    </g>
+  </g>
+</svg>

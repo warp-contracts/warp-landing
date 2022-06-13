@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <head>
   <meta charset="utf-8">
@@ -10,7 +12,7 @@
 <!-- ===============================================-->
 <!--    Document Title-->
 <!-- ===============================================-->
-<title>Redstone SmartContracts</title>
+<title>Warp SmartContracts</title>
 
 
 <!-- ===============================================-->
@@ -22,7 +24,8 @@
 <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/smartweave-favicon.png">
 <link rel="manifest" href="assets/img/favicons/manifest.json">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="Highly customizable DeFi data streams delivered quickly, reliably and cost-efficiently.">
+<meta name="description"
+  content="Highly customizable DeFi data streams delivered quickly, reliably and cost-efficiently.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FT767HW5C2"></script>
 <script async>
   window.dataLayer = window.dataLayer || [];
@@ -33,7 +36,8 @@
   gtag('js', new Date());
   gtag('config', 'G-FT767HW5C2');
 </script>
-<script async src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
+<script async
+  src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
 
 
 <!-- ===============================================-->
@@ -41,445 +45,512 @@
 <!-- ===============================================-->
 <link href="/assets/css/theme.css" rel="stylesheet" lazyload />
 
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css"></noscript>
-
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css" as="style"
+  onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css">
+</noscript>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 
 <body>
 
-  <!-- ===============================================-->
-  <!--    Main Content-->
-  <!-- ===============================================-->
-  <main class="main" id="top">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
-    <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#intro"><img src="assets/img/smartweave-logo.svg" width="223" height="58" alt="Redstone logo" /></a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-            <!--li.nav-item(data-anchor)-->
-            <!--  a.nav-link.fw-medium(aria-current='page', href='#home' class= currentPage === 'index' ? 'active' : false ) Home-->
-            
-                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#motivation">Motivation</a></li>
-                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#sdk">SDK</a></li>
-                <!-- <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#network">Network</a></li> -->
-                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#features">Features</a></li>
-                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#vision">Vision</a></li>
-                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#resources">Resources</a></li>
-                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#community">Community</a></li>
-                <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#contact">Contact</a></li>
-            
+  <div style="overflow-x: hidden;">
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#intro"><img
+        src="assets/img/warp-logo-full.svg" alt="Redstone logo" style="width: 150px" /></a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+        <!--li.nav-item(data-anchor)-->
+        <!--  a.nav-link.fw-medium(aria-current='page', href='#home' class= currentPage === 'index' ? 'active' : false ) Home-->
+        
+        <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#about">About</a>
+        </li>
+        <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#sdk">SDK</a>
+        </li>
+        <!-- <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#network">Network</a></li> -->
+        <!-- <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#features">Features</a>
+        </li> -->
+        <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#resources">Resources</a>
+        </li>
+        <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#community">Community</a>
+        </li>
+        <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#vision">Vision</a>
+        </li>
+        
+      </ul>
+      <div class="d-flex align-items-center ml-5">
+        <ul class=" list-unstyled list-inline mb-0">
+          <li class="list-inline-item me-3">
+            <a href="https://twitter.com/redstone_defi" target="_blank" rel="noreferrer noopener">
+              <img src="/assets/img/icons/twitter-black.svg" style="height: 24px;" alt="Twitter icon" />
+            </a>
+          </li>
+          <li class="list-inline-item me-3">
+            <a href="https://discord.com/invite/PVxBZKFr46" target="_blank" rel="noreferrer noopener">
+              <img src="/assets/img/icons/discord-black.svg" style="height: 24px;" alt="Discord icon" />
+            </a>
+          </li>
+          <li class="list-inline-item me-3">
+            <a href="https://github.com/redstone-finance" target="_blank" rel="noreferrer noopener">
+              <img src="/assets/img/icons/github-nav.svg" style="height: 20px;" alt="Github icon" />
+            </a>
+          </li>
         </ul>
-        <form class="ps-lg-5 text-end text-lg-center mt-3 mt-lg-0"><a class="button btn btn-lg btn-danger rounded-pill order-0" href="https://www.npmjs.com/package/redstone-smartweave" target="_blank">Try it out</a></form>
-        </div>
+      </div>
     </div>
+  </div>
 </nav>
 
-
-    <div class="oval right"></div>
-    <div class="oval bottom"></div>
-    <div class="oval left"></div>
-
-    
-    <section class="" id="intro">
-      <div class="container position-relative h-100">
-        <div class="row mt-5 mt-md-6 mb-8 align-items-center">
-          <div class="col-12 col-md-6 text-center text-md-start">
-            <div class="h1 mb-4 mb-md-2 display-3 fw-bold lh-sm mt-lg-0">Data-centered smart contracts protocol</div>
-            <p class="my-3 my-md-4 fs-1 text-center text-md-start">A new generation of smart contracts designed to efficiently handle large datasets powered by 
-              <a target="_blank" href="https://www.arweave.org/">Arweave</a>.</p>
-            <a class="btn btn-lg btn-danger rounded-pill"
-              href="https://www.npmjs.com/package/redstone-smartweave" target="_blank" role="button">Try it out</a>
-              <a class="btn btn-link ps-md-4 fw-medium" href="#motivation" role="button"> Learn more </a>
-        </div>
-        <div  class="col-12 col-md-6 px-2 px-md-6" id="weave-animation"></div>
-      </div>
-    </section>
-    <!-- <section> close ============================-->
-    <!-- ============================================-->
+      <div class="oval right"></div>
+      <div class="oval bottom"></div>
+      <div class="oval left"></div>
 
 
-        <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <section class="py-4 py-lg-0" id="motivation">
+      <section class="" id="intro">
+        <div class="container position-relative h-100">
+          <div class="row mt-5 mt-md-6 mb-8 align-items-center">
+            <div class="col-12 col-md-6 text-center text-md-start">
+              <p class="my-3 my-md-4 fs-2 text-center text-md-start">Fast. Secure. Convenient.
+              </p>
+              <div class="h1 mb-4 mb-md-2 display-4 fw-bold lh-sm mt-lg-0">Smart contracts<br /> on
+                Arweave</div>
 
-      <div class="container">
-        <div class="row justify-content-center mb-3 flex-column-reverse flex-md-row">
-          <div class="col-sm-10 col-lg-6 text-center baloon-container">
-            <div id="baloon-animation"></div>
-            <div class="italic f-sm">Ethereum <a target="_blank" href="https://etherscan.io/chartsync/chainarchive">full-archive state</a> by Etherscan</a></div>
-          </div>
-          <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-2">
-            <div class="p-title lh-sm mb-4 mb-mb-3">Blockchain data problem</div>
-            <p class="mb-0">
-              Most smart contracts treat data as a side-product that slows down processing. 
-              Data is digested, pruned, and pushed out to side chains. Nonetheless, the bloated global state is still the biggest challenge of modern blockchains.                           
-            </p>
-            <ul class="no-list mt-3 mt-md-2">
-              <li><span>Enormous sizes of EVMs’ global states</span></li>
-              <li><span>Extreme costs of data storage</span></li>
-              <li><span>Weak connection between tokens and content</span></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-3">
-          <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
-            <div class="p-title lh-sm mb-4 mb-md-3">How Redstone SmartContracts solve that</div>
-            <p class="mb-0">
-              We have a radically different design where data is treated as the most valuable asset.
-              We get rid of the ever-growing global state by separating the storage from the computation.
-              The contracts can be evaluated on-demand and “lazily”, which creates the potential for unparalleled scalability.
-            </p>
-            <ul class="yes-list mt-3 mt-md-2">
-              <li><span>Decoupling storage from computation</span></li>
-              <li><span>Flexible lazy-evaluation pattern</span></li>
-              <li><span>The ability to directly process rich content</span></li>
-            </ul>
-            <p>
-              Building our solution on the <a href="https://smartweave.redstone.finance">Arweave</a> chain (which is the most innovative 
-              and scalable storage solution out there), allows us to save time on the development 
-              of the basic infrastructure. Arweave has a thriving community of users and developers 
-              with a growing need for an efficient smart contracts protocol.  
-            </p>
-          </div>
-          <div class="col-sm-10 col-lg-6">
-            <div id="gears-animation" height="80%"></div>
-          </div>
-        </div>
-      </div><!-- end of .container-->
-    </section>
-
-    <section class="pt-6 pb-3" id="sdk">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">SDK</div>
-            <p class="mb-0 text-center">This is a core module responsible for the evaluation of smart contracts.
-              <br class="d-md-none" />
-              Check it out on 
-              <a href="https://www.npmjs.com/package/redstone-smartweave" target="_blank" rel="noreferrer noopener">
-                <img width="40" src="/assets/img/icons/npm.png" />
+              <a class="btn btn-lg btn-danger rounded-pill mt-4"
+                href="https://www.npmjs.com/package/redstone-smartweave" target="_blank" role="button">Try it out</a>
+              <a class="btn btn-link ps-md-4 fw-medium mt-4" href="https://redstone.academy/" target="_blank"> Learn
+                more
               </a>
-              and
-              <a href="https://github.com/redstone-finance/redstone-smartweave" target="_blank" rel="noreferrer noopener">
-                <img width="22" src="/assets/img/icons/github-black.svg" alt="Github icon" style="transform: translateY(-2px)"/>
-              </a>.
-          </div>
-        </div>
-        
-        <div class="row justify-content-center mt-4 mb-2">
-          <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-5 mt-4 text-center text-md-start align-self-center">
-            <div class="p-title lh-sm mb-4 mb-md-3">Architecture</div>
-            <p class="mb-0">We based our solution on the Arweave's innovative approach to smart contracts and their initial 
-              version of the SmartWeave SDK. We've designed and built our implementation, focusing on performance, modularity adding multiple enhancements and optimizations.
-              </p>
-          </div>
-          <div class="col-sm-10 col-lg-6 px-0">
-            <img class="d-md-none" src="assets/img/illustrations/architecture_mobile.svg" width="100%" />
-            <img class="d-none d-md-block" src="assets/img/illustrations/architecture.svg" width="100%" />
-          </div>
-        </div>
-        <div class="row justify-content-center mb-6 mt-6 flex-column-reverse flex-md-row">
-          <div class="col-sm-10 col-lg-6 d-flex flex-column align-items-center">
-            <div class="fw-bold mb-3 align-self-center align-self-md-start performance-gain blue">Performance improvement</div>
-            <div class="d-flex">
-              <div class="d-flex flex-column justify-content-around pt-4 pb-3 pe-2">
-                <a target="_blank" class="chart-link first" href="https://viewblock.io/arweave/tx/usjm4PCxUd5mtaon7zc97-dt-3qf67yPyqgzLnLqk5A">usjm4P...<span class="d-none d-md-inline">qk5A</span></a>
-                <a target="_blank" class="chart-link first" href="https://viewblock.io/arweave/tx/mzvUgNc8YFk0w5K5H7c8pyT-FC5Y_ba0r7_8766Kx74">mzvUgN...<span class="d-none d-md-inline">Kx74</span></a>
-                <a target="_blank" class="chart-link first" href="https://viewblock.io/arweave/tx/LkfzZvdl_vfjRXZOPjnov18cGnnK3aDKj0qSQCgkCX8">LkfzZv...<span class="d-none d-md-inline">kCX8</span></a>
-              </div>
-              <div>
-                <div class="fw-medium mb-2">First read</div>
-                <img class="benchmark-chart d-md-none" src="assets/img/illustrations/chart_first_read_mobile.png" />
-                <img class="benchmark-chart d-none d-md-block"src="assets/img/illustrations/chart_first_read.png" />
-                <div class="d-flex justify-content-between chart-scale">
-                  <div>0</div>
-                  <div>5x</div>
-                  <div>10x</div>
-                  <div>15x</div>
-                </div>
-              </div>
             </div>
-            <div class="d-flex mt-3">
-              <div class="d-flex flex-column justify-content-around pt-4 pb-3 pe-2">
-                <a target="_blank" class="chart-link consecutive" href="https://viewblock.io/arweave/tx/usjm4PCxUd5mtaon7zc97-dt-3qf67yPyqgzLnLqk5A">usjm4P...<span class="d-none d-md-inline">qk5A</span></a>
-                <a target="_blank" class="chart-link consecutive" href="https://viewblock.io/arweave/tx/mzvUgNc8YFk0w5K5H7c8pyT-FC5Y_ba0r7_8766Kx74">mzvUgN...<span class="d-none d-md-inline">Kx74</span</a>
-                <a target="_blank" class="chart-link consecutive" href="https://viewblock.io/arweave/tx/LkfzZvdl_vfjRXZOPjnov18cGnnK3aDKj0qSQCgkCX8">LkfzZv...<span class="d-none d-md-inline">kCX8</span></a>
-              </div>
-              <div>
-                <div class="fw-medium mb-2">Consecutive read</div>
-                <img class="benchmark-chart d-md-none" src="assets/img/illustrations/chart_consecutive_read_mobile.png" />
-                <img class="benchmark-chart d-none d-md-block"src="assets/img/illustrations/chart_consecutive_read.png" />
-                <div class="d-flex justify-content-between chart-scale">
-                  <div>0</div>
-                  <div>50x</div>
-                  <div>100x</div>
-                  <div>150x</div>
-                  <div>200x</div>
-                  <div>250x</div>
-                </div>
-              </div>
-            </div>
-            <div class="mt-4 italic f-sm">Benchmarks created with scripts available in <a target="_blank" href="https://github.com/redstone-finance/redstone-smartweave-examples/tree/main/src">our repository</a></div>
+            <div class="col-12 col-md-6 px-2 px-md-6" id="weave-animation"></div>
           </div>
-          <div class="col-sm-10 col-lg-6 mx-auto mb-3 mb-md-0 text-center text-md-start align-self-center">
-            <div class="p-title lh-sm mb-4 mb-md-3">Improved performance</div>
-            <p class="mb-0">Optimization of contract evaluation and caching mechanisms allowed us to reach speed of contract evaluation not yet seen on
-              Arweave blockchain. 
-              </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="pb-3" id="features">
-      <div class="container">
-        <div class="row justify-content-center mb-4 mb-md-6">
-          <div class="col-sm-10 col-lg-12 text-center mx-auto">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm">What's there already</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="text-center px-lg-3">
-              <div class="features-image-wrapper">
-                  <img loading="lazy" class="lazy img-fluid img-features mb-2"
-                  src="assets/img/icons/fast.svg" alt="Speed-o-meter" height="60" width="60" />
-              </div>
-              <div class="h5 fw-bold">Performance</div>
-              <p class="mb-md-0  text-center">Caching data inputs</p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="text-center px-lg-3">
-              <div class="features-image-wrapper">
-                <img loading="lazy" class="lazy img-fluid img-features mb-2"
-                src="assets/img/icons/cost-efficient.svg" alt="Efficiency" height="60" width="60" />
-              </div>
-              <div class="h5 fw-bold">Efficiency</div>
-              <p class="mb-md-0  text-center">Memoizing computations</p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="text-center px-lg-3">
-              <div class="features-image-wrapper">
-                <img loading="lazy" class="lazy img-fluid img-features mb-2"
-                src="assets/img/icons/read.svg" alt="Decentralized structure" height="70" width="70"  />
-              </div>
-              <div class="h5 fw-bold">Interoperability</div>
-              <p class="mb-md-0  text-center">Interactive reads from external contracts
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center mt-8 mb-4 mb-md-6">
-          <div class="col-sm-10 col-lg-12 text-center mx-auto">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm">What's coming</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-3 mb-md-5">
-            <div class="text-center px-lg-3">
-              <div class="features-image-wrapper">
-                <img loading="lazy" class="lazy img-fluid img-features mb-2"
-                src="assets/img/icons/decentralized.svg" alt="Decentralized structure" height="55" width="55"  />
-              </div>    
-              <div class="h5 fw-bold">Distributed Execution Network</div>
-              <p class="mb-md-0  text-center">A trustless set of nodes responsible for delegated computation and speeding-up data access
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 mb-md-5">
-            <div class="text-center px-lg-3">
-              <div class="features-image-wrapper">
-                <img loading="lazy" class="lazy img-fluid img-features mb-2"
-                src="assets/img/icons/writing.svg" alt="Decentralized structure" height="60" width="60"  />
-              </div>  
-              <div class="h5 fw-bold">Extended Functionality</div>
-              <p class="mb-md-0  text-center">Allowing contracts to modify the state of other contracts and implementing an upgrade mechanism for contracts</p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 mb-md-5">
-            <div class="text-center px-lg-3">
-              <div class="features-image-wrapper">
-                <img loading="lazy" class="lazy img-fluid img-features mb-2"
-                  src="assets/img/icons/shield.svg" alt="Contract" height="60" width="60"  />
-                </div>
-              <div class="h5 fw-bold">Security</div>
-              <p class="mb-md-0  text-center">Sandboxing the execution environment preventing malicious code from harming users’ environment</p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 mb-md-5">
-            <div class="text-center px-lg-3">
-              <div class="features-image-wrapper">
-                <img loading="lazy" class="lazy img-fluid img-features mb-2"
-                src="assets/img/icons/replay.svg" alt="Contract" height="60" width="60"  />
-              </div>  
-              <div class="h5 fw-bold">Deterministic external calls</div>
-              <p class="mb-md-0  text-center">Intercepting and persisting answers from external API’s allowing to rebuilt contract state deterministically</p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 mb-md-5">
-            <div class="text-center px-lg-3">
-              <div class="features-image-wrapper">
-                <img loading="lazy" class="lazy img-fluid img-features mb-2"
-                src="assets/img/icons/incognito.svg" alt="Contract" height="60" width="60"  />
-              </div>  
-              <div class="h5 fw-bold">Privacy</div>
-              <p class="mb-md-0  text-center">Ability to create a virtual network that will use encrypted data available to trusted parties
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 mb-md-5">
-            <div class="text-center px-lg-3">
-              <div class="features-image-wrapper">
-                <img loading="lazy" class="lazy img-fluid img-features mb-2"
-                src="assets/img/icons/tools.svg" alt="Multitool" height="60" width="60"  />
-              </div>  
-              <div class="h5 fw-bold">Devex</div>
-              <p class="mb-md-0  text-center">Developing tools for code testing, automatic deployment, real-time monitoring, and debugging</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
 
-    <section class="pb-3" id="vision">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm">Vision</div>
-            <div class="d-flex justify-content-around align-items-center mt-6 mx-auto vision-icons">
-              <img  src="assets/img/icons/bitcoin.svg" />
-              <img class="chevron" src="assets/img/icons/right-chevron.svg" />
-              <img  src="assets/img/icons/ethereum.svg" />
-              <img class="chevron" src="assets/img/icons/right-chevron.svg" />
-              <img  src="assets/img/icons/nft.svg" />
-              <img class="chevron" src="assets/img/icons/right-chevron.svg" />
-              <img  src="assets/img/icons/data.svg" />
-            </div>
-            <p class="mb-0 mt-6 mx-md-6 px-md-6">Blockchains have come a long way from a medium of a single coin, 
-              through embracing more sophisticated tokens towards managing media-rich NFTs. Every iteration 
-              introduced more content-rich assets. We believe that in the future, blockchains will be able to handle 
-              large streams of data that can power machine learning and data mining solutions. When that moment comes, we’ll 
-              be ready by having a smart contracts protocol to facilitate that change. </p>
-          </div>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <div id="about" class="py-5">
+        <section class="py-5 mb-5">
+          <div class="container">
+            <div class="row justify-content-center mb-3 flex-column-reverse flex-md-row align-items-center mb-5">
+              <div class="col-sm-10 col-lg-5 text-center text-md-start mx-auto mb-2 order-1 order-sm-0">
+                <div class="p-title lh-sm mb-2 fs-6 light-blue text-left">Fast</div>
+                <p class="font-weight-bold blue lh-sm fs-2 text-left">Transactions processed in seconds, not minutes.
+                </p>
+
+                <p>Data input has been optimized by building a <span class="font-weight-bold">sequencer</span> which
+                  sorts incoming transactions. Sorted
+                  interactions are instantly delegated to the Bundlr network for guaranteed persistence on the Arweave
+                  chain.
+                </p>
+                <p>
+                  The output side has also been improved, through the creation of a dedicated <span
+                    class="font-weight-bold">gateway</span> which indexes the
+                  transactions. This enables fast queries and efficient filtering of interactions, which in effect
+                  greatly reduces state evaluation time.
+                </p>
+                <p>Multi-node <span class="font-weight-bold">execution</span> network listens for incoming transactions
+                  and automatically updates contract state.
+
+
+                </p>
+              </div>
+              <div class="col-sm-10 offset-lg-1 col-lg-6 text-center baloon-container">
+                <div class="col-12 col-md-10 offset-md-1 mt-5 mt-sm-5">
+    <div class="mb-3" style="font-weight: 500;">Try minting some PST tokens with <a target="_blank"
+            href="https://sonar.redstone.tools/#/app/contract/5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI"> this
+            contract</a>, to test the execution speed yourself.
+
+    </div>
+    <div class="d-flex justify-content-between pb-3">Balance: <span class="balance-el font-weight-bold"></span></div>
+    <div class="d-sm-flex justify-content-between pb-3">Your temporary wallet: <span
+            class="address-el font-weight-bold"></span>
+    </div>
+    <form>
+        <div class="form-group">
+            <input type="number" inputmode="numeric" pattern="[1-9]*" id="tokens" name="tokens" class="form-control"
+                placeholder="Tokens">
         </div>
-      </div>
+        <button class="button btn btn-lg btn-danger rounded-pill order-0 mint btn-block mt-0">Mint</button>
+    </form>
+    <div class="d-flex justify-content-center pt-2" style="height: 40px">
+        <div class="mt-2 interaction"></div>
+    </div>
+</div>
+<script src="assets/js/theme.js" type="text/javascript"></script>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-5">
+          <div class="container">
+            <div class="row justify-content-center mb-3 align-items-center mb-5">
+              <div class="col-sm-10 col-lg-5 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4 order-1 order-sm-0">
+                <div class="p-title lh-sm mb-2 fs-6 light-blue text-left">Secure</div>
+                <p class="font-weight-bold blue lh-sm fs-2 text-left">WASM sandboxed execution environment</p>
 
-    </section>
+                <p>
+                  Writing contracts in JavaScript is a great first step for newcomers. However, once an application
+                  begins to gain traction, a more mature and robust solution may become necessary.
 
-    <section id="resources">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-sm-10 col-lg-12 text-center mx-auto">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-7">Resources</div>
-            <div class="row justify-content-center mb-2 mt-4 align-items-center">
-              <div class="col-sm-10 col-lg-6 mb-5 mb-md-0">
-                <div class="d-flex flex-column align-items-center doc-links">
-                  <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank" href="https://github.com/redstone-finance/redstone-smartweave/blob/hatskier/migration-guide/docs/MIGRATION_GUIDE.md">
-                    <p>Migration guide</p>
-                    <img src="/assets/img/icons/arrow-right.svg">
-                  </a>
-                  <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank" href="https://github.com/redstone-finance/redstone-smartweave-examples">
-                    <p>Examples</p>
-                    <img src="/assets/img/icons/arrow-right.svg">
-                  </a>
-                  <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank" href="https://github.com/redstone-finance/smartweave-loot">
-                    <p>Getting started</p>
-                    <img src="/assets/img/icons/arrow-right.svg">
-                  </a>
-                  <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank" href="https://github.com/redstone-finance/redstone-smartweave/blob/main/README.md">
-                    <p>Readme</p>
-                    <img src="/assets/img/icons/arrow-right.svg">
-                  </a>
-                  <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank" href="https://smartweave.docs.redstone.finance">
-                    <p>Documentation</p>
-                    <img src="/assets/img/icons/arrow-right.svg">
-                  </a>
+
+                </p>
+                <p>
+                  Warp leverages <span class="font-weight-bold">WASM</span> in order to guarantee deterministic
+                  execution as well as securing its users with a
+                  developer-friendly sandboxed execution environment. Contracts may be implemented in either
+                  <span class="font-weight-bold">AssemblyScript, Go & Rust</span> ensuring a balance between the
+                  familiar syntax of AS and the cutting edge
+                  performance of Rust.
+                </p>
+                <p>
+                  Warp’s <span class="font-weight-bold">gateway</span> also provides a added protection against forks
+                  and <a href="https://github.com/redstone-finance/redstone-sw-gateway#corrupted-transactions"
+                    target="_blank">corrupted interactions.</a>
+                </p>
+              </div>
+              <div class="col-sm-10 col-lg-6 offset-lg-1 order-1 order-sm-0">
+                <div class="your-class">
+                  <div class="">
+                    <img src="assets/img/code/rust.png" style="width: 100%;" />
+                    <div class="text-center blue-text">Rust</div>
+                  </div>
+                  <div class="">
+                    <img src="assets/img/code/as.png" style="width: 100%;" />
+                    <div class="text-center blue-text">Assemblyscript</div>
+                  </div>
+                  <div class="">
+                    <img src="assets/img/code/go.png" style="width: 100%;" />
+                    <div class="text-center blue-text">Go</div>
+
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-10 col-lg-6">
+            </div>
+          </div>
+        </section>
+        <section class="py-5">
+          <div class="container">
+            <div class="row justify-content-center mb-3 flex-column-reverse flex-md-row align-items-center mb-5">
+              <div class="col-sm-10 col-lg-5 text-center text-md-start mx-auto mb-2 order-1 order-sm-0">
+                <div class="p-title lh-sm mb-2 fs-6 light-blue text-left">Convenient</div>
+                <p class="font-weight-bold blue lh-sm fs-2 text-left">A set of tools for developers</p>
+
+                <p><a href="https://sonar.redstone.tools">SonAR</a> allows for up to date monitoring of contracts by
+                  displaying the transaction status, current contract state, and providing error notifications.
+
+                </p>
+
+                <p><a href="https://testnet.redstone.tools">A dedicated test network</a> for experimenting with
+                  contracts without incurring transaction fees. The network is also indexed by SonAR.
+
+                </p>
+
+                <p>A set of <a href="https://github.com/redstone-finance/redstone-smartcontracts-wasm-templates">project
+                    templates</a> has been prepared in order to speed up the process of scaffolding
+                  contract’s structure and linking connecting importing to proper tools and libraries.</p>
+
+                <p>In addition, <a href="https://redstone.academy">Redstone
+                    Academy</a>, a dedicated learning platform that will guide developers through the process of
+                  creating, deploying and testing smart contracts using our protocols.</p>
+
+              </div>
+              <div class="col-sm-10 col-lg-6 offset-lg-1 baloon-container mt-5 mt-sm-0">
+                <img src="assets/img/academy.png" width="85%" class="float-left mt-n5" />
+                <img src="assets/img/sonar-main.png" width="85%" class="float-right" style="margin-top: -5rem;" />
+              </div>
+            </div>
+          </div><!-- end of .container-->
+      </div>
+      </section>
+
+      <section class="pt-6 pb-3" id="sdk">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
+              <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">SmartWeave contracts on steroids</div>
+
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center mb-3">
+            <div class="col-sm-10 col-lg-6 order-1 order-sm-0">
+              <img src="assets/img/code/cross-contract.png" style="width: 100%;" />
+            </div>
+            <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4 order-0 order-sm-1">
+              <div class="p-title lh-sm mb-4 mb-md-3">Cross contract calls</div>
+              <div class="fs-1">an easy way to access and modify external contract state.</div>
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center mb-3">
+            <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
+              <div class="p-title lh-sm mb-4 mb-md-3 text-sm-right">Bundled interactions and contracts deployment</div>
+              <div class="fs-1 text-sm-right">instant transactions and contracts availability and finality</div>
+            </div>
+            <div class="col-sm-10 col-lg-6">
+              <img src="assets/img/code/bundled.png" style="width: 100%;" />
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center mb-3">
+            <div class="col-sm-10 col-lg-6 order-1 order-sm-0 text-right">
+              <img src="assets/img/code/vrf.png" style="width: 100%;" />
+            </div>
+            <div class="col-sm-10 col-lg-6 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
+              <div class="p-title lh-sm mb-4 mb-md-3">Verifiable randomness</div>
+              <div class="fs-1">generate randomness that is verifiable on-chain</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-6 pb-3" id="sdk">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
+              <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">How it works</div>
+
+            </div>
+          </div>
+          <div class="row mt-4 mb-2 justify-content-center">
+            <div class="col-sm-10 px-0 mb-md-5 mt-md-5">
+              <img class="d-block" src="assets/img/warp_transaction_lifecycle.svg" width="100%" />
+            </div>
+            <div
+              class="col-sm-10 col-lg-10 offset-lg-1 mx-auto mb-3 mb-md-5 mt-4 text-center text-center align-self-center">
+              <p class="mb-0">Enhanced smart contract platform by making the processing and evaluation of transactions
+                simple and effective.
+
+
+              <ol class="mt-3 mt-md-2 text-left list">
+                <li><span class="aligned">The <span class="font-weight-bold">sequencer</span> sorts SmartWeave
+                    interactions, taking into account the
+                    sequencer’s timestamp and the current Arweave network block height, and is salted with the
+                    sequencer’s key.</span></li>
+                <li><span class="aligned">Interactions are then packed by <span class="font-weight-bold">Bundlr</span>
+                    which guarantees transactions finality
+                    and complete data upload reliability.</span></li>
+                <li><span class="aligned">Transactions are stored on <span class="font-weight-bold">Arweave</span> where
+                    they are available for querying.</span></li>
+                <li><span class="aligned">The key component for the lazy-evaluation nature of the SmartWeave protocol is
+                    fast and reliable interaction loading. Through Warp’s <span class="font-weight-bold">gateway</span>,
+                    which contains built-in
+                    protection against forks and corrupted transactions, reliable loading of transactions is
+                    guaranteed.</span></li>
+                <li><span class="aligned">Transactions may be evaluated either through Warp’s <span
+                      class="font-weight-bold">SDK</span>, or delegated to a
+                    distribution execution network - a dedicated network of nodes (<span
+                      class="font-weight-bold">DEN</span>).</span></li>
+                </ul>
+
+                </p>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div class="col-sm-10 col-lg-5 text-center text-md-start mx-auto mb-3 mb-md-5 mt-4">
+              <div class="p-title lh-sm mb-4 mb-md-3">State separated from execution</div>
+              <p class="mb-0">
+                Introducing a radically different design where the most valuable asset is the data itself. By separating
+                storage from computation, there is no further need of the ever-growing global state. Contracts can now
+                be evaluated on-demand as well as “lazily”, which in turn creates the potential for unparalleled
+                scalability.
+              </p>
+              <ul class="yes-list mt-3 mt-md-2">
+                <li><span>Decoupling storage from computation</span></li>
+                <li><span>Flexible lazy-evaluation pattern</span></li>
+                <li><span>The ability to directly process rich content</span></li>
+              </ul>
+            </div>
+            <div class="col-sm-10 col-lg-6 offset-lg-1">
+              <div id="gears-animation" height="80%"></div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-4 mb-2">
+            <div class="col-sm-10 col-lg-5 mx-auto mb-3 mb-md-5 mt-4 text-center text-md-start align-self-center">
+              <div class="p-title lh-sm mb-4 mb-md-3">Flexible execution environment</div>
+              <p class="mb-0">Solution based on Arweave's innovative approach to smart contracts and their initial
+                release of <a href="https://github.com/ArweaveTeam/SmartWeave" target="_blank">SmartWeaveJS</a>. Warp's
+                implementation has been designed and built focusing on
+                performance and modularity, adding various enhancements and optimizations.
+              </p>
+            </div>
+            <div class="col-sm-10 col-lg-6 offset-lg-1 px-0">
+              <img class="d-md-none" src="assets/img/illustrations/architecture_mobile.svg" width="100%" />
+              <img class="d-none d-md-block" src="assets/img/illustrations/architecture.svg" width="100%" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-lg-12 text-center mx-auto">
+              <div class="h6 fw-bold fs-4 display-3 lh-sm mb-7">Resources</div>
+              <div class="row justify-content-center mb-2 mt-4 align-items-center">
+                <div class="col-sm-10 mb-5 mb-md-0">
+                  <div class="d-flex flex-column align-items-center doc-links">
+                    <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank"
+                      href="https://github.com/redstone-finance/redstone-smartweave/blob/hatskier/migration-guide/docs/MIGRATION_GUIDE.md">
+                      <p>Migration guide</p>
+                      <img src="/assets/img/icons/arrow-right.svg">
+                    </a>
+                    <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank"
+                      href="https://github.com/redstone-finance/redstone-smartweave-examples">
+                      <p>Examples</p>
+                      <img src="/assets/img/icons/arrow-right.svg">
+                    </a>
+                    <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank"
+                      href="https://github.com/redstone-finance/smartweave-loot">
+                      <p>Getting started</p>
+                      <img src="/assets/img/icons/arrow-right.svg">
+                    </a>
+                    <a class="mb-3 d-flex justify-content-between align-items-center blue" target="_blank"
+                      href="https://github.com/redstone-finance/redstone-smartweave/blob/main/README.md">
+                      <p>Readme</p>
+                      <img src="/assets/img/icons/arrow-right.svg">
+                    </a>
+                  </div>
+                </div>
+                <!-- <div class="col-sm-10 col-lg-6">
                 <iframe width="100%" id="migration-video" allow="fullscreen"
                   src="https://www.youtube.com/embed/fNjUV7mHFqw">
                 </iframe>
+              </div> -->
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="pt-6" id="community">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mx-auto align-items-center text-center">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">SmartContracts community</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-lg-12 mx-auto align-items-center text-center">
-            <div class="mt-3">
-              <p class="px-2 px-md-6 mx-md-6">
-                We believe that the community is the most important building block of future of blockchain technology. For that reason we 
-                cooperate with many projects on various fields, battle-testing our product in different use-cases and environments, to create 
-                the best possible user and developer experience. We’re extremely grateful to the amazing Arweave projects for initial feedback 
-                and willingness to test our solution. A big shout out to: 
-                <br /><br />
-              </p>
+      <section class="pt-6" id="community">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mx-auto align-items-center text-center">
+              <div class="h6 fw-bold fs-4 display-3 lh-sm mb-4 mb-md-3">SmartContracts community</div>
             </div>
           </div>
-          <div class="row align-items-center justify-content-center justify-content-lg-around mx-0 px-md-7">
-            <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-4 mb-lg-0 text-center"><a
-                href="https://www.arweave.org/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
-                class="community-logo black" src="assets/img/backers/arweave.svg" width="50px" alt="Arweave logo" /></a></div>
-            <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-4 mb-lg-0 text-center"><a href="https://textury.org/"
-              role="button" target="_blank"><img loading="lazy" class="community-logo" src="assets/img/backers/textury.svg" width="50px" height="50px" alt="Textury logo" /></a></div>
-            <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-4 mb-lg-0 text-center"><a
-                href="https://www.kyve.network/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
-                class="community-logo kyve" src="assets/img/backers/kyve.svg" height="50px" alt="Kyve logo" /></a></div>
-            <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-4 mb-lg-0 text-center"><a href="https://openbits.world/"
-                role="button" target="_blank"><img loading="lazy" class="community-logo openbits" src="assets/img/backers/openbits.svg" width="50px" height="50px" alt="Openbits logo" /></a></div>
+          <div class="row">
+            <div class="col-12 col-lg-12 mx-auto align-items-center text-center">
+              <div class="mt-3">
+                <p class="px-2 px-md-6 mx-md-6">
+                  The future of blockchain technology will be centered around community as it’s most important building
+                  block. In order to create the best possible user and developer experience, Warp has partnered with
+                  with many innovative companies in various fields, battle-testing our product through many different
+                  use-cases and in various environments. A special thank you to the incredible Arweave projects for
+                  initial feedback and willingness to test our solution. A big shout out to:
+                  <br /><br />
+                </p>
+              </div>
+            </div>
+            <div class="row align-items-center justify-content-center justify-content-lg-around mx-0 px-md-7">
               <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-4 mb-lg-0 text-center"><a
-                href="https://community.xyz/home/" role="button" target="_blank" rel="noreferrer noopener"><img loading="lazy"
-                class="community-logo" src="assets/img/backers/communityxyz.svg" height="45px" alt="CommunityXYZ logo" /></a></div>
+                  href="https://www.arweave.org/" role="button" target="_blank" rel="noreferrer noopener"><img
+                    loading="lazy" class="community-logo black" src="assets/img/backers/arweave.svg" width="50px"
+                    alt="Arweave logo" /></a></div>
+              <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-4 mb-lg-0 text-center"><a
+                  href="https://textury.org" role="button" target="_blank"><img loading="lazy" class="community-logo"
+                    src="assets/img/backers/textury.svg" width="50px" height="50px" alt="Textury logo" /></a></div>
+              <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-4 mb-lg-0 text-center"><a
+                  href="https://www.kyve.network/" role="button" target="_blank" rel="noreferrer noopener"><img
+                    loading="lazy" class="community-logo kyve" src="assets/img/backers/kyve.svg" height="50px"
+                    alt="Kyve logo" /></a></div>
+              <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-4 mb-lg-0 text-center"><a
+                  href="https://openbits.world/" role="button" target="_blank"><img loading="lazy"
+                    class="community-logo openbits" src="assets/img/backers/openbits.svg" width="50px" height="50px"
+                    alt="Openbits logo" /></a></div>
+              <div class="col-6 col-sm-4 col-md-4 col-lg-1 px-md-0 mb-4 mb-lg-0 text-center"><a
+                  href="https://community.xyz/home" role="button" target="_blank" rel="noreferrer noopener"><img
+                    loading="lazy" class="community-logo" src="assets/img/backers/communityxyz.svg" height="45px"
+                    alt="CommunityXYZ logo" /></a></div>
+            </div>
+          </div>
+          <div class="row mt-8 mx-0">
+            <div class="col-12 col-md-5 text-center quoted-person d-flex flex-column align-items-center mb-5 mb-md-0">
+              <a href="https://pianity.com" target="_blank"><img width="200" src="assets/img/gallery/pianity.svg"></a>
+              <div class="quote mt-2 quotes-height">
+                Warp took smart contracts on Arweave to the next level and has become a fundamental piece of our tech
+                stack here at Pianity. Its Sequencer allows us to scale our contract interactions, whereas WASM support
+                ensures security and stability.<br />
+                Warp has consistently been making our use of smart contracts a lot more stable, faster and safer.
+              </div>
+              <div class="mt-3 fw-bold">Eyal Chojnowski</div>
+              <div class="mt-1">Web3 lead at Pianity</div>
+            </div>
+            <div class="col-12 col-md-5 offset-md-2 text-center quoted-person d-flex flex-column align-items-center">
+              <a href="https://bundlr.network" target="_blank"><img src="assets/img/gallery/Dark.svg" width="300"></a>
+              <div class="quote mt-2 quotes-height">
+                Warp enables us to build scaling solutions for Arweave. Bundlr does not need to worry about transaction
+                costs getting out of hand while Warp's "lazy" approach guarantees that the contracts can execute more
+                complex code without blocking the whole blockchain network.
+              </div>
+              <div class="mt-3 fw-bold">Josh Benaron</div>
+              <div class="mt-1">Founder of Bundlr Network</div>
+            </div>
+          </div>
+          <div class="row mt-8 mx-0">
+            <div class="col-12 col-md-5 text-center quoted-person d-flex flex-column align-items-center mb-5 mb-md-0">
+              <a href="https://akord.com" target="_blank"><img width="200" src="assets/img/gallery/akord.svg"></a>
+              <div class="quote mt-2 quotes-height">
+                Implementation of Warp was pivotal for us at Akord. All their tools and enhancements to the Arweave
+                smart
+                contract system allowed us to increase efficiency and quickly get to market. Warp Contracts is now the
+                cornerstone technology in the Akord Vault Protocol stack.
+              </div>
+              <div class="mt-3 fw-bold">Richard Caetano</div>
+              <div class="mt-1">Co-Founder of Akord</div>
+            </div>
+            <div class="col-12 col-md-5 offset-md-2 text-center quoted-person d-flex flex-column align-items-center">
+              <a href="https://ever.finance" target="_blank"><img width="500"
+                  src="assets/img/gallery/ever-logo.svg"></a>
+              <div class="quote mt-2 quotes-height">
+                Warp is the true rocket system for SmartWeave. The Sequencer solves problems that SWC can produce with
+                many invalid trades and Front-Running issues. Our core product, a cross-chain PST called everPay, uses
+                the
+                scalable Warp infrastructure, which provides the core foundation for PST liquidity.
+              </div>
+              <div class="mt-3 fw-bold">Outprog</div>
+              <div class="mt-1">Founder & CEO of everFinance</div>
+            </div>
           </div>
         </div>
-        <div class="row mt-8 mx-0">
-          <div class="col-12 col-md-6 text-center quoted-person d-flex flex-column align-items-center mb-5 mb-md-0">
-            <img src="assets/img/gallery/cedrik.jpeg">
-            <div class="mt-3 fw-bold">Cedrik Boudreau</div>
-            <div class="mt-1">Arweave Team, CommunityXYZ</div>
-            <div class="quote mt-2">
-                The Redstone team did an amazing work improving the SmartContracts Javascript library. "redstone-smartweave" is the way to go
-            </div>
-          </div>
-          <div class="col-12 col-md-6 text-center quoted-person d-flex flex-column align-items-center">
-            <img src="assets/img/gallery/john.jpeg">
-            <div class="mt-3 fw-bold">John Letey</div>
-            <div class="mt-1">Founder of Kyve</div>
-            <div class="quote mt-2">
-                The easy-to-use predefined caching mechanisms improved our contract execution time drastically! The plugin-like approach is genius - we've even made a plugin to use KYVE data when executing contracts.
-            </div>
-          </div>
-        </div>
-      </div>
 
-    </section>
+      </section>
 
-    <section id="contact" class="pt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-12 mx-auto align-items-center text-center">
-            <div class="h6 fw-bold fs-4 display-3 lh-sm mb-5">Want to know more?</div>
-            <div class="mt-3">
-              Feel free to contact us if you have any questions or would like to contribute in our project.
-              We'll be happy to answer!
-              <br /><br />
-            </div>
-            <div class="px-0 px-md-7">
-              <div class="justify-content-center">
+      <section id="contact" class="pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-12 mx-auto align-items-center text-center">
+              <div class="h6 fw-bold fs-4 display-3 lh-sm mb-5">Want to know more?</div>
+              <div class="mt-3">
+                Please feel free to reach out with any questions or if you wish to contribute. We'll be happy to answer!
+
+
+                <br /><br />
+              </div>
+              <div class="px-0 px-md-7">
+                <div class="justify-content-center">
     <form action="https://formsubmit.co/e9be7fef243c839a1a501b9a7fab4668" method="POST">
         <div class="row">
             <div class="form-group col-lg-6">
@@ -499,14 +570,40 @@
     </form>
 </div>
 
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!-- ============================================-->
+      <section id="vision" class="pt-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-lg-12 text-center mx-auto mb-4">
+              <div class="h6 fw-bold fs-4 display-3 lh-sm">Vision</div>
+              <div class="d-flex justify-content-around align-items-center mt-6 mx-auto vision-icons">
+                <img src="assets/img/icons/bitcoin.svg" />
+                <img class="chevron" src="assets/img/icons/right-chevron.svg" />
+                <img src="assets/img/icons/ethereum.svg" />
+                <img class="chevron" src="assets/img/icons/right-chevron.svg" />
+                <img src="assets/img/icons/nft.svg" />
+                <img class="chevron" src="assets/img/icons/right-chevron.svg" />
+                <img src="assets/img/icons/data.svg" />
+              </div>
+              <p class="mb-0 mt-6 mx-md-6 px-md-6">Blockchains have come a long way from a medium of a single coin,
+                through embracing more sophisticated tokens, towards managing media-rich NFTs. Every iteration has
+                introduced more content-rich assets and new possibilities. In the future, blockchains will be able to
+                handle large streams of data that can power data-heavy interactions from machine learning to data mining
+                solutions and much much more. Once that moment arrives, Warp will be ready with a smart contracts
+                protocol to facilitate that change.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- ============================================-->
 <!-- <section> begin ============================-->
 <section class="py-3" id="footer">
 
@@ -568,24 +665,199 @@
 <!-- <section> close ============================-->
 <!-- ============================================-->
 
-  <!-- ===============================================-->
+    <!-- ===============================================-->
 <!--    JavaScripts-->
 <!-- ===============================================-->
 <script async src="vendors/@popperjs/popper.min.js"></script>
 <script async src="vendors/bootstrap/bootstrap.min.js"></script>
-<script src="vendors/is/is.min.js"></script> 
-<script async id="cookie-script" src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js"></script>
+<script src="vendors/is/is.min.js"></script>
+<script async id="cookie-script"
+    src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js"></script>
 <script async src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
 <script async src="assets/js/theme.js"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap"
+    rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+<script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://unpkg.com/redstone-smartweave@0.5.6/bundles/web.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+  </div>
 
-  <script src="assets/js/theme.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+      $('.your-class').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+      })
+    });
 
+    const arweave = Arweave.init({
+      host: 'arweave.net',
+      port: 443,
+      protocol: 'https',
+    });
+
+    const smartweave = rsdk.SmartWeaveWebFactory.memCachedBased(arweave).build();
+
+    if (!getCookie('arweave_key')) {
+      arweave.wallets.generate().then((key) => {
+        const keyCookie = JSON.stringify(key);
+        setCookie('arweave_key', keyCookie);
+        handleArweaveKey(key, smartweave, arweave)
+      });
+    } else {
+      const key = JSON.parse(getCookie('arweave_key'));
+      handleArweaveKey(key, smartweave, arweave)
+    }
+
+    function waitForElm(selector) {
+      /* eslint-disable */
+      return new Promise((resolve) => {
+        if (document.querySelector(selector)) {
+          return resolve(document.querySelector(selector));
+        }
+
+        const observer = new MutationObserver(() => {
+          if (document.querySelector(selector)) {
+            resolve(document.querySelector(selector));
+            observer.disconnect();
+          }
+        });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+      });
+    }
+
+    function setCookie(cname, cvalue) {
+      document.cookie = cname + "=" + cvalue + ";";
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i].trim();
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+      }
+      return "";
+    }
+
+    async function handleArweaveKey(key, smartweave, arweave) {
+      let walletAddress;
+      const balanceElement = await waitForElm('.balance-el');
+      balanceElement.innerHTML += `<div class="spinner-border spinner-border-sm text-primary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>`;
+
+      const contract = smartweave.pst('5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI').connect(key);
+
+      arweave.wallets.jwkToAddress(key).then(async (address) => {
+        walletAddress = address;
+        await mintTokens(contract, walletAddress, balanceElement)
+        const addressElement = await waitForElm('.address-el');
+        addressElement.innerHTML += subtractWalletString(walletAddress);
+        const state = await fetch(`https://d2rkt3biev1br2.cloudfront.net/state?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
+          .then((res) => {
+            console.log(res)
+            return res.json();
+          })
+          .then((data) => {
+            const currentBalance = data.state.balances[address]
+            balanceElement.innerHTML = "";
+            if (currentBalance) {
+              balanceElement.innerHTML += currentBalance;
+            } else {
+              balanceElement.innerHTML += "0"
+            }
+            return data.state
+          });
+      });
+    }
+
+    function subtractWalletString(address) {
+      return address.substr(0, 6) + '...' + address.substr(address.length - 6);
+    }
+
+    async function mintTokens(contract, walletAddress, balanceElement) {
+
+      const mintBtn = document.querySelector('.mint');
+      mintBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        mintBtn.setAttribute('disabled', '');
+        const interactionInfo = document.querySelector('.interaction');
+        interactionInfo.innerHTML = "";
+
+        interactionInfo.classList.add('dot-flashing')
+        let tokensAmount = document.getElementById('tokens');
+
+        const txId = await contract.bundleInteraction({ function: 'mint', qty: parseInt(tokensAmount.value) })
+
+        balanceElement.innerHTML = "";
+        balanceElement.innerHTML += `<div class="spinner-border spinner-border-sm text-primary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>`;
+
+        interactionInfo.classList.remove('dot-flashing')
+        interactionInfo.innerHTML = `Transaction processed: <span><a href="https://sonar.redstone.tools/#/app/interaction/${txId.originalTxId}" target="_blank">${subtractWalletString(txId.originalTxId)}</a></span>.`
+
+        const state = await fetch(`https://d2rkt3biev1br2.cloudfront.net/state?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            const currentBalance = data.state.balances[walletAddress]
+            balanceElement.innerHTML = "";
+            if (currentBalance) {
+              balanceElement.innerHTML += currentBalance;
+            } else {
+              balanceElement.innerHTML += "0"
+            }
+            tokensAmount.value = "";
+            const mintBtn = document.querySelector('.mint');
+            console.log(mintBtn)
+            mintBtn.removeAttribute('disabled');
+            return data.state
+          });
+      })
+    }
+    async function getContractState() {
+      const state = fetch(`https://d2rkt3biev1br2.cloudfront.net/state?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          return data.state
+        });
+      return state
+    }
+    $("#tokens").on("input", function () {
+      if (/^0/.test(this.value)) {
+        this.value = this.value.replace(/^0/, "")
+      }
+    })
+  </script>
 </body>
 
 </html>

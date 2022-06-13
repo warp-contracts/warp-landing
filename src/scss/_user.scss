@@ -95,6 +95,10 @@ section {
     background-color: $redstone-light-blue;
 }
 
+.btn-danger {
+    background-color: $redstone-light-blue !important;
+}
+
 .doc-links {
     a {
         padding-left: 20px;
@@ -124,7 +128,6 @@ section {
 
 .quoted-person {
     img {
-        border-radius: 9999px;
         height: 200px;
     }
 
@@ -215,7 +218,7 @@ ul.yes-list, ul.no-list {
             margin-bottom: 0.25rem;
         }
 
-        span {
+        .text {
             display: block;
             padding-left: 0.25rem;
             transform: translateY(-3px);
@@ -231,6 +234,65 @@ ul.yes-list, ul.no-list {
         }
     }
 }
+
+.quotes-height {
+    height: 320px;
+    @include media-breakpoint-up(sm) {
+        height: 180px;
+    }
+}
+
+ol li {
+    list-style-type: none;
+    counter-increment: item;
+    padding-top: 20px;
+  }
+  
+  ol li:before {
+    content: counter(item);
+    margin-right: 5px;
+    font-size: 70%;
+    background-color: #5273fb;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 50%;
+
+  }
+
+  .col-centered{
+    float: none;
+    margin: 0 auto;
+    }
+    
+  ol li:first-of-type:before {
+        padding: 3px 9px;
+  }
+
+  .aligned {
+    vertical-align: text-top;
+    display: inline-block;
+    width: 80%;
+    margin-left: 0.5rem;
+  }
+div.list {
+    counter-reset: list-number;
+  }
+  div.list div:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+    
+    margin-right: 10px;
+    margin-bottom:10px;
+    width:25px;
+    height:25px;
+    display:inline-flex;
+    align-items:center;
+    justify-content: center;
+    background-color:#5273fb;
+    border-radius:50%;
+    color:#fff;
+  }
 
 .community-logo {
     filter: grayscale(100%) invert(0.56);
@@ -279,6 +341,18 @@ ul.no-list li {
     height: 70px;
 }
 
+.text-fade-in {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+  
+.text-fade-out {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
 .monospace {
     font-family: $font-family-monospace !important;
 }
@@ -291,6 +365,9 @@ ul.no-list li {
     color: $redstone-light-blue;
 }
 
+.bolded {
+    font-weight: $font-weight-bolded;
+}
 .first-page {
     @include media-breakpoint-up(lg) {
         height: 100vh;
