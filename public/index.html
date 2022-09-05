@@ -5,51 +5,51 @@
 
 <head>
   <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<!-- ===============================================-->
-<!--    Document Title-->
-<!-- ===============================================-->
-<title>Warp SmartContracts</title>
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>Warp SmartContracts</title>
 
 
-<!-- ===============================================-->
-<!--    Favicons-->
-<!-- ===============================================-->
-<!--link(rel="apple-touch-icon" sizes="180x180", href=`${CWD}assets/img/favicons/apple-touch-icon.png`)-->
-<!--link(rel="icon" type="image/png" sizes="32x32", href=`${CWD}assets/img/favicons/favicon-32x32.png`)-->
-<!--link(rel="icon" type="image/png" sizes="16x16", href=`${CWD}assets/img/favicons/favicon-16x16.png`)-->
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/smartweave-favicon.png">
-<link rel="manifest" href="assets/img/favicons/manifest.json">
-<meta name="theme-color" content="#ffffff">
-<meta name="description"
-  content="Highly customizable DeFi data streams delivered quickly, reliably and cost-efficiently.">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FT767HW5C2"></script>
-<script async>
-  window.dataLayer = window.dataLayer || [];
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <!--link(rel="apple-touch-icon" sizes="180x180", href=`${CWD}assets/img/favicons/apple-touch-icon.png`)-->
+  <!--link(rel="icon" type="image/png" sizes="32x32", href=`${CWD}assets/img/favicons/favicon-32x32.png`)-->
+  <!--link(rel="icon" type="image/png" sizes="16x16", href=`${CWD}assets/img/favicons/favicon-16x16.png`)-->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/smartweave-favicon.png">
+  <link rel="manifest" href="assets/img/favicons/manifest.json">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description"
+    content="Highly customizable DeFi data streams delivered quickly, reliably and cost-efficiently.">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FT767HW5C2"></script>
+  <script async>
+    window.dataLayer = window.dataLayer || [];
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-  gtag('config', 'G-FT767HW5C2');
-</script>
-<script async
-  src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-FT767HW5C2');
+  </script>
+  <script async
+    src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
 
 
-<!-- ===============================================-->
-<!--    Stylesheets-->
-<!-- ===============================================-->
-<link href="/assets/css/theme.css" rel="stylesheet" lazyload />
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link href="/assets/css/theme.css" rel="stylesheet" lazyload />
 
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css" as="style"
-  onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css">
-</noscript>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css">
+  </noscript>
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
@@ -63,70 +63,70 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#intro"><img
-        src="assets/img/warp-logo-full.svg" alt="Redstone logo" style="width: 150px" /></a>
-    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-        <!--li.nav-item(data-anchor)-->
-        <!--  a.nav-link.fw-medium(aria-current='page', href='#home' class= currentPage === 'index' ? 'active' : false ) Home-->
-        
-        <li class="nav-item mx-lg-2" data-anchor="data-anchor">
-          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#about">About</a>
-        </li>
-        <li class="nav-item mx-lg-2" data-anchor="data-anchor">
-          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#sdk">SDK</a>
-        </li>
-        <!-- <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#network">Network</a></li> -->
-        <!-- <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#intro"><img
+              src="assets/img/warp-logo-full.svg" alt="Redstone logo" style="width: 150px" /></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+              <!--li.nav-item(data-anchor)-->
+              <!--  a.nav-link.fw-medium(aria-current='page', href='#home' class= currentPage === 'index' ? 'active' : false ) Home-->
+
+              <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+                <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#about">About</a>
+              </li>
+              <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+                <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#sdk">SDK</a>
+              </li>
+              <!-- <li class="nav-item mx-lg-2" data-anchor="data-anchor"><a class="nav-link fw-medium text-end text-lg-center text-primary" href="#network">Network</a></li> -->
+              <!-- <li class="nav-item mx-lg-2" data-anchor="data-anchor">
           <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#features">Features</a>
         </li> -->
-        <li class="nav-item mx-lg-2" data-anchor="data-anchor">
-          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#resources">Resources</a>
-        </li>
-        <li class="nav-item mx-lg-2" data-anchor="data-anchor">
-          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#community">Community</a>
-        </li>
-        <li class="nav-item mx-lg-2" data-anchor="data-anchor">
-          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item mx-lg-2" data-anchor="data-anchor">
-          <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#vision">Vision</a>
-        </li>
-        
-      </ul>
-      <div class="d-flex align-items-center ml-5">
-        <ul class=" list-unstyled list-inline mb-0">
-          <li class="list-inline-item me-3">
-            <a href="https://twitter.com/warp_contracts" target="_blank" rel="noreferrer noopener">
-              <img src="/assets/img/icons/twitter-black.svg" style="height: 24px;" alt="Twitter icon" />
-            </a>
-          </li>
-          <li class="list-inline-item me-3">
-            <a href="https://discord.com/invite/PVxBZKFr46" target="_blank" rel="noreferrer noopener">
-              <img src="/assets/img/icons/discord-black.svg" style="height: 24px;" alt="Discord icon" />
-            </a>
-          </li>
-          <li class="list-inline-item me-3">
-            <a href="https://github.com/warp-contracts" target="_blank" rel="noreferrer noopener">
-              <img src="/assets/img/icons/github-nav.svg" style="height: 20px;" alt="Github icon" />
-            </a>
-          </li>
-          <li class="list-inline-item me-3">
-            <a href="https://medium.com/@RedStone_Finance" target="_blank" rel="noreferrer noopener">
-              <img src="/assets/img/icons/medium-nav.svg" style="height: 20px;" alt="Medium icon" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
+              <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+                <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#resources">Resources</a>
+              </li>
+              <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+                <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#community">Community</a>
+              </li>
+              <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+                <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item mx-lg-2" data-anchor="data-anchor">
+                <a class="nav-link fw-medium text-end text-lg-center text-primary" href="#vision">Vision</a>
+              </li>
+
+            </ul>
+            <div class="d-flex align-items-center ml-5">
+              <ul class=" list-unstyled list-inline mb-0">
+                <li class="list-inline-item me-3">
+                  <a href="https://twitter.com/warp_contracts" target="_blank" rel="noreferrer noopener">
+                    <img src="/assets/img/icons/twitter-black.svg" style="height: 24px;" alt="Twitter icon" />
+                  </a>
+                </li>
+                <li class="list-inline-item me-3">
+                  <a href="https://discord.com/invite/PVxBZKFr46" target="_blank" rel="noreferrer noopener">
+                    <img src="/assets/img/icons/discord-black.svg" style="height: 24px;" alt="Discord icon" />
+                  </a>
+                </li>
+                <li class="list-inline-item me-3">
+                  <a href="https://github.com/warp-contracts" target="_blank" rel="noreferrer noopener">
+                    <img src="/assets/img/icons/github-nav.svg" style="height: 20px;" alt="Github icon" />
+                  </a>
+                </li>
+                <li class="list-inline-item me-3">
+                  <a href="https://medium.com/@RedStone_Finance" target="_blank" rel="noreferrer noopener">
+                    <img src="/assets/img/icons/medium-nav.svg" style="height: 20px;" alt="Medium icon" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
       <div class="oval right"></div>
       <div class="oval bottom"></div>
@@ -185,27 +185,29 @@
               </div>
               <div class="col-sm-10 offset-lg-1 col-lg-6 text-center baloon-container">
                 <div class="col-12 col-md-10 offset-md-1 mt-5 mt-sm-5">
-    <div class="mb-3" style="font-weight: 500;">Try minting some PST tokens with <a target="_blank"
-            href="https://sonar.redstone.tools/#/app/contract/5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI"> this
-            contract</a>, to test the execution speed yourself.
+                  <div class="mb-3" style="font-weight: 500;">Try minting some PST tokens with <a target="_blank"
+                      href="https://sonar.redstone.tools/#/app/contract/5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI">
+                      this
+                      contract</a>, to test the execution speed yourself.
 
-    </div>
-    <div class="d-flex justify-content-between pb-3">Balance: <span class="balance-el font-weight-bold"></span></div>
-    <div class="d-sm-flex justify-content-between pb-3">Your temporary wallet: <span
-            class="address-el font-weight-bold"></span>
-    </div>
-    <form>
-        <div class="form-group">
-            <input type="number" inputmode="numeric" pattern="[1-9]*" id="tokens" name="tokens" class="form-control"
-                placeholder="Tokens">
-        </div>
-        <button class="button btn btn-lg btn-danger rounded-pill order-0 mint btn-block mt-0">Mint</button>
-    </form>
-    <div class="d-flex justify-content-center pt-2" style="height: 40px">
-        <div class="mt-2 interaction"></div>
-    </div>
-</div>
-<script src="assets/js/theme.js" type="text/javascript"></script>
+                  </div>
+                  <div class="d-flex justify-content-between pb-3">Balance: <span
+                      class="balance-el font-weight-bold"></span></div>
+                  <div class="d-sm-flex justify-content-between pb-3">Your temporary wallet: <span
+                      class="address-el font-weight-bold"></span>
+                  </div>
+                  <form>
+                    <div class="form-group">
+                      <input type="number" inputmode="numeric" pattern="[1-9]*" id="tokens" name="tokens"
+                        class="form-control" placeholder="Tokens">
+                    </div>
+                    <button class="button btn btn-lg btn-danger rounded-pill order-0 mint btn-block mt-0">Mint</button>
+                  </form>
+                  <div class="d-flex justify-content-center pt-2" style="height: 40px">
+                    <div class="mt-2 interaction"></div>
+                  </div>
+                </div>
+                <script src="assets/js/theme.js" type="text/javascript"></script>
               </div>
             </div>
           </div>
@@ -443,11 +445,6 @@
                     </a>
                   </div>
                 </div>
-                <!-- <div class="col-sm-10 col-lg-6">
-                <iframe width="100%" id="migration-video" allow="fullscreen"
-                  src="https://www.youtube.com/embed/fNjUV7mHFqw">
-                </iframe>
-              </div> -->
               </div>
             </div>
           </div>
@@ -561,24 +558,24 @@
               </div>
               <div class="px-0 px-md-7">
                 <div class="justify-content-center">
-    <form action="https://formsubmit.co/e9be7fef243c839a1a501b9a7fab4668" method="POST">
-        <div class="row">
-            <div class="form-group col-lg-6">
-                <label class="control-label" for="name-input">Name</label>
-                <input id="name-input" name="name" class="form-control" required>
-            </div>
-            <div class="form-group col-lg-6">
-                <label class="control-label" for="email-input">Email address</label>
-                <input id="email-input" type="email" name="email" class="form-control" required>
-            </div>
-        </div>
-        <div class="form-group mt-3">
-            <label class="control-label" for="textarea-input">Message</label>
-            <textarea class="form-control" id="textarea-input" name="text" rows="3"></textarea>
-        </div>
-        <button class="button btn btn-lg btn-danger rounded-pill mt-3" type="submit">Send</button>
-    </form>
-</div>
+                  <form action="https://formsubmit.co/e9be7fef243c839a1a501b9a7fab4668" method="POST">
+                    <div class="row">
+                      <div class="form-group col-lg-6">
+                        <label class="control-label" for="name-input">Name</label>
+                        <input id="name-input" name="name" class="form-control" required>
+                      </div>
+                      <div class="form-group col-lg-6">
+                        <label class="control-label" for="email-input">Email address</label>
+                        <input id="email-input" type="email" name="email" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="form-group mt-3">
+                      <label class="control-label" for="textarea-input">Message</label>
+                      <textarea class="form-control" id="textarea-input" name="text" rows="3"></textarea>
+                    </div>
+                    <button class="button btn btn-lg btn-danger rounded-pill mt-3" type="submit">Send</button>
+                  </form>
+                </div>
 
               </div>
             </div>
@@ -614,102 +611,101 @@
     </main>
 
     <!-- ============================================-->
-<!-- <section> begin ============================-->
-<section class="py-3" id="footer">
+    <!-- <section> begin ============================-->
+    <section class="py-3" id="footer">
 
-    <div class="container">
+      <div class="container">
         <!--.row.flex-center-->
         <!--  .col-auto.mb-5-->
         <!--    a.pe-2.d-flex.align-items-center.text-decoration-none.fw-bold.fs-3(href='#')-->
         <!--      .text-danger Red-->
         <!--      .text-white Stone-->
         <div class="d-flex flex-wrap justify-content-between">
-            <div class="footer-links d-flex flex-wrap justify-content-center mb-3 mb-md-0">
-                <div class="text-white" style="margin-right: 0.5rem">&copy; RedStone 2021</div>
-                <div class="text-white">·</div>
-                <div class="mx-2">
-                    <a class="text-white" href="./contact.html">Contact </a>
-                </div>
-                <div class="text-white">·</div>
-                <div class="mx-2">
-                    <a class="text-white" href="./privacy.html">Privacy policy</a>
-                </div>
-                <div class="text-white">·</div>
-                <div class="mx-2">
-                    <a class="text-white" href="./terms.html">Terms of Use</a>
-                </div>
+          <div class="footer-links d-flex flex-wrap justify-content-center mb-3 mb-md-0">
+            <div class="text-white" style="margin-right: 0.5rem">&copy; RedStone 2021</div>
+            <div class="text-white">·</div>
+            <div class="mx-2">
+              <a class="text-white" href="./contact.html">Contact </a>
             </div>
-            <div class="footer-social">
-                <ul class="list-unstyled list-inline">
-                    <li class="list-inline-item me-3">
-                        <a href="mailto:core@redstone.finance" target="_blank">
-                            <img src="/assets/img/icons/mail.svg" alt="Mail icon" />
-                        </a>
-                    </li>
-                    <li class="list-inline-item me-3">
-                        <a href="https://twitter.com/warp_contracts" target="_blank" rel="noreferrer noopener">
-                            <img src="/assets/img/icons/twitter.svg" alt="Twitter icon" />
-                        </a>
-                    </li>
-                    <li class="list-inline-item me-3">
-                        <a href="https://discord.com/invite/PVxBZKFr46" target="_blank" rel="noreferrer noopener">
-                            <img src="/assets/img/icons/discord.svg" alt="Discord icon" />
-                        </a>
-                    </li>
-                    <li class="list-inline-item me-3">
-                        <a href="https://github.com/warp-contracts" target="_blank" rel="noreferrer noopener">
-                            <img src="/assets/img/icons/github.svg" alt="Github icon" />
-                        </a>
-                    </li>
-                    <li class="list-inline-item me-3">
-                        <a href="https://www.linkedin.com/company/redstone-finance/" target="_blank"
-                            rel="noreferrer noopener">
-                            <img src="/assets/img/icons/linkedin.svg" alt="Github icon" />
-                        </a>
-                    </li>
-                    <li class="list-inline-item me-3">
-                        <a href="https://medium.com/@RedStone_Finance/" target="_blank" rel="noreferrer noopener">
-                            <img src="/assets/img/icons/medium.svg" alt="Medium icon" />
-                        </a>
-                    </li>
-                </ul>
+            <div class="text-white">·</div>
+            <div class="mx-2">
+              <a class="text-white" href="./privacy.html">Privacy policy</a>
             </div>
+            <div class="text-white">·</div>
+            <div class="mx-2">
+              <a class="text-white" href="./terms.html">Terms of Use</a>
+            </div>
+          </div>
+          <div class="footer-social">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item me-3">
+                <a href="mailto:core@redstone.finance" target="_blank">
+                  <img src="/assets/img/icons/mail.svg" alt="Mail icon" />
+                </a>
+              </li>
+              <li class="list-inline-item me-3">
+                <a href="https://twitter.com/warp_contracts" target="_blank" rel="noreferrer noopener">
+                  <img src="/assets/img/icons/twitter.svg" alt="Twitter icon" />
+                </a>
+              </li>
+              <li class="list-inline-item me-3">
+                <a href="https://discord.com/invite/PVxBZKFr46" target="_blank" rel="noreferrer noopener">
+                  <img src="/assets/img/icons/discord.svg" alt="Discord icon" />
+                </a>
+              </li>
+              <li class="list-inline-item me-3">
+                <a href="https://github.com/warp-contracts" target="_blank" rel="noreferrer noopener">
+                  <img src="/assets/img/icons/github.svg" alt="Github icon" />
+                </a>
+              </li>
+              <li class="list-inline-item me-3">
+                <a href="https://www.linkedin.com/company/redstone-finance/" target="_blank" rel="noreferrer noopener">
+                  <img src="/assets/img/icons/linkedin.svg" alt="Github icon" />
+                </a>
+              </li>
+              <li class="list-inline-item me-3">
+                <a href="https://medium.com/@RedStone_Finance/" target="_blank" rel="noreferrer noopener">
+                  <img src="/assets/img/icons/medium.svg" alt="Medium icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div><!-- end of .container-->
+      </div><!-- end of .container-->
 
-</section>
-<!-- <section> close ============================-->
-<!-- ============================================-->
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
     <!-- ===============================================-->
-<!--    JavaScripts-->
-<!-- ===============================================-->
-<script async src="vendors/@popperjs/popper.min.js"></script>
-<script async src="vendors/bootstrap/bootstrap.min.js"></script>
-<script src="vendors/is/is.min.js"></script>
-<script async id="cookie-script"
-    src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js"></script>
-<script async src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
-<script async src="assets/js/theme.js"></script>
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script async src="vendors/@popperjs/popper.min.js"></script>
+    <script async src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script async id="cookie-script"
+      src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js"></script>
+    <script async src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script async src="assets/js/theme.js"></script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap"
-    rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-<script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="https://unpkg.com/redstone-smartweave@0.5.6/bundles/web.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+    <script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://unpkg.com/redstone-smartweave@0.5.6/bundles/web.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
   </div>
 
   <script>
