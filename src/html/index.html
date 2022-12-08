@@ -549,7 +549,7 @@
         await mintTokens(contract, walletAddress, balanceElement)
         const addressElement = await waitForElm('.address-el');
         addressElement.innerHTML += subtractWalletString(walletAddress);
-        const state = await fetch(`https://d2rkt3biev1br2.cloudfront.net/state?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
+        const state = await fetch(`https://dre-1.warp.cc/contract?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
           .then((res) => {
             console.log(res)
             return res.json();
@@ -593,7 +593,7 @@
         interactionInfo.classList.remove('dot-flashing')
         interactionInfo.innerHTML = `Transaction processed: <span><a href="https://sonar.redstone.tools/#/app/interaction/${txId.originalTxId}" target="_blank">${subtractWalletString(txId.originalTxId)}</a></span>.`
 
-        const state = await fetch(`https://d2rkt3biev1br2.cloudfront.net/state?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
+        const state = await fetch(`https://dre-1.warp.cc/contract?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
           .then((res) => {
             return res.json();
           })
@@ -614,7 +614,7 @@
       })
     }
     async function getContractState() {
-      const state = fetch(`https://d2rkt3biev1br2.cloudfront.net/state?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
+      const state = fetch(`https://dre-1.warp.cc/contract?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
         .then((res) => {
           return res.json();
         })
