@@ -133,21 +133,21 @@
                 <div class="p-title lh-sm mb-2 fs-6 light-blue text-left">Convenient</div>
                 <p class="font-weight-bold blue lh-sm fs-2 text-left">A set of tools for developers</p>
 
-                <p><a href="https://sonar.redstone.tools">SonAR</a> allows for up to date monitoring of contracts by
+                <p><a href="https://sonar.warp.cc" target="_blank">SonAR</a> allows for up to date monitoring of contracts by
                   displaying the transaction status, current contract state, and providing error notifications.
 
                 </p>
 
-                <p><a href="https://testnet.redstone.tools">A dedicated test network</a> for experimenting with
+                <p>A dedicated test network for experimenting with
                   contracts without incurring transaction fees. The network is also indexed by SonAR.
 
                 </p>
 
-                <p>A set of <a href="https://github.com/warp-contracts/redstone-smartcontracts-wasm-templates">project
+                <p>A set of <a href="https://github.com/warp-contracts/redstone-smartcontracts-wasm-templates" target="_blank">project
                     templates</a> has been prepared in order to speed up the process of scaffolding
                   contract structure and linking to proper tools and libraries.</p>
 
-                <p>In addition, <a href="https://redstone.academy">Redstone
+                <p>In addition, <a href="https://redstone.academy" target="_blank">Redstone
                     Academy</a>, a dedicated learning platform that will guide developers through the process of
                   creating, deploying and testing smart contracts using our protocols.</p>
 
@@ -545,23 +545,22 @@
 
       arweave.wallets.jwkToAddress(key).then(async (address) => {
         walletAddress = address;
-        await mintTokens(contract, walletAddress, balanceElement)
+        await mintTokens(contract, walletAddress, balanceElement);
         const addressElement = await waitForElm('.address-el');
         addressElement.innerHTML += subtractWalletString(walletAddress);
         const state = await fetch(`https://dre-1.warp.cc/contract?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
           .then((res) => {
-            console.log(res)
             return res.json();
           })
           .then((data) => {
-            const currentBalance = data.state.balances[address]
+            const currentBalance = data.state.balances[address];
             balanceElement.innerHTML = "";
             if (currentBalance) {
               balanceElement.innerHTML += currentBalance;
             } else {
-              balanceElement.innerHTML += "0"
+              balanceElement.innerHTML += "0";
             }
-            return data.state
+            return data.state;
           });
       });
     }
@@ -590,7 +589,7 @@
 </div>`;
 
         interactionInfo.classList.remove('dot-flashing')
-        interactionInfo.innerHTML = `Transaction processed: <span><a href="https://sonar.redstone.tools/#/app/interaction/${txId.originalTxId}" target="_blank">${subtractWalletString(txId.originalTxId)}</a></span>.`
+        interactionInfo.innerHTML = `Transaction processed: <span><a href="https://sonar.warp.cc/#/app/interaction/${txId.originalTxId}" target="_blank">${subtractWalletString(txId.originalTxId)}</a></span>.`
 
         const state = await fetch(`https://dre-1.warp.cc/contract?id=5Yt1IujBmOm1LSux9KDUTjCE7rJqepzP7gZKf_DyzWI`)
           .then((res) => {
