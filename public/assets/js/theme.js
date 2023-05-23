@@ -281,6 +281,73 @@ var detectorInit = function detectorInit() {
   navigator.userAgent.match('CriOS') && addClass(html, 'chrome');
 };
 
+var angels = [{
+  name: 'Stani Kulechov',
+  title: 'Aave & Lens Founder',
+  image: 'assets/img/angels/stani-kulechov.png',
+  url: 'https://twitter.com/StaniKulechov'
+}, {
+  name: 'Sandeep Nailwal',
+  title: 'Polygon Co-Founder',
+  image: 'assets/img/angels/sandeep-nailwal.png',
+  url: 'https://twitter.com/sandeepnailwal'
+}, {
+  name: 'Alex Gluchovski',
+  title: 'zkSync Co-Founder',
+  image: 'assets/img/angels/alex-gluchovski.png',
+  url: 'https://twitter.com/gluk64'
+}, {
+  name: 'Emin Gün Sirer',
+  title: 'Avalanche Co-Founder',
+  image: 'assets/img/angels/emin-gun-sirer.png',
+  url: 'https://twitter.com/el33th4xor'
+}, {
+  name: 'Coinflipcanada',
+  title: 'GMX Contributor',
+  image: 'assets/img/angels/coinflipcanada.png',
+  url: 'https://twitter.com/coinflipcanada'
+}, {
+  name: 'Richard Ma',
+  title: 'Quantstamp CEO',
+  image: 'assets/img/angels/richard-ma.png',
+  url: 'https://www.linkedin.com/in/rtmtd/'
+}, {
+  name: 'Jacob Blish',
+  title: 'Lido Head of BD',
+  image: 'assets/img/angels/jacob-blish.png',
+  url: 'https://twitter.com/chaingenius'
+}, {
+  name: 'Marco Cora',
+  title: 'zkSync Head of BD',
+  image: 'assets/img/angels/marco-cora.png',
+  url: 'https://twitter.com/Be1garat'
+}, {
+  name: 'Justin Reyes',
+  title: 'Lido Head of DeFi',
+  image: 'assets/img/angels/justin-reyes.png',
+  url: 'https://twitter.com/Justin_Stables'
+}, {
+  name: 'Patrick Dai',
+  title: 'Qtum Founder',
+  image: 'assets/img/angels/patrick-dai.png',
+  url: 'https://twitter.com/PatrickXDai'
+}];
+var angelsSection = document.getElementById('partners');
+
+if (angelsSection) {
+  var element = document.getElementById('angels');
+
+  if (element.childNodes.length === 0) {
+    angels.forEach(function (angel) {
+      var angelItem = document.createElement('div');
+      angelItem.classList.add('partner-item');
+      angelItem.classList.add('mt-4');
+      angelItem.innerHTML += "\n        <a\n          href=\"".concat(angel.url, "\"\n          role=\"button\"\n          target=\"_blank\"\n          rel=\"noreferrer noopener\"\n          class=\"link-like-text-button\"\n        >\n          <img\n            class=\"testimonial-image\"\n            loading=\"lazy\"\n            src=\"").concat(angel.image, "\"\n            alt=\"").concat(angel.name, " Logo\"\n          />\n          <p class=\"mb-0 mt-2\">").concat(angel.name, "</p>\n          <p class=\"mb-0 mt-0\" style=\"height: 75px;\">").concat(angel.title, "</p>\n        </a>\n      ");
+      element.appendChild(angelItem);
+    });
+  }
+}
+
 function animateDataPoints(displayInterval, pointsPerDisplayInterval) {
   var referenceDataPoints = 269400336;
   var referenceTimestamp = 1630398567000;
@@ -428,6 +495,96 @@ var _window2 = window,
 
 function isDeviceMobile() {
   return is.mobile() || is.iphone() || is.androidPhone() || is.windowsPhone() || is.blackberry();
+}
+
+var partners = [{
+  name: 'Lemniscap',
+  url: 'https://lemniscap.com/',
+  image: 'assets/img/partners/lemniscap.png'
+}, {
+  name: 'Blockchain Capital',
+  url: 'https://blockchain.capital/',
+  image: 'assets/img/partners/blockchain-capital.png'
+}, {
+  name: 'Coinbase Ventures',
+  url: 'https://www.coinbase.com/ventures',
+  image: 'assets/img/partners/coinbase-ventures.png'
+}, {
+  name: 'Maven11',
+  url: 'https://www.maven11.com/',
+  image: 'assets/img/partners/maven11.svg'
+}, {
+  name: 'Distributed Global',
+  url: 'http://www.distributedglobal.com/',
+  image: 'assets/img/partners/distributed-global.png'
+}, {
+  name: 'Arweave',
+  url: 'https://www.arweave.org/',
+  image: 'assets/img/partners/arweave.svg'
+}, {
+  name: 'Lattice',
+  url: 'https://lattice.fund/',
+  image: 'assets/img/partners/lattice.png'
+}, {
+  name: 'SevenX',
+  url: 'https://7xvc.com/',
+  image: 'assets/img/partners/seven-x.png'
+}, {
+  name: 'KR1',
+  url: 'https://www.kryptonite1.co/',
+  image: 'assets/img/partners/kr1.jpg'
+}, {
+  name: 'BeringWaters',
+  url: 'https://beringwaters.com/',
+  image: 'assets/img/partners/beringwaters.png'
+}, {
+  name: '1KX',
+  url: 'https://twitter.com/1kxnetwork',
+  image: 'assets/img/partners/1kx.jpeg'
+}, {
+  name: 'Collider Ventures',
+  url: 'https://www.collider.vc/',
+  image: 'assets/img/partners/collider.png'
+}, {
+  name: 'Folius Ventures',
+  url: 'https://www.folius.ventures/',
+  image: 'assets/img/partners/folius-ventures.png'
+}, {
+  name: 'TRGC',
+  url: 'https://trgc.io/',
+  image: 'assets/img/partners/trgc.svg'
+}, {
+  name: 'Permanent Ventures',
+  url: 'https://twitter.com/permanentvc',
+  image: 'assets/img/partners/permanent-ventures.png'
+}, {
+  name: '4SV',
+  url: 'https://www.4sv.io/',
+  image: 'assets/img/partners/4sv.png'
+}, {
+  name: 'Numeus',
+  url: 'https://numeus.xyz/',
+  image: 'assets/img/partners/numeus.svg'
+}, {
+  name: 'The Graph',
+  url: 'https://thegraph.com/',
+  image: 'assets/img/partners/graph.png'
+}];
+var partnersSection = document.getElementById('partners');
+
+if (partnersSection) {
+  var _element = document.getElementById('backed-by');
+
+  if (_element.childNodes.length === 0) {
+    partners.forEach(function (partner) {
+      var partnerItem = document.createElement('div');
+      partnerItem.classList.add('partner-item');
+      var isBlackBackgroundRequired = partner.name === 'Distributed Global';
+      partnerItem.innerHTML += "\n        <a\n          href=\"".concat(partner.url, "\"\n          role=\"button\"\n          target=\"_blank\"\n          rel=\"noreferrer noopener\"\n        >\n          <img\n            src=\"").concat(partner.image, "\"\n            width=\"120px\"\n            alt=\"").concat(partner.name, " Logo\"\n            style=\"").concat(isBlackBackgroundRequired ? 'background: black; padding: 6px' : '', "\"\n          />\n        </a>\n      ");
+
+      _element.appendChild(partnerItem);
+    });
+  }
 }
 /* eslint-disable */
 
@@ -1012,13 +1169,17 @@ if (document.getElementById('members')) {
     linkedin: 'https://www.linkedin.com/in/piotr-duda-62b66b63/',
     bio: 'New challenge? Sounds like a task for Piotr! In his not so long story he built a <a href="https://wutracing.pl/" target="_blank">racing car</a>, designed machinery for production of Tesla cars, developed numerous web apps and created furniture related company. Passionate full-stack developer with 4 years of experience, now exploring the world of blockchain!'
   }];
-  var element = document.getElementById('members');
+
+  var _element2 = document.getElementById('members');
+
   var bio = document.getElementById('member-bio');
   members.forEach(function (member, index) {
     var card = document.createElement('div');
     card.classList.add('member-card', 'col-12', 'col-md-3', 'col-lg-2', 'mb-4');
     card.innerHTML += "\n            <img class=\"member-picture\" src=\"".concat(member.img, "\"/>\n            <div class=\"member-info fw-medium\">\n                <div class=\"member-name\">").concat(member.name, "</div>\n                <div class=\"member-role\">").concat(member.role, "</div>\n                <div class=\"member-social\">\n                    <a href=\"mailto:").concat(member.email, "\">\n                        <img src=\"assets/img/icons/mail.svg\">\n                    </a>\n                    <a href=\"").concat(member.linkedin, "\" target=\"_blank\">\n                        <img src=\"assets/img/icons/linkedin.svg\">\n                    </a>\n                </div>\n            </div>");
-    element.appendChild(card);
+
+    _element2.appendChild(card);
+
     var memberBio = document.createElement('div');
     memberBio.innerHTML = member.bio;
 
@@ -1034,7 +1195,8 @@ if (document.getElementById('members')) {
       });
     } else {
       memberBio.classList.add('text-center', 'mt-2', 'mb-4');
-      element.appendChild(memberBio);
+
+      _element2.appendChild(memberBio);
     }
   });
 } // /* -------------------------------------------------------------------------- */
